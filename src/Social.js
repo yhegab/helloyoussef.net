@@ -1,15 +1,6 @@
 import React, { Component } from "react";
-import {
-  Route,
-  NavLink,
-  HashRouter
-} from "react-router-dom";
 
 class SocialIcon extends Component {
-  constructor(props){
-    super(props);
-  }
-
   render() {
     return(
       <a href={this.props.link}>

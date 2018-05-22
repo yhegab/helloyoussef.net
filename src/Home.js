@@ -7,7 +7,7 @@ class Home extends Component {
         <h4>Hi there,</h4>
         <p>I'm a student studying concurrently at the University of Waterloo and Wilfrid Laurier University working towards a <b>Bachelor of Computer Science</b> and <b>Bachelor of Business Administration</b> respectively. </p>
  
-        <p>I will graduate in 2021 with 5 internships. So far, I've worked as a <b>DevOps Engineer</b> at Camis inc. and a <b>Software Developer</b> at BMO Capital Markets. </p>
+        <p>I will graduate in 2021 with five four-month internships. So far, I've worked as a <b>DevOps Engineer</b> at Camis inc. and a <b>Software Developer</b> at BMO Capital Markets. </p>
 
         <p>I'm a <b>Canadian citizen</b> and a <b>permanent resident of the United States</b>, willing to work anywhere in the world that will offer me a great learning experience and a chance to better myself and others. </p>
 

@@ -7,9 +7,9 @@ class Technical extends Component {
         <p>Here's a quick overview about my technical experience:</p>
         <h3>Personal</h3>
         <ul>
-          <li><b>This website</b> - developed using ReactJS with React Router.</li>
-          <li><b>web-msngr</b> - a personal messaging web app made using Angular, Mongo, Node.js, and Express and deployed using Heroku</li>
-          <li><b>sorcery</b> - an object-oriented implementation of a card game based on Magic: The Gathering and Hearthstone written in C++ </li>
+          <li><a href="http://jafer.ca"><b>This website</b></a> - developed using ReactJS with React Router.</li>
+          <li><a href="http://web-msngr.jafer.ca"> <b>web-msngr</b> </a> - a personal messaging web app made using Angular, Mongo, Node.js, and Express and deployed using Heroku</li>
+          <li><a href="http://github.com/itsjafer/sorcery"><b>sorcery</b></a> - an object-oriented implementation of a card game based on Magic: The Gathering and Hearthstone written in C++ </li>
         </ul>
         <p> <i>Current goals</i>: learn Flutter to create a mobile app. </p>
         <h3>On-the-job</h3>
