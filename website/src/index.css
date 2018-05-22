@@ -1,0 +1,47 @@
+html {
+  font: 100%/1.45em 'Source Serif Pro', serif;
+  height: 100%;
+}
+body {
+  padding: 20px;
+  margin: 0;
+}
+h1, h2, p, ul, li {
+  font-family: sans-serif;
+}
+h1 {
+  height: 100%;
+  margin: 0;
+  text-align: center;
+}
+ul.header li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+}
+ul.header {
+  padding: 0;
+}
+ul.header li a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+}
+.content {
+  background-color: #FFF;
+  padding: 20px;
+}
+.content h2 {
+  padding: 0;
+  margin: 0;
+}
+.content li {
+  margin-bottom: 10px;
+}
+.active {
+  color: #FFF !important;
+  font-style: italic;
+  background-color: #000;
+}
