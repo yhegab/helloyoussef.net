@@ -4,16 +4,16 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <h2>HELLO</h2>
-        <p>Cras facilisis urna ornare ex volutpat, et
-        convallis erat elementum. Ut aliquam, ipsum vitae
-        gravida suscipit, metus dui bibendum est, eget rhoncus nibh
-        metus nec massa. Maecenas hendrerit laoreet augue
-        nec molestie. Cum sociis natoque penatibus et magnis
-        dis parturient montes, nascetur ridiculus mus.</p>
+        <h4>Hi there,</h4>
+        <p>I'm a student studying concurrently at the University of Waterloo and Wilfrid Laurier University working towards a <b>Bachelor of Computer Science</b> and <b>Bachelor of Business Administration</b> respectively. </p>
  
-        <p>Duis a turpis sed lacus dapibus elementum sed eu lectus.</p>
-      </div>
+        <p>I will graduate in 2021 with 5 internships. So far, I've worked as a <b>DevOps Engineer</b> at Camis inc. and a <b>Software Developer</b> at BMO Capital Markets. </p>
+
+        <p>I'm a <b>Canadian citizen</b> and a <b>permanent resident of the United States</b>, willing to work anywhere in the world that will offer me a great learning experience and a chance to better myself and others. </p>
+
+        <p>When I'm not coding, you'll find me eagerly awaiting the next season of Game of Thrones, rewatching The Office for the 10th time, trying a new Shawarma place, or playing Rocket League/Fortnite/FIFA with my friends. I <i>love</i> playing board games and in the summer, I like to coach house-league soccer.</p>
+
+       </div>
     );
   }
 }

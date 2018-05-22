@@ -1,18 +1,12 @@
-html {
-  font: 100%/1.45em 'Source Serif Pro', serif;
-  height: 100%;
-}
 body {
-  padding: 20px;
-  margin: 0;
-}
-h1, h2, p, ul, li {
-  font-family: sans-serif;
+  font-family: 'Roboto', serif;
 }
 h1 {
   height: 100%;
   margin: 0;
-  text-align: center;
+  text-align: center; 
+  font-size: 4.5em;
+  font-weight: 100;
 }
 ul.header li {
   display: inline;
@@ -30,8 +24,15 @@ ul.header li a {
   display: inline-block;
 }
 .content {
-  background-color: #FFF;
-  padding: 20px;
+  display: block;
+  max-width: 800px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+  width: 100%;
+  flex: 1 0 auto;
 }
 .content h2 {
   padding: 0;
@@ -44,4 +45,22 @@ ul.header li a {
   color: #FFF !important;
   font-style: italic;
   background-color: #000;
+}
+.social {
+  text-align: center;
+  margin-bottom: 1em;
+}
+.social a {
+  margin-right: 1em;
+}
+.social a img {
+  width: 25px;
+  margin-bottom: 1em;
+}
+.pdf {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
