@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: 'Roboto', serif;
 }
@@ -26,8 +29,8 @@ ul.header li a {
 .content {
   display: block;
   max-width: 800px;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: auto;
+  padding-right: auto;
   margin-left: auto;
   margin-right: auto;
   padding: 1em;
