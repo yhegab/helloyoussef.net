@@ -24,8 +24,8 @@ class Social extends Component {
     return (
       <div className="social">
         <SocialIcon link="http://github.com/itsjafer" name="github"/>
-        <SocialIcon link="http://linkedin.com/itsjafer" name="linkedin"/>
-        <SocialIcon link="http://itsjafer@gmail.com" name="email"/>
+        <SocialIcon link="http://www.linkedin.com/in/itsjafer" name="linkedin"/>
+        <SocialIcon link="mailto:itsjafer@gmail.com" name="email"/>
         <SocialIcon link="http://facebook.com/itsjafer" name="facebook"/>
         <SocialIcon link="http://instagram.com/itsjafer" name="instagram"/>
       </div>
