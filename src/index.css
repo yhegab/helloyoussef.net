@@ -17,7 +17,9 @@ ul.header li {
   margin: 0;
 }
 ul.header {
+  text-align: center;
   padding: 0;
+
 }
 ul.header li a {
   color: #000;
@@ -46,7 +48,6 @@ ul.header li a {
 }
 .active {
   color: #FFF !important;
-  font-style: italic;
   background-color: #000;
 }
 .social {
