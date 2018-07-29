@@ -10,8 +10,8 @@ class Resume extends Component {
       <div>
         <p> My resume was written in LaTeX. To view the source code and the PDF side by side, you can view it directly on Overleaf <a href="https://v2.overleaf.com/read/wvmqpzrthcpw">here</a>. </p>
         <p> For convenience, here is a <a href={ResumePDF}>direct link</a> to my resume. </p>
-        <Document file={ResumePDF}>
-          <Page pageNumber={1} renderTextLayer={false}/>
+        <Document file={ResumePDF} renderMode="svg">
+          <Page pageNumber={1} renderTextLayer={true} scale={1.5}/>
         </Document>
       </div>
     );
