@@ -7,7 +7,7 @@ class Technical extends Component {
         <p>Here's a quick overview about my technical experience:</p>
         <h3>Personal</h3>
         <ul>
-          <li><a href="http://jafer.ca"><b>This website</b></a> - developed using ReactJS with React Router.</li>
+          <li><a href="http://itsjafer.com"><b>This website</b></a> - developed using ReactJS with React Router.</li>
           <li><a href="http://web-msngr.jafer.ca"> <b>web-msngr</b> </a> - a personal messaging web app made using Angular, Mongo, Node.js, and Express and deployed using Heroku</li>
           <li><a href="http://github.com/itsjafer/sorcery"><b>sorcery</b></a> - an object-oriented implementation of a card game based on Magic: The Gathering and Hearthstone written in C++ </li>
           <li><b>C++/WLP4 Compiler</b> - A complete implementation of a compiler of a C++ subset called WLP4; converts WLP4 code to MIPS to binary machine code completely. </li>
