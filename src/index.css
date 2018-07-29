@@ -16,7 +16,7 @@ h3 {
   height: 100%;
   margin: 0;
   font-size: 1.5em;
-  font-weight: 100;
+  font-weight: 300;
 }
 h4 {
   height: 100%;
@@ -32,14 +32,18 @@ ul.header li {
 ul.header {
   text-align: center;
   padding: 0;
-
 }
 ul.header li a {
   color: #000;
-  font-weight: bold;
+  font-size: 1.5em;
+  font-weight: 300;
   text-decoration: none;
   padding: 10px;
   display: inline-block;
+  outline: none;
+}
+.active {
+  font-weight: 500 !important;
 }
 .content {
   display: block;
@@ -58,10 +62,6 @@ ul.header li a {
 }
 .content li {
   margin-bottom: 10px;
-}
-.active {
-  color: #FFF !important;
-  background-color: #000;
 }
 .social {
   text-align: center;
