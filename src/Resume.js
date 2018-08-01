@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Document, Page } from 'react-pdf';
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 import PDF from 'react-pdf-js';
-import ResumePDF from './resume.pdf';
+import ResumePDF from './Resume.pdf';
 
 class Resume extends Component {
   render() {
