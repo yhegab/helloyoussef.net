@@ -4,15 +4,22 @@ import {
   NavLink,
   HashRouter
 } from "react-router-dom";
+import ReactGA from "react-ga";
 import Home from "./Home";
 import Social from "./Social";
 import Technical from "./Technical";
 import Resume from "./Resume";
 
+ReactGA.initialize('UA-123367662-1');
+
+function fireTracking() {
+  ReactGA.pageview(window.location.pathname + window.location.search);
+}
+
 class Main extends Component {
   render() {
     return (
-      <HashRouter>
+      <HashRouter onUpdate={fireTracking}>
         <div>
           <div className="content">
             <ul className="header">

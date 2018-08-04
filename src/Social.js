@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class SocialIcon extends Component {
   render() {
     return(
-      <a href={this.props.link} target="_blank">
+      <a href={this.props.link} target="_blank" rel="noopener noreferrer">
         <img src={window.location.origin + "/icons/" + this.props.name + ".svg"} alt={this.props.name + " logo"}/>
       </a>
     );
