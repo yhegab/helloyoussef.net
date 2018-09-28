@@ -15,6 +15,7 @@ class Technical extends Component {
         <p> <i>Current goals</i>: learn Flutter to create a mobile app. Create a web app using Ruby on Rails. </p>
         <h3>On-the-job</h3>
         <ul>
+          <li><b>Visitor Management System</b> - a cross-platform React Native iOS/Android application that manages visitors and employee sign in and out</li>
           <li><b>Axes Blotter</b> - a desktop application written in C# using MVVM that allows bond traders at BMO Capital Markets to create, manage, and publish discounted bonds to clientele</li>
           <li><b>Bond TradeHistory</b> - a feature for a WPF application that allowed traders to view the sales history of bonds located in a database in Oracle SQL.</li>
           <li><b>Bulk Trade Entry System</b> - functionality written in C# that allows several trades to be generated at once and published to a RabbitMQ back-end to allow quicker workflows</li>
