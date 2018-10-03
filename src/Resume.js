@@ -1,17 +1,32 @@
 import React, { Component } from 'react';
-import { Document, Page } from 'react-pdf';
+import PDF from 'react-pdf-js';
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 import ResumePDF from './Resume.pdf';
 
 class Resume extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+  onDocumentComplete = (pages) => {
+    this.setState({ page: 1, pages });
+  }
   render() {
     return (
       <div>
-        <p> My resume was written in LaTeX. To view the source code and the PDF side by side, you can view it directly on Overleaf <a href="https://v2.overleaf.com/read/wvmqpzrthcpw" target="_blank" rel="noopener noreferrer">here</a>. </p>
+        <p> My resume was written in LaTeX using OverLeaf. You can see the latest version below.</p>
         <p> For convenience, here is a <a href={ResumePDF} target="_blank">direct link</a> to my resume. </p>
-        <Document file={ResumePDF} renderMode="svg">
+        
+        {/* <Document file={ResumePDF} renderMode="svg">
           <Page pageNumber={1} renderTextLayer={false} scale={1.5}/>
-        </Document>
+        </Document> */}
+
+        <PDF
+          file={ResumePDF}
+          page={this.state.page}
+          onDocumentComplete={this.onDocumentComplete}
+          fillWidth
+        />
       </div>
     );
   }
