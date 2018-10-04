@@ -9,6 +9,7 @@ import Home from "./Home";
 import Social from "./Social";
 import Technical from "./Technical";
 import Resume from "./Resume";
+import Favourites from "./Favourites";
 
 ReactGA.initialize('UA-123367662-1');
 
@@ -25,6 +26,7 @@ class Main extends Component {
             <ul className="header">
               <li><NavLink exact to="/">Home</NavLink></li>
               <li><NavLink exact to="/technical">Technical</NavLink></li>
+              <li><NavLink to="/favourites">List of Favourites</NavLink></li>
               <li><NavLink to="/resume">Resume</NavLink></li>
             </ul>
             <h1>Jafer Haider</h1>
@@ -32,6 +34,7 @@ class Main extends Component {
             <Route exact path="/" component={Home}/>
             <Route exact path="/technical" component={Technical}/>
             <Route path="/resume" component={Resume}/>
+            <Route path="/favourites" component={Favourites}/>
           </div>
         </div>
         </HashRouter>

@@ -80,3 +80,6 @@ ul.header li a.active {
   width: 25px;
   margin-bottom: 1em;
 }
+.movies,.shows,.games,.books,.boardgames {
+  float: left;
+}
