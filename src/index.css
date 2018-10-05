@@ -80,6 +80,16 @@ ul.header li a.active {
   width: 25px;
   margin-bottom: 1em;
 }
-.movies,.shows,.games,.books,.boardgames {
+.movies,.shows,.games,.books,.boardgames,.year,.term {
   float: left;
+}
+.term {
+  margin-left: 1em;
+}
+.title {
+  align-content: center;
+  text-align: center;
+}
+.finalYear {
+  float: inline-start;
 }
