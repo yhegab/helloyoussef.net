@@ -20,7 +20,7 @@ class Favourites extends Component {
           <li>Django Unchained</li>
           <li>The Hateful Eight</li>
           <li>Wall-E</li>
-          <li>Goodwill Hunting</li>
+          <li>Good Will Hunting</li>
           <li>Reservoir Dogs</li>
           <li>Spider-Man 2</li>
           <li>Gone Girl</li>
@@ -41,6 +41,13 @@ class Favourites extends Component {
           <li>A Quiet Place</li>
           <li>Holes</li>
           <li>Cast Away</li>
+          <li>Get Out</li>
+          <li>The Martian</li>
+          <li>The Big Short</li>
+          <li>Slumdog Millionaire</li>
+          <li>Dead Poet's Society</li>
+          <li>Jumanji</li>
+          <li>21 Jump Street</li>
         </ul>
         </div>
         <div className="shows">
