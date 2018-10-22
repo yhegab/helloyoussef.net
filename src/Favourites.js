@@ -127,6 +127,7 @@ class Favourites extends Component {
           <li>Ender's Game (Orson Scott Card)</li>
           <li>City of Ember (Jeanne DuPrau)</li>
           <li>The Circle (Dave Eggers)</li>
+          <li><b>Mistborn: The Final Empire (Brandon Sanderson)</b></li>
         </ul>
         </div>
       </div>
