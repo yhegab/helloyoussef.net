@@ -66,7 +66,6 @@ class Favourites extends Component {
             <li>Black Mirror</li>
             <li>Rick and Morty</li>
             <li>Avatar: the last airbender</li>
-            <li>Black Mirror</li>
             <li>Stranger Things</li>
             <li>Firefly</li>
             <li>Imposters</li>
@@ -127,7 +126,7 @@ class Favourites extends Component {
           <li>Ender's Game (Orson Scott Card)</li>
           <li>City of Ember (Jeanne DuPrau)</li>
           <li>The Circle (Dave Eggers)</li>
-          <li><b>Mistborn: The Final Empire (Brandon Sanderson)</b></li>
+          <li><b>Mistborn (Brandon Sanderson)</b></li>
         </ul>
         </div>
       </div>
