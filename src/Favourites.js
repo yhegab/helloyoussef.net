@@ -22,7 +22,7 @@ class Favourites extends Component {
           <li>Wall-E</li>
           <li>Good Will Hunting</li>
           <li>Reservoir Dogs</li>
-          <li>Spider-Man 2</li>
+          <li>Spider-Man 2 (AND 3!)</li>
           <li>Gone Girl</li>
           <li>La La Land</li>
           <li>The Truman Show</li>
@@ -69,6 +69,7 @@ class Favourites extends Component {
             <li>Stranger Things</li>
             <li>Firefly</li>
             <li>Imposters</li>
+            <li><b>The Haunting of Hill House</b></li>
             <li><b>Justified</b></li>
             <li><b>Atlanta</b></li>
             <li><b>Better Call Saul</b></li>
