@@ -14,29 +14,29 @@ class Schedule extends Component {
           <div className="term">
             <h3>1A: Fall 2016</h3>
             <ul>
-              <li>BU111</li>
-              <li>EC120</li>
-              <li>CS135</li>
-              <li>MATH135</li>
-              <li>MATH137</li>
+              <li>BU111 - Business Environment</li>
+              <li>EC120 - Microeconomics</li>
+              <li>CS135 - Functional Programming</li>
+              <li>MATH135 - Algebra (proofs)</li>
+              <li>MATH137 - Calculus I</li>
             </ul>
           </div>
           <div className="term">
             <h3>1B: Winter 2017</h3>
             <ul>
-              <li>BU121</li>
-              <li>EC140</li>
-              <li>CS136</li>
-              <li>SPCOM223</li>
-              <li>MATH128</li>
-              <li>PD1</li>
+              <li>BU121 - Business Functions</li>
+              <li>EC140 - Macroeconomics</li>
+              <li>CS136 - Algorithms & Data Abstraction</li>
+              <li>SPCOM223 - Public Speaking</li>
+              <li>MATH128 - Calculus II</li>
+              <li>PD1 - Career Fundamentals</li>
             </ul>
           </div>
           <div className="term">
             <h3>Spring 2017</h3>
             <ul>
-              <li>MATH136</li>
-              <li><b>COOP</b></li>
+              <li>MATH136 - Linear Algebra</li>
+              <li><b>Intern - Camis Inc.</b></li>
             </ul>
           </div>
         </div>
@@ -48,30 +48,30 @@ class Schedule extends Component {
           <div className="term">
             <h3>2A: Fall 2017</h3>
             <ul>
-              <li>BU127</li>
-              <li>BU283</li>
-              <li>BU288</li>
-              <li>CS245</li>
-              <li>CS246</li>
-              <li>STAT230</li>
+              <li>BU127 - Financial Accounting</li>
+              <li>BU283 - Corporate Finance I</li>
+              <li>BU288 - Organizational Behaviour I</li>
+              <li>CS245 - Logic and Computation</li>
+              <li>CS246 - Object-Oriented Software</li>
+              <li>STAT230 - Probability</li>
             </ul>
           </div>
           <div className="term">
             <h3>Winter 2017</h3>
             <ul>
-              <li>CO250</li>
-              <li><b>COOP</b></li>
+              <li>CO250 - Introduction to Optimization</li>
+              <li><b>Intern - BMO Capital Markets</b></li>
             </ul>
           </div>
           <div className="term">
             <h3>2B: Spring 2018</h3>
             <ul>
-              <li>BU231</li>
-              <li>BU247</li>
-              <li>CS240</li>
-              <li>CS241</li>
-              <li>CS251</li>
-              <li>STAT231</li>
+              <li>BU231 - Business Law</li>
+              <li>BU247 - Managerial Accounting</li>
+              <li>CS240 - Data Structures</li>
+              <li>CS241 - Compilers</li>
+              <li>CS251 - Computer/Circuit Design</li>
+              <li>STAT231 - Statistics</li>
             </ul>
           </div>
         </div>
@@ -83,29 +83,29 @@ class Schedule extends Component {
           <div className="term">
             <h3>3B: Fall 2018</h3>
             <ul>
-              <li>BU393</li>
-              <li>BU352</li>
-              <li>BU354</li>
-              <li>CS350</li>
-              <li>MATH239</li>
-              <li><b>COOP</b></li>
+              <li>BU393 - Corporate Finance II</li>
+              <li>BU352 - Human Resources</li>
+              <li>BU354 - Marketing</li>
+              <li>CS350 - Operating Systems</li>
+              <li>MATH239 - Combinatronics</li>
+              <li><b>Intern - National Logistics Services</b></li>
             </ul>
           </div>
           <div className="term">
             <h3>4A: Winter 2018</h3>
             <ul>
-              <li>BU362</li>
-              <li>BU375</li>
-              <li>BU398</li>
-              <li>CS341</li>
-              <li>FR151</li>
+              <li>BU362 - Product management</li>
+              <li>BU375 - Operations management</li>
+              <li>BU398 - Organizational Behaviour II</li>
+              <li>CS341 - Algorithms</li>
+              <li>FR151 - Practical French II</li>
             </ul>
           </div>
           <div className="term">
             <h3>Spring 2019</h3>
             <ul>
-              <li>FR251</li>
-              <li><b>COOP</b></li>
+              <li>FR251 - French Language II</li>
+              <li><b>Intern - A nice company, hopefully</b></li>
             </ul>
           </div>
         </div>
@@ -117,28 +117,28 @@ class Schedule extends Component {
           <div className="term">
             <h3>4B: Fall 2019</h3>
             <ul>
-              <li>BU481</li>
+              <li>BU481 - Business Policy I</li>
               <li>BU???</li>
-              <li>CS343</li>
-              <li>FR225</li>
-              <li>FR385</li>
-              <li></li>
+              <li>CS343 - Concurrency Programming</li>
+              <li>FR225 - French in Pop Culture</li>
+              <li>FR385 - French Cinema</li>
+              <li>?????</li>
             </ul>
           </div>
           <div className="term">
             <h3>Winter 2020</h3>
             <ul>
-              <li><b>COOP</b></li>
+              <li><b>Intern - A nice company, hopefully</b></li>
             </ul>
           </div>
           <div className="term">
             <h3>5A: Spring 2020</h3>
             <ul>
-              <li>BU491</li>
+              <li>BU491 - Business Policy II</li>
               <li>BU???</li>
-              <li>CS490</li>
-              <li>CS452</li>
-              <li>FR2?6</li>
+              <li>CS490 - Information Systems</li>
+              <li>CS452 - Real-time Programming</li>
+              <li>FR2?6 - A UW french course</li>
             </ul>
           </div>
         </div>
@@ -150,7 +150,7 @@ class Schedule extends Component {
           <div className="term">
             <h3>Fall 2020</h3>
             <ul>
-              <li><b>COOP</b></li>
+              <li><b>Intern - A nice company, hopefully</b></li>
             </ul>
           </div>
           <div className="term">
@@ -158,9 +158,9 @@ class Schedule extends Component {
             <ul>
               <li>BU???</li>
               <li>BU???</li>
-              <li>CS444/?</li>
-              <li>CS492</li>
-              <li>FR260</li>
+              <li>CS444/? - Compiler Construction</li>
+              <li>CS492 - Implications of Computing</li>
+              <li>FR260 - French pronunciation</li>
             </ul>
           </div>
           <div className="term">
@@ -168,8 +168,8 @@ class Schedule extends Component {
             <ul>
               <li>BU???</li>
               <li>BU???</li>
-              <li>EC250</li>
-              <li>CS458</li>
+              <li>EC250 - Economics II</li>
+              <li>CS458 - Computer Security</li>
               <li>CS???</li>
             </ul>
           </div>

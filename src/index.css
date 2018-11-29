@@ -93,3 +93,8 @@ ul.header li a.active {
 .finalYear {
   float: inline-start;
 }
+canvas {
+  padding: 0;
+  margin: auto;
+  display: block;
+}

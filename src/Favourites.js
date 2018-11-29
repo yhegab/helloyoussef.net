@@ -1,11 +1,31 @@
 import React, { Component } from "react";
+import { withStyles } from '@material-ui/core/styles';
+import Paper from '@material-ui/core/Paper';
+import Grid from '@material-ui/core/Grid'; 
  
+const styles = theme => ({
+  root: {
+    flexGrow: 1,
+  },
+  paper: {
+    padding: theme.spacing.unit * 2,
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+  },
+});
 class Favourites extends Component {
   render() {
     return (
       <div>
-        <p>For whatever reason, I've found that I <b>really</b> enjoy making lists of things that I like so I thought I'd put some (all?) of them here. <b>Bolded</b> means work in progress. Last updated October 2018.</p>
-      
+        <p>I've found that I <b>really</b> enjoy making lists of things that I like so I thought I'd put some (all?) of them here. <b>Bolded</b> means work in progress. Last updated October 2018.</p>
+
+        {/* <div className="root">
+        <Grid container spacing={24}>
+          <Grid item xs={12}>
+            <Paper className="paper">This is a movie</Paper>
+          </Grid>
+        </Grid>
+        </div> */}
         <div className="movies">
         <h3>Movies</h3>
         <ul>
@@ -69,7 +89,9 @@ class Favourites extends Component {
             <li>Stranger Things</li>
             <li>Firefly</li>
             <li>Imposters</li>
-            <li><b>The Haunting of Hill House</b></li>
+            <li>The Haunting of Hill House</li>
+            <li><b>The Good Place</b></li>
+            <li><b>Sabrina</b></li>
             <li><b>Justified</b></li>
             <li><b>Atlanta</b></li>
             <li><b>Better Call Saul</b></li>
@@ -116,18 +138,18 @@ class Favourites extends Component {
         <h3>Books</h3>
         <ul>
           <li>Le Petit Prince (Saint-Exupéry)</li>
-          <li>Le Compe de Monte-Cristo (Dumas)</li>
-          <li>The Name of the Wind (Patrick Rothfuss)</li>
+          <li>Le Compte de Monte-Cristo (Dumas)</li>
+          <li>Kingkiller Chronicles (Rothfuss)</li>
           <li>1984 (George Orwell)</li>
           <li>Brave New World (Aldous Huxley)</li>
           <li>Small Steps (Louis Sachar)</li>
           <li>To Kill a Mockingbird (Harper Lee)</li>
           <li>The Mazerunner (James Dashner)</li>
-          <li>Lord of the Flies (William Golding)</li>
+          <li>Lord of the Flies (Golding)</li>
           <li>Ender's Game (Orson Scott Card)</li>
           <li>City of Ember (Jeanne DuPrau)</li>
           <li>The Circle (Dave Eggers)</li>
-          <li><b>Mistborn (Brandon Sanderson)</b></li>
+          <li>Mistborn (Brandon Sanderson)</li>
         </ul>
         </div>
       </div>
@@ -135,4 +157,4 @@ class Favourites extends Component {
   }
 }
  
-export default Favourites;
+export default withStyles(styles)(Favourites);
