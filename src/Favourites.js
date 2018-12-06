@@ -90,15 +90,14 @@ class Favourites extends Component {
             <li>Firefly</li>
             <li>Imposters</li>
             <li>The Haunting of Hill House</li>
-            <li><b>The Good Place</b></li>
+            <li>The Good Place</li>
+            <li>Atlanta</li>
+            <li>Maniac</li>
             <li><b>Sabrina</b></li>
             <li><b>Justified</b></li>
-            <li><b>Atlanta</b></li>
             <li><b>Better Call Saul</b></li>
             <li><b>The Twilight Zone</b></li>
             <li><b>Mr. Robot</b></li>
-            <li><b>The Wire</b></li>
-            <li><b>The Sopranos</b></li>
           </ul>
         </div>
 
