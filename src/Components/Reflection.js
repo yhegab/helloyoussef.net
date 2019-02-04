@@ -19,7 +19,7 @@ class Reflection extends Component {
     //console.log(this.state.file);
     return (
       <div className="reflection">
-        <h2>{this.props.title}</h2>
+        <span className="reflectionTitle">{this.props.title}</span>
         <h4>{this.props.date}</h4>
         <MarkdownComponent markdownSrcPromise={this.state.file} />      </div>
     );

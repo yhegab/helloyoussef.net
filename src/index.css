@@ -18,7 +18,7 @@ b {
 h2 {
   height: 100%;
   margin: 0;
-  font-size: 3.5em;
+  font-size: 3em;
   font-weight: 300;
 }
 h3 {
@@ -103,4 +103,10 @@ canvas {
   padding: 0;
   margin: auto;
   display: block;
+}
+.reflectionTitle {
+  height: 100%;
+  margin: 0;
+  font-size: 4.5em;
+  font-weight: 100;
 }

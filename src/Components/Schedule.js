@@ -99,10 +99,10 @@ class Schedule extends Component {
           <div className="term">
             <h3>4A: Winter 2018</h3>
             <ul>
-              <li>BU362 - Product management</li>
+              <li><NavLink to="/bu362">BU362</NavLink> - Product management</li>
               <li>BU375 - Operations management</li>
               <li>BU398 - Organizational Behaviour II</li>
-              <li>CS341 - Algorithms</li>
+              <li><NavLink to="/cs341">CS341</NavLink> - Algorithms</li>
             </ul>
           </div>
           <div className="term">

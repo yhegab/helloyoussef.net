@@ -15,6 +15,8 @@ import Schedule from "./Components/Schedule";
 import Reflection from "./Components/Reflection";
 import Reflections from "./Components/Reflections";
 import CS240 from "./Courses/CS240.md";
+import BU362 from "./Courses/BU362.md";
+import CS341 from "./Courses/CS341.md";
 
 const MATHJAX_SCRIPT = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
 
@@ -64,6 +66,10 @@ class Main extends Component {
             <Route path="/schedule" component={Schedule}/>
             <Route path="/cs240" component={() => <Reflection title="CS240" date="Spring 2018"
                     file={CS240}/>}/>
+            <Route path="/bu362" component={() => <Reflection title="BU362" date="Winter 2019"
+                    file={BU362}/>}/>
+            <Route path="/cs341" component={() => <Reflection title="CS341" date="Winter 2019"
+                    file={CS341}/>}/>
           </div>
         </div>
         </HashRouter>
