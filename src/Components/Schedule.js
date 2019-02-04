@@ -97,7 +97,7 @@ class Schedule extends Component {
             </ul>
           </div>
           <div className="term">
-            <h3>4A: Winter 2018</h3>
+            <h3>4A: Winter 2019</h3>
             <ul>
               <li><NavLink to="/bu362">BU362</NavLink> - Product management</li>
               <li>BU375 - Operations management</li>
