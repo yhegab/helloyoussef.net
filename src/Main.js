@@ -5,13 +5,27 @@ import {
   HashRouter
 } from "react-router-dom";
 import ReactGA from "react-ga";
-import Home from "./Home";
-import Social from "./Social";
-import Technical from "./Technical";
-import Resume from "./Resume";
-import Favourites from "./Favourites";
-import Schedule from "./Schedule";
-import Reflections from "./Reflections";
+import loadScript from 'load-script'
+import Home from "./Components/Home";
+import Social from "./Components/Social";
+import Technical from "./Components/Technical";
+import Resume from "./Components/Resume";
+import Favourites from "./Components/Favourites";
+import Schedule from "./Components/Schedule";
+import Reflection from "./Components/Reflection";
+import Reflections from "./Components/Reflections";
+import CS240 from "./Courses/CS240.md";
+
+const MATHJAX_SCRIPT = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+
+const MATHJAX_OPTIONS = {
+  tex2jax: {
+    inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+    displayMath: [ ['$$','$$'], ['\\[','\\]'] ],
+  },
+  showMathMenu: false,
+  showMathMenuMSIE: false,
+};
 
 ReactGA.initialize('UA-123367662-1');
 
@@ -20,6 +34,13 @@ function fireTracking() {
 }
 
 class Main extends Component {
+  constructor(props) {
+    super(props);
+    loadScript(MATHJAX_SCRIPT, () => {
+      window.MathJax.Hub.Config(MATHJAX_OPTIONS);
+    });
+}
+
   render() {
     return (
       <HashRouter onUpdate={fireTracking}>
@@ -41,6 +62,8 @@ class Main extends Component {
             <Route path="/favourites" component={Favourites}/>
             <Route path="/reflections" component={Reflections}/>
             <Route path="/schedule" component={Schedule}/>
+            <Route path="/cs240" component={() => <Reflection title="CS240" date="Spring 2018"
+                    file={CS240}/>}/>
           </div>
         </div>
         </HashRouter>
