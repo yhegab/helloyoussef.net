@@ -53,7 +53,7 @@ class Main extends Component {
               <li><NavLink exact to="/">Home</NavLink></li>
               <li><NavLink exact to="/technical">Technical</NavLink></li>
               <li><NavLink to="/favourites">List of Favourites</NavLink></li>
-              <li><NavLink to="/schedule">Course Schedule</NavLink></li>
+              <li><NavLink to="/schedule">Course Notes</NavLink></li>
               <li><NavLink to="/reflections">Term Reflections</NavLink></li>
               <li><NavLink to="/resume">Resume</NavLink></li>
             </ul>
