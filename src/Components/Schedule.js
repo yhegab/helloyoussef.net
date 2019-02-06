@@ -1,15 +1,14 @@
 import React, { Component } from "react";
 import {
-  Route,
-  NavLink,
-  HashRouter
+  NavLink
 } from "react-router-dom";
  
 class Schedule extends Component {
   render() {
     return (
       <div>
-        <p>This is a schedule of the courses I have taken and plan to take. I plan to fill in the business courses towards a <b>Finance</b> concentration. The French courses (taken mostly at Laurier) are put towards a <b>French</b> minor. Note that I skipped from 2B to 3B due to extra credits.</p>
+        <p>Certain courses have notes associated with them; as I slowly review my courses, more notes will be added.</p>
+        <p>Starting in 3A, I started to write term reflections; these can be seen by clicking on the term name.</p>
         <p>I am currently in my <b>3B</b> term.</p>
         <div className="schedule">
         <div className="year">
@@ -62,7 +61,7 @@ class Schedule extends Component {
             </ul>
           </div>
           <div className="term">
-            <h3>Winter 2017</h3>
+            <h3>Winter 2018</h3>
             <ul>
               <li>CO250 - Introduction to Optimization</li>
               <li><b>Intern - BMO Capital Markets</b></li>
@@ -86,7 +85,7 @@ class Schedule extends Component {
             <h4>2018-2019</h4>
           </div>
           <div className="term">
-            <h3>3B: Fall 2018</h3>
+            <h3><NavLink to="/3a">3A</NavLink>: Fall 2018</h3>
             <ul>
               <li>BU393 - Corporate Finance II</li>
               <li>BU352 - Human Resources</li>
@@ -97,18 +96,20 @@ class Schedule extends Component {
             </ul>
           </div>
           <div className="term">
-            <h3>4A: Winter 2019</h3>
+            <h3>3B: Winter 2019</h3>
             <ul>
               <li><NavLink to="/bu362">BU362</NavLink> - Product management</li>
               <li>BU375 - Operations management</li>
               <li>BU398 - Organizational Behaviour II</li>
               <li><NavLink to="/cs341">CS341</NavLink> - Algorithms</li>
+              <li><NavLink to="/coopwinter2019">Waterloo Works</NavLink></li>
             </ul>
           </div>
           <div className="term">
             <h3>Spring 2019</h3>
             <ul>
               <li><b>Intern - A nice company, hopefully</b></li>
+              <li>EC260? - Macroeconomics II</li>
             </ul>
           </div>
         </div>
@@ -118,29 +119,28 @@ class Schedule extends Component {
             <h4>2019-2020</h4>
           </div>
           <div className="term">
-            <h3>4B: Fall 2019</h3>
+            <h3>4A: Fall 2019</h3>
             <ul>
               <li>BU481 - Business Policy I</li>
               <li>BU???</li>
               <li>CS343 - Concurrency Programming</li>
-              <li>?????</li>
-              <li>?????</li>
+              <li>CS[340-398]</li>
             </ul>
           </div>
           <div className="term">
             <h3>Winter 2020</h3>
             <ul>
               <li><b>Intern - A nice company, hopefully</b></li>
+              <li>Elective course</li>
             </ul>
           </div>
           <div className="term">
-            <h3>5A: Spring 2020</h3>
+            <h3>4B: Spring 2020</h3>
             <ul>
               <li>BU491 - Business Policy II</li>
               <li>BU???</li>
-              <li>???</li>
               <li>CS490 - Information Systems</li>
-              <li>CS452 - Real-time Programming</li>
+              <li>CS452/? - Real-time Programming</li>
             </ul>
           </div>
         </div>
@@ -153,25 +153,24 @@ class Schedule extends Component {
             <h3>Fall 2020</h3>
             <ul>
               <li><b>Intern - A nice company, hopefully</b></li>
+              <li>Elective course</li>
             </ul>
           </div>
           <div className="term">
-            <h3>5B: Winter 2021</h3>
+            <h3>5A: Winter 2021</h3>
             <ul>
               <li>BU???</li>
               <li>BU???</li>
-              <li>???</li>
               <li>CS444/? - Compiler Construction</li>
               <li>CS492 - Implications of Computing</li>
             </ul>
           </div>
           <div className="term">
-            <h3>6A: Spring 2021</h3>
+            <h3>5B: Spring 2021</h3>
             <ul>
               <li>BU???</li>
               <li>BU???</li>
-              <li>EC250 - Economics II</li>
-              <li>CS458 - Computer Security</li>
+              <li>CS???</li>
               <li>CS???</li>
             </ul>
           </div>

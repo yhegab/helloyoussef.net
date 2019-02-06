@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import MarkdownComponent from './MarkdownComponent';
-import threeA from "../Reflections/3A.md";
 
 class Reflection extends Component {
 

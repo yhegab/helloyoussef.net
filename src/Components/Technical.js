@@ -26,7 +26,9 @@ class Technical extends Component {
         <ul>
           <li>I was the lead consultant at the Laurier Consulting Program in Fall 2018</li>
           <li>I like to use Linux as my personal main operating system although I've overwhelmingly used Windows in my professional life</li>
-          <li>New to both the discipline and the club, I'm a member of the UW Data Science Club</li>
+          <li>I'm learning to swim! I go to weekly swimming classes at the UW Aquatics Club</li>
+          <li>I'm a beginner learning Muay Thai; intense warm-ups coupled with technique workshops every week.</li>
+          <li>Recently, I've tried Yoga and really enjoyed it. I plan on attending a drop-in class weekly.</li>
           <li>I've got a <i>Bloomberg Market Concepts</i> certification using a Bloomberg Terminal</li>
           <li>In my freshman year, I reached the semi-finals of the BDO New Venture competition where contestants pitched ideas for new business ventures. My idea was a U-lock for skateboards called the BoardLock.</li>
         </ul>
