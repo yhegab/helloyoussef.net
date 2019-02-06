@@ -92,7 +92,7 @@ class Schedule extends Component {
               <li>BU352 - Human Resources</li>
               <li>BU354 - Marketing</li>
               <li>CS350 - Operating Systems</li>
-              <li>MATH239 - Combinatronics</li>
+              <li><NavLink to="/math239">MATH239</NavLink> - Graph Theory</li>
               <li><b>Intern - National Logistics Services</b></li>
             </ul>
           </div>
