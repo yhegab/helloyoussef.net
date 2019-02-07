@@ -20,7 +20,7 @@ import CS341 from "./Courses/CS341.md";
 import MATH239 from "./Courses/MATH239.md";
 import COOPWINTER2019 from "./Reflections/COOPWINTER2019.md";
 
-const MATHJAX_SCRIPT = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_SVG';
+const MATHJAX_SCRIPT = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML';
 
 const MATHJAX_OPTIONS = {
   "fast-preview": {disabled:true},
@@ -28,7 +28,7 @@ const MATHJAX_OPTIONS = {
     inlineMath: [ ['$','$'], ['\\(','\\)'] ],
     displayMath: [ ['$$','$$'], ['\\[','\\]'] ],
   },
-  showMathMenu: true,
+  showMathMenu: false,
   showMathMenuMSIE: false,
 };
 
