@@ -20,14 +20,15 @@ import CS341 from "./Courses/CS341.md";
 import MATH239 from "./Courses/MATH239.md";
 import COOPWINTER2019 from "./Reflections/COOPWINTER2019.md";
 
-const MATHJAX_SCRIPT = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+const MATHJAX_SCRIPT = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_SVG';
 
 const MATHJAX_OPTIONS = {
+  "fast-preview": {disabled:true},
   tex2jax: {
     inlineMath: [ ['$','$'], ['\\(','\\)'] ],
     displayMath: [ ['$$','$$'], ['\\[','\\]'] ],
   },
-  showMathMenu: false,
+  showMathMenu: true,
   showMathMenuMSIE: false,
 };
 

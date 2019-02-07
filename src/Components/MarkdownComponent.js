@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import md from 'markdown-it';
-import mj from 'markdown-it-mathjax';
 import imsize from 'markdown-it-imsize';
 
 import '../../node_modules/highlightjs/styles/github-gist.css';
@@ -25,7 +24,6 @@ class MarkdownComponent extends React.Component {
       },
       html: true,
     })
-      .use(mj())
       .use(imsize, { autofill: true });
 
     this.state = {markdownData: ''};
