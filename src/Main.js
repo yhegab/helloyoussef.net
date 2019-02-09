@@ -19,6 +19,7 @@ import BU362 from "./Courses/BU362.md";
 import CS341 from "./Courses/CS341.md";
 import MATH239 from "./Courses/MATH239.md";
 import COOPWINTER2019 from "./Reflections/COOPWINTER2019.md";
+import Unfinished from "./Reflections/unfinished.md";
 
 const MATHJAX_SCRIPT = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML';
 
@@ -75,9 +76,9 @@ class Main extends Component {
             <Route path="/cs341" component={() => <Reflection title="CS341" date="Winter 2019"
                     file={CS341}/>}/>
             <Route path="/math239" component={() => <Reflection title="MATH239" date="Fall 2018"
-                    file={MATH239}/>}/>
+                    file={Unfinished}/>}/>
             <Route path="/coopwinter2019" component={() => <Reflection title="The Co-Op Search" date="Winter 2019"
-                    file={COOPWINTER2019}/>}/>
+                    file={Unfinished}/>}/>
           </div>
         </div>
         </HashRouter>
