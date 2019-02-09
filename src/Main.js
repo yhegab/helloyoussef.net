@@ -17,8 +17,8 @@ import threeA from "./Reflections/3A.md";
 import CS240 from "./Courses/CS240.md";
 import BU362 from "./Courses/BU362.md";
 import CS341 from "./Courses/CS341.md";
-import MATH239 from "./Courses/MATH239.md";
-import COOPWINTER2019 from "./Reflections/COOPWINTER2019.md";
+//import MATH239 from "./Courses/MATH239.md";
+//import COOPWINTER2019 from "./Reflections/COOPWINTER2019.md";
 import Unfinished from "./Reflections/unfinished.md";
 
 const MATHJAX_SCRIPT = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML';
