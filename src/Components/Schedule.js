@@ -145,7 +145,7 @@ class Schedule extends Component {
           </div>
         </div>
         
-        <div className="finalYear">
+        <div className="year">
           <div className="title">
             <h4>2020-2021</h4>
           </div>
