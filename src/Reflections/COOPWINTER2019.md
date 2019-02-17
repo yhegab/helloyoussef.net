@@ -7,7 +7,9 @@
 ### Responses
 
 **Coding challenges**: Treyarch, HBO, Yelp, The Trade Desk, AdRoll, Lumina.
-**Interviews**: Vida Health, Tesla, SAS Institute, ESCRYPT
+
+**Interviews**: Vida Health, Tesla, SAS Institute, ESCRYPT, The Trade Desk
+
 **Offers**: Vida Health
 
 ## Challenges
