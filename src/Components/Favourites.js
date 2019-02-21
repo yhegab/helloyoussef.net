@@ -29,77 +29,99 @@ class Favourites extends Component {
         <div className="movies">
         <h3>Movies</h3>
         <ul>
-          <li>Shawshank Redemption</li>
-          <li>The Dark Knight trilogy</li>
-          <li>12 Angry Men</li>
-          <li>Inception</li>
-          <li>Forrest Gump</li>
-          <li>Saving Private Ryan</li>
-          <li>The Prestige</li>
-          <li>The Green Mile</li>
-          <li>Django Unchained</li>
-          <li>The Hateful Eight</li>
-          <li>Wall-E</li>
-          <li>Good Will Hunting</li>
-          <li>Reservoir Dogs</li>
-          <li>Spider-Man 2 (AND 3!)</li>
-          <li>Into the Spider-Verse</li>
-          <li>Gone Girl</li>
-          <li>La La Land</li>
-          <li>The Truman Show</li>
-          <li>BlackKklansman</li>
-          <li>Donnie Darko</li>
-          <li>Gladiator</li>
-          <li>Fight Club</li>
-          <li>Back to the Future</li>
-          <li>The Breakfast Club</li>
-          <li>Ratatouille</li>
-          <li>Coach Carter</li>
-          <li>Wonder Woman</li>
-          <li>O Brother, Where art thou?</li>
-          <li>Schindler's List</li>
-          <li>I, Robot</li>
-          <li>A Quiet Place</li>
-          <li>Holes</li>
-          <li>Cast Away</li>
-          <li>Get Out</li>
-          <li>The Martian</li>
-          <li>The Big Short</li>
-          <li>Slumdog Millionaire</li>
-          <li>Dead Poet's Society</li>
-          <li>Jumanji</li>
-          <li>21 Jump Street</li>
-          <li>A Simple Favour</li>
+          <li>12 Angry Men (1957)</li>
+          <li>The Shining (1980)</li>
+          <li><b>E.T. the Extra-Terrestrial</b> (1982)</li>
+          <li>Back to the Future (1985)</li>
+          <li>The Breakfast Club (1985)</li>
+          <li><b>The Goonies</b> (1985)</li>
+          <li><b>Ferris Bueller's Day Off</b> (1986)</li>
+          <li>Die Hard (1988)</li>
+          <li>Dead Poet's Society (1989)</li>
+          <li><b>Silence of the Lambs</b> (1991)</li>
+          <li>Reservoir Dogs (1992)</li>
+          <li>Schindler's List (1993)</li>
+          <li>Jurassic Park (1993)</li>
+          <li><b>Groundhog Day</b> (1993)</li>
+          <li>Shawshank Redemption (1994)</li>
+          <li>The Lion King (1994)</li>
+          <li>Forrest Gump (1994)</li>
+          <li>Jumanji (1995)</li>
+          <li><b>Heat</b> (1995)</li>
+          <li>Good Will Hunting (1997)</li>
+          <li>Saving Private Ryan (1998)</li>
+          <li>The Truman Show (1998)</li>
+          <li><b>The Big Lebowski</b> (1998)</li>
+          <li>The Green Mile (1999)</li>
+          <li>Fight Club (1999)</li>
+          <li>The Matrix (1999)</li>
+          <li><b>American Beauty</b> (1999)</li>
+          <li><b>Memento</b> (2000)</li>
+          <li>Cast Away (2000)</li>
+          <li>O Brother, Where art thou? (2000)</li>
+          <li>Gladiator (2000)</li>
+          <li>Donnie Darko (2001)</li>
+          <li>Spider-Man (2002)</li>
+          <li>Holes (2003)</li>
+          <li>Big Fish (2003)</li>
+          <li><b>Kill Bill</b> (2004)</li>
+          <li>I, Robot (2004)</li>
+          <li><b>Eternal Sunshine of the Spotless Mind</b> (2004)</li>
+          <li>The Dark Knight trilogy (2005)</li>
+          <li>Coach Carter (2005)</li>
+          <li>The Prestige (2006)</li>
+          <li>Ratatouille (2007)</li>
+          <li>Gone Baby Gone (2007)</li>
+          <li>Slumdog Millionaire (2008)</li>
+          <li>Wall-E (2008)</li>
+          <li>Inception (2010)</li>
+          <li>Django Unchained (2012)</li>
+          <li>21 Jump Street (2012)</li>
+          <li><b>12 Years a Slave</b> (2013)</li>
+          <li>The Grand Budapest Hotel (2014)</li>
+          <li>Gone Girl (2014)</li>
+          <li>The Hateful Eight (2015)</li>
+          <li>The Martian (2015)</li>
+          <li>The Big Short (2015)</li>
+          <li>La La Land (2016)</li>
+          <li>Wonder Woman (2017)</li>
+          <li>Get Out (2017)</li>
+          <li>Into the Spider-Verse (2018)</li>
+          <li>BlackKklansman (2018)</li>
+          <li>A Quiet Place (2018)</li>
+          <li>A Simple Favour (2018)</li>
+          <li><b>Eighth Grade</b> (2018)</li>
         </ul>
         </div>
         <div className="shows">
         <h3>TV Shows</h3>
           <ul>
-            <li>Mad Men</li>
-            <li>Breaking Bad</li>
-            <li>Game of Thrones</li>
-            <li>The Office</li>
-            <li>Community</li>
-            <li>Brooklyn Nine Nine</li>
-            <li>Narcos</li>
-            <li>Santa Clarita Diet</li>
-            <li>Lost</li>
-            <li>Friends</li>
-            <li>Black Mirror</li>
-            <li>Rick and Morty</li>
-            <li>Avatar: the last airbender</li>
-            <li>Stranger Things</li>
-            <li>Firefly</li>
-            <li>Imposters</li>
-            <li>The Haunting of Hill House</li>
-            <li>The Good Place</li>
-            <li>Atlanta</li>
-            <li>Maniac</li>
-            <li>You</li>
-            <li><b>Justified</b></li>
-            <li><b>Better Call Saul</b></li>
-            <li><b>The Twilight Zone</b></li>
-            <li><b>Mr. Robot</b></li>
+            <li><b>The Twilight Zone</b> (1959-1964)</li>
+            <li>Friends (1994-2004)</li>
+            <li>Firefly (2002-2003)</li>
+            <li>Avatar: The Last Airbender (2003-2008)</li>
+            <li>Lost (2004-2010)</li>
+            <li>The Office (2005-2013)</li>
+            <li>Mad Men (2007-2015)</li>
+            <li>Breaking Bad (2008-2013)</li>
+            <li>Community (2009-2015)</li>
+            <li><b>Justified</b> (2010-2015)</li>
+            <li>Game of Thrones (2011-)</li>
+            <li>Black Mirror (2011-)</li>
+            <li>Brooklyn Nine-Nine (2013-)</li>
+            <li>Rick and Morty (2013-)</li>
+            <li><b>Mr. Robot</b> (2015-)</li>
+            <li><b>Better Call Saul</b> (2015-)</li>
+            <li>Narcos (2015-2016)</li>
+            <li>Stranger Things (2016-)</li>
+            <li>Atlanta (2016-)</li>
+            <li>The Good Place (2016-)</li>
+            <li>Santa Clarita Diet (2017-)</li>
+            <li>Imposters (2017-2018)</li>
+            <li>The Haunting of Hill House (2018-)</li>
+            <li>Maniac (2018)</li>
+            <li>You (2018-)</li>
+
           </ul>
         </div>
 
@@ -120,6 +142,8 @@ class Favourites extends Component {
           <li>Rocket League</li>
           <li>FIFA</li>
           <li>Until Dawn</li>
+          <li>Super Smash Bros</li>
+          <li>Mario Kart</li>
           <li><b>Uncharted</b></li>
           <li><b>GTA V</b></li>
           <li><b>Horizon Zero Dawn</b></li>

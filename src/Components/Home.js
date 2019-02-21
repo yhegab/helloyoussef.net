@@ -6,7 +6,7 @@ class Home extends Component {
       <div>
         <h4>Hi there,</h4>
 
-        <p>My name is <b>Syed Jafer Haider</b> and I'm a third-year student studying concurrently at the University of Waterloo and Wilfrid Laurier University working towards an <b>Honours Bachelor of Computer Science</b> and an <b>Honours Bachelor of Business Administration</b> respectively expecting to graduate in 2021.</p>
+        <p>My name is <b>Syed Jafer Haider</b> and I'm a student studying concurrently at the University of Waterloo and Wilfrid Laurier University working towards an <b>Honours Bachelor of Computer Science</b> and an <b>Honours Bachelor of Business Administration</b> respectively expecting to graduate in 2021.</p>
  
         <p>I am a <b>Canadian citizen</b>, having grown up in the Greater Toronto Area, as well as a <b>permanent resident of the United States</b>, willing to work anywhere in the world that will offer me a great learning experience and a chance to better myself and others.</p>
         
