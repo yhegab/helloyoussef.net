@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Document, Page } from 'react-pdf';
+//import { Document, Page } from 'react-pdf';
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 
 class Resume extends Component {
@@ -16,9 +16,9 @@ class Resume extends Component {
         <p> My resume was written in LaTeX using OverLeaf. You can see the latest version below.</p>
         <p> For convenience, here is a <a href={"Resume.pdf"} target="_blank" rel="noopener noreferrer">direct link</a> to my resume. </p>
         
-        <Document file={"Resume.pdf"} renderMode="canvas">
+        {/* <Document file={"Resume.pdf"} renderMode="canvas">
           <Page pageNumber={1} renderMode="canvas" renderTextLayer={true} scale={1.5}/>
-        </Document>
+        </Document> */}
 
         {/* <PDF
           file={ResumePDF}

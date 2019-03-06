@@ -108,8 +108,8 @@ class Schedule extends Component {
           <div className="term">
             <h3>Spring 2019</h3>
             <ul>
-              <li><b>Intern - A nice company, hopefully</b></li>
-              <li>EC260? - Macroeconomics II</li>
+              <li><b>Intern - Vida Health</b></li>
+              <li>EC250 - Macroeconomics II</li>
             </ul>
           </div>
         </div>
