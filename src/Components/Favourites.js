@@ -35,7 +35,7 @@ class Favourites extends Component {
           <li>Back to the Future (1985)</li>
           <li>The Breakfast Club (1985)</li>
           <li><b>The Goonies</b> (1985)</li>
-          <li><b>Ferris Bueller's Day Off</b> (1986)</li>
+          <li>Ferris Bueller's Day Off (1986)</li>
           <li>Die Hard (1988)</li>
           <li>Dead Poet's Society (1989)</li>
           <li><b>Silence of the Lambs</b> (1991)</li>
@@ -61,12 +61,13 @@ class Favourites extends Component {
           <li>O Brother, Where art thou? (2000)</li>
           <li>Gladiator (2000)</li>
           <li>Donnie Darko (2001)</li>
+          <li>The Lord of the Rings (2001)</li>
           <li>Spider-Man (2002)</li>
           <li>Holes (2003)</li>
           <li>Big Fish (2003)</li>
           <li><b>Kill Bill</b> (2004)</li>
           <li>I, Robot (2004)</li>
-          <li><b>Eternal Sunshine of the Spotless Mind</b> (2004)</li>
+          <li>Eternal Sunshine of the Spotless Mind (2004)</li>
           <li>The Dark Knight trilogy (2005)</li>
           <li>Coach Carter (2005)</li>
           <li>The Prestige (2006)</li>
@@ -75,6 +76,7 @@ class Favourites extends Component {
           <li>Slumdog Millionaire (2008)</li>
           <li>Wall-E (2008)</li>
           <li>Inception (2010)</li>
+          <li>Life of Pi (2012)</li>
           <li>Django Unchained (2012)</li>
           <li>21 Jump Street (2012)</li>
           <li><b>12 Years a Slave</b> (2013)</li>
@@ -83,6 +85,7 @@ class Favourites extends Component {
           <li>The Hateful Eight (2015)</li>
           <li>The Martian (2015)</li>
           <li>The Big Short (2015)</li>
+          <li>Le Petit Prince (2015)</li>
           <li>La La Land (2016)</li>
           <li>Wonder Woman (2017)</li>
           <li>Get Out (2017)</li>
@@ -90,7 +93,6 @@ class Favourites extends Component {
           <li>BlackKklansman (2018)</li>
           <li>A Quiet Place (2018)</li>
           <li>A Simple Favour (2018)</li>
-          <li><b>Eighth Grade</b> (2018)</li>
         </ul>
         </div>
         <div className="shows">
@@ -121,11 +123,12 @@ class Favourites extends Component {
             <li>The Haunting of Hill House (2018-)</li>
             <li>Maniac (2018)</li>
             <li>You (2018-)</li>
-
+            <li>Death, Love, and Robots (2019)</li>
+            <li>The Umbrella Academy (2019)</li>
           </ul>
         </div>
 
-        <div className="games">
+        {/* <div className="games">
         <h3>Video Games</h3>
         <ul>
           <li>Spider-Man</li>
@@ -157,7 +160,7 @@ class Favourites extends Component {
           <li>Bang</li>
           <li>Exploding Kittens</li>
         </ul>
-        </div>
+        </div> */}
 
         <div className="books">
         <h3>Books</h3>
