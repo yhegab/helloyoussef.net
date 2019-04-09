@@ -89,10 +89,13 @@ class Favourites extends Component {
           <li>La La Land (2016)</li>
           <li>Wonder Woman (2017)</li>
           <li>Get Out (2017)</li>
+          <li>It (2017)</li>
           <li>Into the Spider-Verse (2018)</li>
           <li>BlackKklansman (2018)</li>
           <li>A Quiet Place (2018)</li>
           <li>A Simple Favour (2018)</li>
+          <li>Game Night (2018)</li>
+          <li>Shazam (2019)</li>
         </ul>
         </div>
         <div className="shows">
@@ -165,6 +168,7 @@ class Favourites extends Component {
         <div className="books">
         <h3>Books</h3>
         <ul>
+          <li>The Qur'an</li>
           <li>Le Petit Prince (Saint-Exupéry)</li>
           <li>Le Compte de Monte-Cristo (Dumas)</li>
           <li>Kingkiller Chronicles (Rothfuss)</li>
