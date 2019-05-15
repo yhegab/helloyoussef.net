@@ -46,6 +46,7 @@ class Favourites extends Component {
           <li>Shawshank Redemption (1994)</li>
           <li>The Lion King (1994)</li>
           <li>Forrest Gump (1994)</li>
+          <li>Apollo 13 (1994)</li>
           <li>Jumanji (1995)</li>
           <li><b>Heat</b> (1995)</li>
           <li>Good Will Hunting (1997)</li>
@@ -75,6 +76,7 @@ class Favourites extends Component {
           <li>Gone Baby Gone (2007)</li>
           <li>Slumdog Millionaire (2008)</li>
           <li>Wall-E (2008)</li>
+          <li>The Informant! (2009)</li>
           <li>Inception (2010)</li>
           <li>Life of Pi (2012)</li>
           <li>Django Unchained (2012)</li>
