@@ -53,7 +53,9 @@ class Favourites extends Component {
           <li>Saving Private Ryan (1998)</li>
           <li>The Truman Show (1998)</li>
           <li><b>The Big Lebowski</b> (1998)</li>
+          <li><b>The Insider</b> (1999)</li>
           <li>The Green Mile (1999)</li>
+          <li>Toy Story 2 (1999)</li>
           <li>Fight Club (1999)</li>
           <li>The Matrix (1999)</li>
           <li><b>American Beauty</b> (1999)</li>
@@ -65,30 +67,39 @@ class Favourites extends Component {
           <li>The Lord of the Rings (2001)</li>
           <li>Spider-Man (2002)</li>
           <li>Holes (2003)</li>
+          <li>Finding Nemo (2003)</li>
           <li>Big Fish (2003)</li>
           <li><b>Kill Bill</b> (2004)</li>
           <li>I, Robot (2004)</li>
+          <li>Finding Neverland (2004)</li>
+          <li>The Incredibles (2004)</li>
           <li>Eternal Sunshine of the Spotless Mind (2004)</li>
           <li>The Dark Knight trilogy (2005)</li>
           <li>Coach Carter (2005)</li>
+          <li><b>The New World</b> (2005)</li>
           <li>The Prestige (2006)</li>
           <li>Ratatouille (2007)</li>
           <li>Gone Baby Gone (2007)</li>
           <li>Slumdog Millionaire (2008)</li>
+          <li>Iron Man (2008)</li>
           <li>Wall-E (2008)</li>
           <li>The Informant! (2009)</li>
+          <li>Up (2009)</li>
           <li>Inception (2010)</li>
           <li>Life of Pi (2012)</li>
           <li>Django Unchained (2012)</li>
           <li>21 Jump Street (2012)</li>
           <li><b>12 Years a Slave</b> (2013)</li>
           <li>The Grand Budapest Hotel (2014)</li>
+          <li>Gardians of the Galaxy (2014)</li>
           <li>Gone Girl (2014)</li>
           <li>The Hateful Eight (2015)</li>
           <li>The Martian (2015)</li>
           <li>The Big Short (2015)</li>
           <li>Le Petit Prince (2015)</li>
+          <li>Ant-Man (2015)</li>
           <li>La La Land (2016)</li>
+          <li>Doctor Strange (2016)</li>
           <li>Wonder Woman (2017)</li>
           <li>Get Out (2017)</li>
           <li>It (2017)</li>
@@ -112,13 +123,11 @@ class Favourites extends Component {
             <li>Mad Men (2007-2015)</li>
             <li>Breaking Bad (2008-2013)</li>
             <li>Community (2009-2015)</li>
-            <li><b>Justified</b> (2010-2015)</li>
-            <li>Game of Thrones (2011-)</li>
+            <li>Justified (2010-2015)</li>
+            <li>Game of Thrones (2011-2019)</li>
             <li>Black Mirror (2011-)</li>
             <li>Brooklyn Nine-Nine (2013-)</li>
             <li>Rick and Morty (2013-)</li>
-            <li><b>Mr. Robot</b> (2015-)</li>
-            <li><b>Better Call Saul</b> (2015-)</li>
             <li>Narcos (2015-2016)</li>
             <li>Stranger Things (2016-)</li>
             <li>Atlanta (2016-)</li>
