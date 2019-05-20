@@ -14,6 +14,7 @@ class Technical extends Component {
         </ul>
         <h3>On-the-job</h3>
         <ul>
+          <li><b>Habit Recommendation Model</b> @ Vida Health - prediction pipeline built on scikit-learn, pandas, and BigQuery to recommend habits for users based on historical data</li>
           <li><b>Track and Trace</b> @ NLS - an ASP.NET web app that allows logistics clients to externally track shipments of cartons</li>
           <li><b>Visitor Management System</b> @ NLS - a cross-platform React Native iOS/Android application that manages visitors and employee sign in and out</li>
           <li><b>Fixed Income Permissions</b> @ BMO - a Razor MVC web application written in C# and JavaScript to manage permission to various tools at BMO</li>

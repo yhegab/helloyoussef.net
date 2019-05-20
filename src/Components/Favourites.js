@@ -137,62 +137,70 @@ class Favourites extends Component {
             <li>The Haunting of Hill House (2018-)</li>
             <li>Maniac (2018)</li>
             <li>You (2018-)</li>
+            <li>Sabrina (2018-)</li>
             <li>Death, Love, and Robots (2019)</li>
             <li>The Umbrella Academy (2019)</li>
           </ul>
         </div>
 
-        {/* <div className="games">
+        <div className="games">
         <h3>Video Games</h3>
         <ul>
           <li>Spider-Man</li>
+          <li>Breath of the Wild</li>
           <li>The Last of Us</li>
-          <li>Infamous</li>
-          <li>Red Dead Redemption</li>
+          <li>Infamous 2</li>
           <li>GTA IV</li>
           <li>God of War III</li>
           <li>God of War (PS4)</li>
+          <li>Portal</li>
           <li>Portal 2</li>
           <li>BioShock Infinite</li>
           <li>Borderlands 2</li>
-          <li>CoD: Black Ops</li>
+          <li>CoD: Black Ops 1/2</li>
           <li>Rocket League</li>
           <li>FIFA</li>
           <li>Until Dawn</li>
-          <li>Super Smash Bros</li>
-          <li>Mario Kart</li>
-          <li><b>Uncharted</b></li>
+          <li>Super Smash Bros Ultimate</li>
+          <li>Mario Kart 8</li>
+          <li>Mortal Kombat Armageddon</li>
+          <li>Mortal Kombat 11</li>
+          <li>Dead by Daylight</li>
+          <li>Cuphead</li>
+          <li>Celeste</li>
+          <li>Uncharted 2</li>
+          <li><b>Red Dead Redemption</b></li>
           <li><b>GTA V</b></li>
           <li><b>Horizon Zero Dawn</b></li>
-        </ul>
-        
-        <h3>Board Games</h3>
-        <ul>
+          </ul>
+          
+          {/* <h3>Board Games</h3>
+          <ul>
           <li>The Resistance: Avalon</li>
           <li>Coup</li>
           <li>Codenames</li>
           <li>Bang</li>
           <li>Exploding Kittens</li>
-        </ul>
-        </div> */}
+          </ul> */}
+        </div>
 
         <div className="books">
         <h3>Books</h3>
         <ul>
-          <li>The Qur'an</li>
           <li>Le Petit Prince (Saint-Exupéry)</li>
           <li>Le Compte de Monte-Cristo (Dumas)</li>
           <li>Kingkiller Chronicles (Rothfuss)</li>
-          <li>1984 (George Orwell)</li>
-          <li>Brave New World (Aldous Huxley)</li>
+          <li>Mistborn Trilogy (Brandon Sanderson)</li>
           <li>Small Steps (Louis Sachar)</li>
           <li>To Kill a Mockingbird (Harper Lee)</li>
+          <li>The Qur'an</li>
+          <li>The Circle (Dave Eggers)</li>
+          <li>1984 (George Orwell)</li>
+          <li>Brave New World (Aldous Huxley)</li>
           <li>The Mazerunner (James Dashner)</li>
           <li>Lord of the Flies (Golding)</li>
           <li>Ender's Game (Orson Scott Card)</li>
           <li>City of Ember (Jeanne DuPrau)</li>
-          <li>The Circle (Dave Eggers)</li>
-          <li>Mistborn (Brandon Sanderson)</li>
         </ul>
         </div>
       </div>
