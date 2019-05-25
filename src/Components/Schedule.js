@@ -102,14 +102,12 @@ class Schedule extends Component {
               <li>BU375 - Operations management</li>
               <li>BU398 - Organizational Behaviour II</li>
               <li><NavLink to="/cs341">CS341</NavLink> - Algorithms</li>
-              <li><NavLink to="/coopwinter2019">Waterloo Works</NavLink></li>
             </ul>
           </div>
           <div className="term">
             <h3>Spring 2019</h3>
             <ul>
               <li><b>Intern - Vida Health</b></li>
-              <li>EC250 - Macroeconomics II</li>
             </ul>
           </div>
         </div>
@@ -122,25 +120,26 @@ class Schedule extends Component {
             <h3>4A: Fall 2019</h3>
             <ul>
               <li>BU481 - Business Policy I</li>
-              <li>BU???</li>
+              <li>BU432 - Consumer Behaviour</li>
               <li>CS343 - Concurrency Programming</li>
-              <li>CS[340-398]</li>
+              <li>CS370 - Numerical Computation</li>
+              <li>CS486 - Artificial Intelligence</li>
             </ul>
           </div>
           <div className="term">
             <h3>Winter 2020</h3>
             <ul>
               <li><b>Intern - A nice company, hopefully</b></li>
-              <li>Elective course</li>
             </ul>
           </div>
           <div className="term">
             <h3>4B: Spring 2020</h3>
             <ul>
               <li>BU491 - Business Policy II</li>
-              <li>BU???</li>
+              <li>EC250 - Macroeconomics</li>
+              <li>BU??? - Marketing</li>
               <li>CS490 - Information Systems</li>
-              <li>CS452/? - Real-time Programming</li>
+              <li>CS452 - Real-time Programming</li>
             </ul>
           </div>
         </div>
@@ -153,25 +152,26 @@ class Schedule extends Component {
             <h3>Fall 2020</h3>
             <ul>
               <li><b>Intern - A nice company, hopefully</b></li>
-              <li>Elective course</li>
             </ul>
           </div>
           <div className="term">
             <h3>5A: Winter 2021</h3>
             <ul>
-              <li>BU???</li>
-              <li>BU???</li>
-              <li>CS444/? - Compiler Construction</li>
+              <li>BU??? - Marketing</li>
+              <li>BU??? - Marketing</li>
+              <li>CS442 - Languages</li>
+              <li>CS480 - Machine Learning</li>
               <li>CS492 - Implications of Computing</li>
             </ul>
           </div>
           <div className="term">
             <h3>5B: Spring 2021</h3>
             <ul>
-              <li>BU???</li>
-              <li>BU???</li>
-              <li>CS???</li>
-              <li>CS???</li>
+              <li>BU??? - Marketing</li>
+              <li>BU??? - Marketing</li>
+              <li>CS488 - Graphics</li>
+              <li>CS458 - Security</li>
+              <li>CO487 - Cryptography</li>
             </ul>
           </div>
         </div>
