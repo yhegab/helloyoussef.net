@@ -12,6 +12,7 @@
     "markdown-it-katex": "^2.0.3",
     "markdown-it-mathjax": "^2.0.0",
     "mathjax-electron": "^3.0.0",
+    "muicss": "^0.9.41",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-ga": "^2.5.6",

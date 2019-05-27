@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-//import { Document, Page } from 'react-pdf';
-import 'react-pdf/dist/Page/AnnotationLayer.css';
+import Form from 'muicss/lib/react/form';
+import Input from 'muicss/lib/react/input';
+import Button from 'muicss/lib/react/button';
 
 class ShowPredictor extends Component {
   constructor(props) {
@@ -49,16 +50,14 @@ class ShowPredictor extends Component {
         <p> Enter in a TV Show and I will recommend 10 other TV Shows you might like based on their rating and similarity.</p>
         <p> You can find the source code <a href="http://github.com/itsjafer/tv_show_predictor" target="_blank" rel="noopener noreferrer">here</a></p>
         <div className="input-show">
-        <form onSubmit={this.handleSubmit}>
-            <label>
-                <input 
-                    type="text"
-                    value={this.state.value}
-                    onChange={this.handleChange}
-                    />
-            </label>
-            <input type="submit" value="Submit" />
-        </form>
+        <Form onSubmit={this.handleSubmit}>
+            <Input 
+                placeholder="TV Show"
+                value={this.state.value}
+                onChange={this.handleChange}
+            />
+            <Button variant="raised" className="formSubmit">Submit</Button>
+        </Form>
         </div>
         <div className="table">
         <table>
