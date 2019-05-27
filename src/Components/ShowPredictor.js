@@ -27,6 +27,7 @@ class ShowPredictor extends Component {
     return (
       <div className="show-predictor">
         <p> Enter in a TV Show and I will recommend 10 other TV Shows you might like based on their rating and similarity.</p>
+        <p> You can find the source code <a href="http://github.com/itsjafer/tv_show_predictor" target="_blank" rel="noopener noreferrer">here</a></p>
         <div className="input-show">
         <form onSubmit={this.handleSubmit}>
             <label>
