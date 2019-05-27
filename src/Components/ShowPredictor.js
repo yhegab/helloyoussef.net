@@ -17,7 +17,7 @@ class ShowPredictor extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    let uri = 'http://itsjafer.pythonanywhere.com/predict?title=' + this.state.value;
+    let uri = 'https://itsjafer.pythonanywhere.com/predict?title=' + this.state.value;
     fetch(encodeURI(uri), {method: 'get', mode: 'cors'})
     .then(response => response.json())
     .then(data => this.setState({ data }))
