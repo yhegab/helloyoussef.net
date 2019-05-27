@@ -13,6 +13,7 @@ import Resume from "./Components/Resume";
 import Favourites from "./Components/Favourites";
 import Schedule from "./Components/Schedule";
 import Reflection from "./Components/Reflection";
+import ShowPredictor from "./Components/ShowPredictor";
 import threeA from "./Reflections/3A.md";
 import CS240 from "./Courses/CS240.md";
 import BU362 from "./Courses/BU362.md";
@@ -58,6 +59,7 @@ class Main extends Component {
               <li><NavLink to="/favourites">List of Favourites</NavLink></li>
               <li><NavLink to="/schedule">Courses</NavLink></li>
               <li><NavLink to="/resume">Resume</NavLink></li>
+              <li><NavLink to="/show-predictor">Recommendation Engine</NavLink></li>
             </ul>
             <h1>Jafer Haider</h1>
             <Social/>
@@ -67,6 +69,7 @@ class Main extends Component {
             <Route path="/resume" component={Resume}/>
             <Route path="/favourites" component={Favourites}/>
             <Route path="/schedule" component={Schedule}/>
+            <Route path="/show-predictor" component={ShowPredictor}/>
             <Route path="/3a" component={() => <Reflection title="Term Reflection" date="Fall 2018: December 2, 2018 @10am"
                     file={threeA}/>}/>
             <Route path="/cs240" component={() => <Reflection title="CS240" date="Spring 2018"

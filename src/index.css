@@ -5,6 +5,12 @@ body {
   font-family: 'Roboto', serif;  
   font-weight: 300;
 }
+input {
+  font-family:inherit;
+  font-size: 1em;
+  outline: 0em;
+  width: 60%;
+}
 h1 {
   height: 100%;
   margin: 0;
@@ -109,4 +115,14 @@ canvas {
   margin: 0;
   font-size: 4.5em;
   font-weight: 100;
+}
+.input-show {
+  text-align: center;
+}
+table {
+  text-align: center;
+  border-spacing: 2em .5em;
+  padding: 0 2em 1em 0;
+  margin-left:auto; 
+  margin-right:auto;
 }
