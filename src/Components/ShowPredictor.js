@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Form from 'muicss/lib/react/form';
 import Input from 'muicss/lib/react/input';
 import Button from 'muicss/lib/react/button';
+import ReactTable from 'react-table'
+import 'react-table/react-table.css'
 
 class ShowPredictor extends Component {
   constructor(props) {
@@ -36,15 +38,67 @@ class ShowPredictor extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    let uri = 'https://itsjafer.pythonanywhere.com/predict?title=' + this.state.value;
+    let uri = 'http://127.0.0.1:5000/predict?title=' + this.state.value;
     fetch(encodeURI(uri), {method: 'get', mode: 'cors'})
     .then(response => response.json())
     .then(data => this.setState({ data }))
+    .then(() => {
+      this.setState({ value: this.state.data[0].similarTitle})
+    })
   }
 
   render() {
     const isDesktop = this.state.isDesktop;
     
+    const fullColumns = [
+      {
+        Header: 'Title',
+        accessor: 'title'
+      },
+      {
+        id: 'recommendationScore',
+        Header: 'Recommendation Score',
+        accessor: d => (d.score * 100).toFixed(2)
+      },
+      {
+        id: 'similarityScore',
+        Header: 'Similarity',
+        accessor: d => (d.similarity* 100).toFixed(2)
+      },
+      {
+        Header: 'IMDB Rating',
+        accessor: 'user_rating',
+        Cell: cellInfo => (
+          <a href={cellInfo.original.link}
+          target="_blank" rel="noopener noreferrer">{cellInfo.original.user_rating}</a>
+        )
+      },
+      {
+        Header: 'Metacritic Score',
+        accessor: 'metascore'
+      },
+      {
+        Header: 'Metacritic Userscore',
+        accessor: 'userscore'
+      },
+  
+    ]
+    const limitedColumns = [
+      {
+        Header: 'Title',
+        accessor: 'title',
+        Cell: cellInfo => (
+          <a href={cellInfo.original.link}
+          target="_blank" rel="noopener noreferrer">{cellInfo.original.title}</a>
+        )
+      },
+      {
+        id: 'recommendationScore',
+        Header: 'Recommendation Score',
+        accessor: d => (d.score * 100).toFixed(2)
+      }
+  
+    ]
     return (
       <div className="show-predictor">
         <p> Enter in a TV Show and I will recommend 10 other TV Shows you might like based on their rating and similarity.</p>
@@ -52,7 +106,7 @@ class ShowPredictor extends Component {
         <div className="input-show">
         <Form onSubmit={this.handleSubmit}>
             <Input 
-                placeholder="TV Show"
+                placeholder=""
                 value={this.state.value}
                 onChange={this.handleChange}
             />
@@ -60,41 +114,10 @@ class ShowPredictor extends Component {
         </Form>
         </div>
         <div className="table">
-        <table>
-            <tbody>
-            {this.state.data.length > 0 && isDesktop &&
-            <tr>
-                <th>TV Show Title</th>
-                <th>Recommendation Score</th>
-                <th>IMDB Rating</th>
-                <th>Similarity Score</th>
-            </tr>
-            }
-            {this.state.data.length > 0 && !isDesktop &&
-            <tr>
-                <th>TV Show Title</th>
-                <th>Recommendation Score</th>
-            </tr>
-            }
-            {this.state.data.map(function(item, key) {
-                
-               return (
-                isDesktop ?
-                <tr key = {key}>
-                    <td>{item.title}</td>
-                    <td>{(item.score * 100).toFixed(2)}%</td>
-                    <td>{item.user_rating}</td>
-                    <td>{(item.similarity * 100).toFixed(2)}%</td>
-                </tr> :
-                <tr key = {key}>
-                    <td>{item.title}</td>
-                    <td>{(item.score * 100).toFixed(2)}%</td>
-                </tr>
-                )
-             
-             })}
-            </tbody>
-       </table>
+          <ReactTable
+              data={this.state.data}
+              columns={isDesktop ? fullColumns : limitedColumns}
+            />
         </div>
       </div>
     );

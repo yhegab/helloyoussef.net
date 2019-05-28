@@ -136,13 +136,6 @@ canvas {
   font-size: 4.5em;
   font-weight: 100;
 }
-table {
-  text-align: center;
-  border-spacing: 2em .5em;
-  padding: 0 2em 1em 0;
-  margin-left:auto; 
-  margin-right:auto;
-}
 .mui-form {
   text-align: center;
 }
