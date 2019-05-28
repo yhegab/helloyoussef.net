@@ -17,6 +17,7 @@ class ShowPredictor extends Component {
     this.updatePredicate = this.updatePredicate.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleFocus = this.handleFocus.bind(this);
   }
 
   componentDidMount() {
@@ -29,11 +30,15 @@ class ShowPredictor extends Component {
   }
 
   updatePredicate() {
-    this.setState({ isDesktop: window.innerWidth > 1250 });
+    this.setState({ isDesktop: window.innerWidth > 1000 });
   }
 
   handleChange(event) {
     this.setState({value: event.target.value});
+  }
+
+  handleFocus(event) {
+    event.target.select();
   }
 
   handleSubmit(event) {
@@ -43,7 +48,11 @@ class ShowPredictor extends Component {
     .then(response => response.json())
     .then(data => this.setState({ data }))
     .then(() => {
-      this.setState({ value: this.state.data[0].similarTitle})
+      let title = this.state.data[0].similarTitle
+      if (title != this.state.value) 
+        this.setState({ value: "Closest Match: " + title })
+      else
+        this.setState({ value: title})
     })
   }
 
@@ -53,33 +62,39 @@ class ShowPredictor extends Component {
     const fullColumns = [
       {
         Header: 'Title',
-        accessor: 'title'
+        accessor: 'title',
+        Cell: cellInfo => (
+          <a href={cellInfo.original.link}
+          target="_blank" rel="noopener noreferrer">{cellInfo.original.title}</a>
+        ),
+        Footer: true && <div/>
       },
       {
         id: 'recommendationScore',
-        Header: 'Recommendation Score',
-        accessor: d => (d.score * 100).toFixed(2)
+        Header: 'Score',
+        accessor: d => (d.score * 100).toFixed(2),
+        Footer: true && <div/>
       },
       {
         id: 'similarityScore',
         Header: 'Similarity',
-        accessor: d => (d.similarity* 100).toFixed(2)
+        accessor: d => (d.similarity* 100).toFixed(2),
+        Footer: true && <div/>
       },
       {
         Header: 'IMDB Rating',
         accessor: 'user_rating',
-        Cell: cellInfo => (
-          <a href={cellInfo.original.link}
-          target="_blank" rel="noopener noreferrer">{cellInfo.original.user_rating}</a>
-        )
+        Footer: true && <div/>
       },
       {
-        Header: 'Metacritic Score',
-        accessor: 'metascore'
+        Header: 'Metascore',
+        accessor: 'metascore',
+        Footer: true && <div/>
       },
       {
-        Header: 'Metacritic Userscore',
-        accessor: 'userscore'
+        Header: 'Userscore',
+        accessor: 'userscore',
+        Footer: true && <div/>
       },
   
     ]
@@ -90,34 +105,46 @@ class ShowPredictor extends Component {
         Cell: cellInfo => (
           <a href={cellInfo.original.link}
           target="_blank" rel="noopener noreferrer">{cellInfo.original.title}</a>
-        )
+        ),
+        Footer: true && <div/>
       },
       {
         id: 'recommendationScore',
-        Header: 'Recommendation Score',
-        accessor: d => (d.score * 100).toFixed(2)
+        Header: 'Score',
+        accessor: d => (d.score * 100).toFixed(2),
+        Footer: true && <div/>
       }
   
     ]
     return (
       <div className="show-predictor">
-        <p> Enter in a TV Show and I will recommend 10 other TV Shows you might like based on their rating and similarity.</p>
+        <p> Enter in a TV Show and I will recommend 10 other TV Shows you might like based on their similarity and ratings.</p>
+        <p> Similarity is based on: genre, keywords, plot, cast, production company, number of seasons, and episode length. Ratings are based on a combination of IMDB rating, Metacritic Score, and Metacritic user score.</p>
         <p> You can find the source code <a href="http://github.com/itsjafer/tv_show_predictor" target="_blank" rel="noopener noreferrer">here</a></p>
         <div className="input-show">
         <Form onSubmit={this.handleSubmit}>
-            <Input 
+            <input 
+                ref="input"
                 placeholder=""
                 value={this.state.value}
                 onChange={this.handleChange}
+                onFocus={this.handleFocus}
+                onMouseUp={(e) => {e.preventDefault()}}
             />
             <Button variant="raised" className="formSubmit">Submit</Button>
         </Form>
         </div>
         <div className="table">
-          <ReactTable
-              data={this.state.data}
-              columns={isDesktop ? fullColumns : limitedColumns}
+          {
+            this.state.data.length > 0 &&
+            <ReactTable
+                data={this.state.data}
+                columns={isDesktop ? fullColumns : limitedColumns}
+                defaultPageSize={10}
+                showPaginationBottom={false}
+                showPageSizeOptions={false}
             />
+          }
         </div>
       </div>
     );
