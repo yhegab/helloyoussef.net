@@ -30,7 +30,7 @@ class ShowPredictor extends Component {
   }
 
   updatePredicate() {
-    this.setState({ isDesktop: window.innerWidth > 1000 });
+    this.setState({ isDesktop: window.innerWidth > 800 });
   }
 
   handleChange(event) {
