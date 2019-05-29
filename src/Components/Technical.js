@@ -8,6 +8,7 @@ class Technical extends Component {
         <h3>Personal</h3>
         <ul>
           <li><a href="http://itsjafer.com" target="_blank" rel="noopener noreferrer"><b>This website</b></a> - developed using ReactJS with React Router.</li>
+          <li><a href="https://github.com/itsjafer/tv_recommendation_engine" target="_blank" rel="noopener noreferrer" > <b>TV Show Recommendation Engine</b> </a> - a machine learning pipeline that scrapes data off metacritic and imdb and uses cosine_similarities to predict and recommend TV Shows.</li>
           <li><a href="https://github.com/itsjafer/web-msngr" target="_blank" rel="noopener noreferrer" > <b>web-msngr</b> </a> - a personal messaging web app made using Angular, Mongo, Node.js, and Express and deployed using Heroku</li>
           <li><a href="http://github.com/itsjafer/sorcery" target="_blank" rel="noopener noreferrer"><b>sorcery</b></a> - an object-oriented implementation of a card game based on Magic: The Gathering and Hearthstone written in C++ </li>
           <li><b>C++/WLP4 Compiler</b> - A complete implementation of a compiler of a C++ subset called WLP4; converts WLP4 code to MIPS to binary machine code completely. </li>
