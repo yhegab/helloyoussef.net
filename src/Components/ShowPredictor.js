@@ -67,7 +67,8 @@ class ShowPredictor extends Component {
           <a href={cellInfo.original.link}
           target="_blank" rel="noopener noreferrer">{cellInfo.original.title}</a>
         ),
-        Footer: true && <div/>
+        Footer: true && <div/>,
+        minWidth: 250
       },
       {
         id: 'recommendationScore',
