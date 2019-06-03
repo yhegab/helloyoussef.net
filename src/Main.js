@@ -4,6 +4,7 @@ import {
   NavLink,
   HashRouter
 } from "react-router-dom";
+import withTracker from './withTracker'
 import ReactGA from "react-ga";
 import loadScript from 'load-script'
 import Home from "./Components/Home";
@@ -14,13 +15,9 @@ import Favourites from "./Components/Favourites";
 import Schedule from "./Components/Schedule";
 import Reflection from "./Components/Reflection";
 import ShowPredictor from "./Components/ShowPredictor";
-import threeA from "./Reflections/3A.md";
 import CS240 from "./Courses/CS240.md";
 import BU362 from "./Courses/BU362.md";
 import CS341 from "./Courses/CS341.md";
-//import MATH239 from "./Courses/MATH239.md";
-//import COOPWINTER2019 from "./Reflections/COOPWINTER2019.md";
-import Unfinished from "./Reflections/unfinished.md";
 
 const MATHJAX_SCRIPT = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML';
 
@@ -64,24 +61,18 @@ class Main extends Component {
             <h1>Jafer Haider</h1>
             <Social/>
 
-            <Route exact path="/" component={Home}/>
-            <Route exact path="/technical" component={Technical}/>
-            <Route path="/resume" component={Resume}/>
-            <Route path="/favourites" component={Favourites}/>
-            <Route path="/schedule" component={Schedule}/>
-            <Route path="/show-predictor" component={ShowPredictor}/>
-            <Route path="/3a" component={() => <Reflection title="Term Reflection" date="Fall 2018: December 2, 2018 @10am"
-                    file={threeA}/>}/>
-            <Route path="/cs240" component={() => <Reflection title="CS240" date="Spring 2018"
-                    file={CS240}/>}/>
-            <Route path="/bu362" component={() => <Reflection title="BU362" date="Winter 2019"
-                    file={BU362}/>}/>
-            <Route path="/cs341" component={() => <Reflection title="CS341" date="Winter 2019"
-                    file={CS341}/>}/>
-            <Route path="/math239" component={() => <Reflection title="MATH239" date="Fall 2018"
-                    file={Unfinished}/>}/>
-            <Route path="/coopwinter2019" component={() => <Reflection title="The Co-Op Search" date="Winter 2019"
-                    file={Unfinished}/>}/>
+            <Route exact path="/" component={withTracker(Home)}/>
+            <Route exact path="/technical" component={withTracker(Technical)}/>
+            <Route path="/resume" component={withTracker(Resume)}/>
+            <Route path="/favourites" component={withTracker(Favourites)}/>
+            <Route path="/schedule" component={withTracker(Schedule)}/>
+            <Route path="/show-predictor" component={withTracker(ShowPredictor)}/>
+            <Route path="/cs240" component={withTracker(() => <Reflection title="CS240" date="Spring 2018"
+            file={CS240}/>)}/>
+            <Route path="/bu362" component={withTracker(() => <Reflection title="BU362" date="Winter 2019"
+            file={BU362}/>)}/>
+            <Route path="/cs341" component={withTracker(() => <Reflection title="CS341" date="Winter 2019"
+            file={CS341}/>)}/>
           </div>
         </div>
         </HashRouter>

@@ -85,13 +85,13 @@ class Schedule extends Component {
             <h4>2018-2019</h4>
           </div>
           <div className="term">
-            <h3><NavLink to="/3a">3A</NavLink>: Fall 2018</h3>
+            <h3>3A</h3>
             <ul>
               <li>BU393 - Corporate Finance II</li>
               <li>BU352 - Human Resources</li>
               <li>BU354 - Marketing</li>
               <li>CS350 - Operating Systems</li>
-              <li><NavLink to="/math239">MATH239</NavLink> - Graph Theory</li>
+              <li>MATH239- Graph Theory</li>
               <li><b>Intern - National Logistics Services</b></li>
             </ul>
           </div>

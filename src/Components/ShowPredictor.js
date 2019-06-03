@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Form from 'muicss/lib/react/form';
-import Input from 'muicss/lib/react/input';
 import Button from 'muicss/lib/react/button';
 import ReactTable from 'react-table'
 import 'react-table/react-table.css'
@@ -49,7 +48,7 @@ class ShowPredictor extends Component {
     .then(data => this.setState({ data }))
     .then(() => {
       let title = this.state.data[0].similarTitle
-      if (title != this.state.value) 
+      if (title !== this.state.value) 
         this.setState({ value: "Closest Match: " + title })
       else
         this.setState({ value: title})
