@@ -91,6 +91,7 @@ class Favourites extends Component {
           <li>21 Jump Street (2012)</li>
           <li><b>12 Years a Slave</b> (2013)</li>
           <li>The Grand Budapest Hotel (2014)</li>
+          <li>John Wick (2014)</li>
           <li>Gardians of the Galaxy (2014)</li>
           <li>Gone Girl (2014)</li>
           <li>The Hateful Eight (2015)</li>
@@ -109,6 +110,7 @@ class Favourites extends Component {
           <li>A Simple Favour (2018)</li>
           <li>Game Night (2018)</li>
           <li>Shazam (2019)</li>
+          <li>I am Mother (2019)</li>
         </ul>
         </div>
         <div className="shows">
@@ -129,6 +131,7 @@ class Favourites extends Component {
             <li>Brooklyn Nine-Nine (2013-)</li>
             <li>Rick and Morty (2013-)</li>
             <li>Narcos (2015-2016)</li>
+            <li><b>Better Call Saul</b> (2015-)</li>
             <li>Stranger Things (2016-)</li>
             <li>Atlanta (2016-)</li>
             <li>The Good Place (2016-)</li>
@@ -140,6 +143,7 @@ class Favourites extends Component {
             <li>Sabrina (2018-)</li>
             <li>Death, Love, and Robots (2019)</li>
             <li>The Umbrella Academy (2019)</li>
+            <li><b>Chernobyl</b> (2019)</li>
           </ul>
         </div>
 
