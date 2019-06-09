@@ -1,0 +1,221 @@
+{
+  "selectedTemplate": 1,
+  "headings": {
+    "work": "Work Experience",
+    "skills": "Skills",
+    "awards": "Activities and Leadership",
+    "education": "Education"
+  },
+  "basics": {
+    "name": "(Syed) Jafer Haider",
+    "email": "itsjafer@gmail.com",
+    "phone": "(650) 284-9693",
+    "website": "itsjafer.com"
+  },
+  "education": [
+    {
+      "institution": "University of Waterloo",
+      "location": "Waterloo, Ontario",
+      "area": "Computer Science",
+      "studyType": "BS",
+      "startDate": "Sep 2016",
+      "gpa": "3.3",
+      "endDate": "April 2021"
+    },
+    {
+      "institution": "Wilfrid Laurier University",
+      "location": "Waterloo, Ontario",
+      "studyType": "BBA",
+      "area": "Business Administration",
+      "gpa": "3.3",
+      "startDate": "Sep 2016",
+      "endDate": "May 2021"
+    }
+  ],
+  "work": [
+    {
+      "company": "Vida Health",
+      "location": "San Francisco, California",
+      "position": "Data Scientist Intern",
+      "website": "",
+      "startDate": "May 2019",
+      "endDate": "Present",
+      "highlights": [
+        "Improved and trained a random forest predictive model to increase prediction accuracy of recommendation of user habits",
+        "Leveraged Google Cloud BigQuery to gather and analyze historical data for use in training of predictive models",
+        "Used Split to perform A/B tests and to create metrics to measure statistical significance",
+        "Improved performance of prediction pipeline by over 50% by upgrading dependencies and implementing asynchronous actions"
+      ]
+    },
+    {
+      "highlights": [
+        "Designed mobile React Native app meant for both iPads and Android tablets for visitor management to track entry of warehouses by employees, contractors, and visitors",
+        "Implemented internal shipment and carton tracking in ASP.NET allowing clients to view status of their shipping orders online",
+        "Leveraged a Go backend with a React front end to create cross-platform mobile apps ",
+        "Developed user-friendly app with Vue.js to allow internal users to fill out automatic billing based on complex conditions"
+      ],
+      "company": "National Logistics Services",
+      "position": "Mobile Developer Intern",
+      "location": "Mississauga, Ontario, Canada",
+      "startDate": "September 2018",
+      "endDate": "December 2018"
+    },
+    {
+      "highlights": [
+        "Collaborated with fixed-income traders to deliver C\\# applications that streamlined trading of corporate securities",
+        "Leveraged pub/sub back-end and FIX protocol adapter to allow bulk trading of bonds resulting in smooth trader workflow",
+        "Connected Angular2 front-end with MongoDB back-end to measure risks on US trading desks to prevent liabilities",
+        "Used ASP.NET, Oracle SQL to develop web apps to manage database permissions and internal treasury auction bids"
+      ],
+      "company": "BMO Capital Markets",
+      "position": "Software Developer",
+      "location": "Toronto, Ontario, Canada",
+      "startDate": "January 2018",
+      "endDate": "April 2018"
+    },
+    {
+      "highlights": [
+        "Created a dynamic web dashboard with Node.js and jQuery used to monitor and update build-deployment processes",
+        "Implemented a company-wide source control branching strategy involving migration from TFS to Git",
+        "Worked in an Agile development environment utilizing Scrum development methodology with various Atlassian tools",
+        "Facilitated the implementation of Puppet to monitor client machines with restricted bandwidth limits"
+      ],
+      "company": "Camis Inc.",
+      "position": "DevOps Engineer",
+      "location": "Guelph, Ontario, Canada",
+      "startDate": "May 2017",
+      "endDate": "August 2017"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "level": "",
+      "keywords": [
+        "C",
+        "C++",
+        "C#",
+        "JavaScript",
+        "Python",
+        "Java",
+        "PowerShell",
+        null,
+        "React",
+        "Angular",
+        "Node.js",
+        "ASP.NET",
+        "PHP"
+      ]
+    },
+    {
+      "keywords": [
+        "SVN",
+        "Git",
+        "TFS",
+        "MongoDB",
+        "Oracle",
+        "SQL Server",
+        null,
+        "Travis CI",
+        "Split",
+        "Flask",
+        null,
+        null
+      ],
+      "name": "Tools and Technologies"
+    },
+    {
+      "keywords": [
+        "BeautifulSoup",
+        "Pandas",
+        "Scikit-learn",
+        "Expo",
+        "SQL",
+        ""
+      ],
+      "name": " "
+    }
+  ],
+  "projects": [
+    {
+      "description": "Machine learning pipeline that analyzes IMDB and Metacritic to recommend TV Shows based on a variety of features. It scrapes key model features using BeautifulSoup and compiled it into a Pandas data frame. A Flask web server was used to host API calls made by a React front end. Cosine similarities were used between all shows pairwise in combination with critical reception scores.",
+      "keywords": [
+        "Python",
+        "Scikit-learn",
+        "Pandas",
+        "Flask",
+        "React",
+        "BeautifulSoup"
+      ],
+      "name": "TV Recommendation Engine",
+      "url": "https://github.com/itsjafer/tv_recommendation_engine"
+    },
+    {
+      "keywords": [
+        "React Native",
+        "Expo",
+        "PHP",
+        "SQL Server"
+      ],
+      "name": "Visitor Management System",
+      "description": "Mobile app on iOS and Android tablets used to register all employees and visitors that enter or leave warehouses. Had a seamless cross-platform user interface using React Native and a PHP and SQL backend. Connected Go API to SQL Server database for back-end management of visitor states and building information"
+    },
+    {
+      "keywords": [
+        "C++"
+      ],
+      "name": "WLP4 / C++ Compiler",
+      "description": "Assembler, Parser, Type-checker, and Code Generator of a C++ subset called WLP4 written in C++. Implemented a MIPS assembler that converts any MIPS program to binary machine code. Wrote a lexical scanner and parser for all WLP4 programs to allow for type-checking using context-free grammar. Programmed complete code generation from WLP4 to MIPS assembly language allowing full compilation of WLP4.",
+      "url": " "
+    },
+    {
+      "keywords": [
+        "C++"
+      ],
+      "name": "Sorcery",
+      "description": "An object-oriented implementation of a card game similar to Magic: the Gathering and Hearthstone. Used C++ MVC pattern to facilitate effective groupwork and delegation of tasks alongside low coupling. Implemented Subject-observer pattern wherein the gameboard broadcasted all moves to graphical interfaces. Effectively managed project by creating UML design beforehand and utilizing effective git branching workflows",
+      "url": " "
+    },
+    {
+      "keywords": [
+        "JavaScript",
+        "Angular",
+        "Node.js",
+        "Socket.io",
+        "Express"
+      ],
+      "name": "web-msngr",
+      "description": "Real-time personal messaging web application created using the MEAN tech stack. Connected Node.js backend with the Express framework to create a REST API for an Angular frontend. Used MongoDB NoSQL database to efficiently store and retrieve information about users, chats, and messages. Implemented Socket.io to facilitate real time message retrieval and broadcasting for connected users.",
+      "url": "https://github.com/itsjafer/web-msngr"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Lead Consultant",
+      "awarder": "Laurier Consulting Club",
+      "date": "September 2018 - December 2018",
+      "summary": "planning and presenting consulting deliverables for chief executive officers of augmented reality start-up"
+    },
+    {
+      "title": "Beginner",
+      "awarder": "Muay Thai",
+      "date": "Present",
+      "summary": "Working on developing strength and conditioning through weekly workshops"
+    },
+    {
+      "title": "Beginner",
+      "date": "Present",
+      "awarder": "Waterloo Swimming",
+      "summary": "Weekly swimming classes to home skills in aquatics"
+    }
+  ],
+  "sections": [
+    "templates",
+    "profile",
+    "education",
+    "work",
+    "skills",
+    "projects",
+    "awards"
+  ]
+}
