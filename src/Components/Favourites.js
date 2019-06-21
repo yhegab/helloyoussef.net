@@ -125,6 +125,7 @@ class Favourites extends Component {
             <li>Mad Men (2007-2015)</li>
             <li>Breaking Bad (2008-2013)</li>
             <li>Community (2009-2015)</li>
+            <li><b>Parks and Recreation</b> (2009-2015)</li>
             <li>Justified (2010-2015)</li>
             <li>Game of Thrones (2011-2019)</li>
             <li>Black Mirror (2011-)</li>
@@ -143,7 +144,7 @@ class Favourites extends Component {
             <li>Sabrina (2018-)</li>
             <li>Death, Love, and Robots (2019)</li>
             <li>The Umbrella Academy (2019)</li>
-            <li><b>Chernobyl</b> (2019)</li>
+            <li>Chernobyl (2019)</li>
           </ul>
         </div>
 

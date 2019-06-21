@@ -38,11 +38,12 @@ class ShowPredictor extends Component {
 
   handleFocus(event) {
     event.target.select();
+    this.setState({value: ""});
   }
 
   handleSubmit(event) {
     event.preventDefault();
-    let uri = 'https://itsjafer.pythonanywhere.com/predict?title=' + this.state.value;
+    let uri = 'https://tv-recommendation-engine.herokuapp.com/predict?title=' + this.state.value;
     fetch(encodeURI(uri), {method: 'get', mode: 'cors'})
     .then(response => response.json())
     .then(data => this.setState({ data }))
