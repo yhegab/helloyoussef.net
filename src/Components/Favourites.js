@@ -111,6 +111,7 @@ class Favourites extends Component {
           <li>Game Night (2018)</li>
           <li>Shazam (2019)</li>
           <li>I am Mother (2019)</li>
+          <li>Once Upon A Time in Hollywood (2019)</li>
         </ul>
         </div>
         <div className="shows">
@@ -125,7 +126,7 @@ class Favourites extends Component {
             <li>Mad Men (2007-2015)</li>
             <li>Breaking Bad (2008-2013)</li>
             <li>Community (2009-2015)</li>
-            <li><b>Parks and Recreation</b> (2009-2015)</li>
+            <li>Parks and Recreation (2009-2015)</li>
             <li>Justified (2010-2015)</li>
             <li>Game of Thrones (2011-2019)</li>
             <li>Black Mirror (2011-)</li>
