@@ -44,6 +44,7 @@ class Favourites extends Component {
           <li>Jurassic Park (1993)</li>
           <li><b>Groundhog Day</b> (1993)</li>
           <li>Shawshank Redemption (1994)</li>
+          <li>Pulp Fiction (1994)</li>
           <li>The Lion King (1994)</li>
           <li>Forrest Gump (1994)</li>
           <li>Apollo 13 (1994)</li>
@@ -65,7 +66,10 @@ class Favourites extends Component {
           <li>Gladiator (2000)</li>
           <li>Donnie Darko (2001)</li>
           <li>The Lord of the Rings (2001)</li>
+          <li>Shrek (2001)</li>
+          <li>Monsters, Inc. (2001)</li>
           <li>Spider-Man (2002)</li>
+          <li>Signs (2002)</li>
           <li>Holes (2003)</li>
           <li>Finding Nemo (2003)</li>
           <li>Big Fish (2003)</li>
@@ -76,20 +80,32 @@ class Favourites extends Component {
           <li>Eternal Sunshine of the Spotless Mind (2004)</li>
           <li>The Dark Knight trilogy (2005)</li>
           <li>Coach Carter (2005)</li>
+          <li>War of the Worlds (2005)</li>
           <li><b>The New World</b> (2005)</li>
           <li>The Prestige (2006)</li>
+          <li>The Departed (2006)</li>
+          <li>Blood Diamond (2006)</li>
+          <li>The Pursuit of Happyness (2006)</li>
           <li>Ratatouille (2007)</li>
           <li>Gone Baby Gone (2007)</li>
+          <li>No Country for Old Men (2007)</li>
           <li>Slumdog Millionaire (2008)</li>
           <li>Iron Man (2008)</li>
           <li>Wall-E (2008)</li>
           <li>The Informant! (2009)</li>
           <li>Up (2009)</li>
+          <li>Coraline (2009)</li>
+          <li>Inglorious Basterds (2009)</li>
           <li>Inception (2010)</li>
+          <li>Shutter Island (2010)</li>
+          <li>The Other Guys (2010)</li>
+          <li>Moneyball (2011)</li>
           <li>Life of Pi (2012)</li>
+          <li>Looper (2012)</li>
           <li>Django Unchained (2012)</li>
           <li>21 Jump Street (2012)</li>
           <li><b>12 Years a Slave</b> (2013)</li>
+          <li>The Grand Budapest Hotel (2014)</li>
           <li>The Grand Budapest Hotel (2014)</li>
           <li>John Wick (2014)</li>
           <li>Gardians of the Galaxy (2014)</li>
@@ -101,9 +117,11 @@ class Favourites extends Component {
           <li>Ant-Man (2015)</li>
           <li>La La Land (2016)</li>
           <li>Doctor Strange (2016)</li>
+          <li>Don't Breathe (2016)</li>
           <li>Wonder Woman (2017)</li>
           <li>Get Out (2017)</li>
           <li>It (2017)</li>
+          <li>Logan (2017)</li>
           <li>Into the Spider-Verse (2018)</li>
           <li>BlackKklansman (2018)</li>
           <li>A Quiet Place (2018)</li>
@@ -132,8 +150,10 @@ class Favourites extends Component {
             <li>Black Mirror (2011-)</li>
             <li>Brooklyn Nine-Nine (2013-)</li>
             <li>Rick and Morty (2013-)</li>
+            <li>BoJack Horseman (2014-)</li>
+            <li>Master of None (2015-2017)</li>
             <li>Narcos (2015-2016)</li>
-            <li><b>Better Call Saul</b> (2015-)</li>
+            <li>Better Call Saul (2015-)</li>
             <li>Stranger Things (2016-)</li>
             <li>Atlanta (2016-)</li>
             <li>The Good Place (2016-)</li>
