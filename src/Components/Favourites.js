@@ -17,7 +17,7 @@ class Favourites extends Component {
   render() {
     return (
       <div>
-        <p>I've found that I <b>really</b> enjoy making lists of things that I like so I thought I'd put some (all?) of them here. <b>Bolded</b> means work in progress. Last updated February 2019.</p>
+        <p>I've found that I <b>really</b> enjoy making lists of things that I like so I thought I'd put some (all?) of them here. <b>Bolded</b> means work in progress. Last updated August 2019.</p>
 
         {/* <div className="root">
         <Grid container spacing={24}>
