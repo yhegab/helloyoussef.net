@@ -119,7 +119,7 @@ class ShowPredictor extends Component {
     ]
     return (
       <div className="show-predictor">
-        <p> Enter in a TV Show and I will recommend 10 other TV Shows you might like based on their similarity and ratings.</p>
+        <p> Enter in a TV Show and I will recommend 10 other TV Shows you might like based on their similarity and ratings. The search may take a moment as the app starts for the first time.</p>
         <p> Similarity is based on: genre, keywords, plot, cast, production company, number of seasons, and episode length. Ratings are based on a combination of IMDB rating, Metacritic Score, and Metacritic user score.</p>
         <p> You can find the source code <a href="http://github.com/itsjafer/tv_show_predictor" target="_blank" rel="noopener noreferrer">here</a></p>
         <div className="input-show">
