@@ -42,7 +42,7 @@ class Favourites extends Component {
           <li>Reservoir Dogs (1992)</li>
           <li>Schindler's List (1993)</li>
           <li>Jurassic Park (1993)</li>
-          <li><b>Groundhog Day</b> (1993)</li>
+          <li>Groundhog Day (1993)</li>
           <li>Shawshank Redemption (1994)</li>
           <li>Pulp Fiction (1994)</li>
           <li>The Lion King (1994)</li>
@@ -106,7 +106,6 @@ class Favourites extends Component {
           <li>21 Jump Street (2012)</li>
           <li><b>12 Years a Slave</b> (2013)</li>
           <li>The Grand Budapest Hotel (2014)</li>
-          <li>The Grand Budapest Hotel (2014)</li>
           <li>John Wick (2014)</li>
           <li>Gardians of the Galaxy (2014)</li>
           <li>Gone Girl (2014)</li>
@@ -139,6 +138,7 @@ class Favourites extends Component {
             <li>Friends (1994-2004)</li>
             <li>Firefly (2002-2003)</li>
             <li>Avatar: The Last Airbender (2003-2008)</li>
+            <li>Arrested Development (2003-2019)</li>
             <li>Lost (2004-2010)</li>
             <li>The Office (2005-2013)</li>
             <li>Mad Men (2007-2015)</li>
@@ -166,6 +166,7 @@ class Favourites extends Component {
             <li>Death, Love, and Robots (2019)</li>
             <li>The Umbrella Academy (2019)</li>
             <li>Chernobyl (2019)</li>
+            <li>The Boys (2019-)</li>
           </ul>
         </div>
 
