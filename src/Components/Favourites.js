@@ -129,6 +129,7 @@ class Favourites extends Component {
           <li>Shazam (2019)</li>
           <li>I am Mother (2019)</li>
           <li>Once Upon A Time in Hollywood (2019)</li>
+          <li>Joker (2019)</li>
         </ul>
         </div>
         <div className="shows">
@@ -141,6 +142,7 @@ class Favourites extends Component {
             <li>Arrested Development (2003-2019)</li>
             <li>Lost (2004-2010)</li>
             <li>The Office (2005-2013)</li>
+            <li>30 Rock (2006-2013)</li>
             <li>Mad Men (2007-2015)</li>
             <li>Breaking Bad (2008-2013)</li>
             <li>Community (2009-2015)</li>
@@ -157,12 +159,15 @@ class Favourites extends Component {
             <li>Stranger Things (2016-)</li>
             <li>Atlanta (2016-)</li>
             <li>The Good Place (2016-)</li>
-            <li>Santa Clarita Diet (2017-)</li>
+            <li><b>Fleabag (2016-2019)</b></li>
+            <li>Santa Clarita Diet (2017-2019)</li>
+            <li><b>The Marvelous Mrs. Maisel (2017-)</b></li>
             <li>Imposters (2017-2018)</li>
             <li>The Haunting of Hill House (2018-)</li>
             <li>Maniac (2018)</li>
             <li>You (2018-)</li>
             <li>Sabrina (2018-)</li>
+            <li>Barry (2018-)</li>
             <li>Death, Love, and Robots (2019)</li>
             <li>The Umbrella Academy (2019)</li>
             <li>Chernobyl (2019)</li>
