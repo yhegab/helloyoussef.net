@@ -122,7 +122,7 @@ class Schedule extends Component {
               <li>BU481 - Business Policy I</li>
               <li>BU432 - Consumer Behaviour</li>
               <li>CS343 - Concurrency Programming</li>
-              <li>CS370 - Numerical Computation</li>
+              <li>EC260 - Microeconomics</li>
               <li>CS486 - Artificial Intelligence</li>
             </ul>
           </div>
@@ -136,8 +136,8 @@ class Schedule extends Component {
             <h3>4B: Spring 2020</h3>
             <ul>
               <li>BU491 - Business Policy II</li>
-              <li>EC250 - Macroeconomics</li>
               <li>BU??? - Marketing</li>
+              <li>CS???</li>
               <li>CS490 - Information Systems</li>
               <li>CS452 - Real-time Programming</li>
             </ul>
