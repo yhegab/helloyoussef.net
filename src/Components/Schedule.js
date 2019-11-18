@@ -7,9 +7,7 @@ class Schedule extends Component {
   render() {
     return (
       <div>
-        <p>Certain courses have notes associated with them; as I slowly review my courses, more notes will be added.</p>
-        <p>Starting in 3A, I started to write term reflections; these can be seen by clicking on the term name.</p>
-        <p>I am currently in my <b>3B</b> term.</p>
+        <p>I am currently in my <b>4A</b> term.</p>
         <div className="schedule">
         <div className="year">
           <div className="title">
