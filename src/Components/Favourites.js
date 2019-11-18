@@ -161,7 +161,7 @@ class Favourites extends Component {
             <li>The Good Place (2016-)</li>
             <li><b>Fleabag (2016-2019)</b></li>
             <li>Santa Clarita Diet (2017-2019)</li>
-            <li><b>The Marvelous Mrs. Maisel (2017-)</b></li>
+            <li>The Marvelous Mrs. Maisel (2017-)</li>
             <li>Imposters (2017-2018)</li>
             <li>The Haunting of Hill House (2018-)</li>
             <li>Maniac (2018)</li>

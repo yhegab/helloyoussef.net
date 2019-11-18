@@ -116,7 +116,8 @@ ul.header li a.active {
   float: left;
 }
 .term {
-  margin-left: 1em;
+  min-width: 300px;
+  max-width: 300px;
 }
 .title {
   align-content: center;
