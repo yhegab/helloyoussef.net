@@ -134,9 +134,10 @@ class Schedule extends Component {
             <h3>4B: Spring 2020</h3>
             <ul>
               <li>BU491 - Business Policy II</li>
-              <li>BU479 - High-Tech Marketing</li>
+              <li>BU452 - Marketing Strategy</li>
               <li>CS490 - Information Systems</li>
               <li>CS348 - Databases</li>
+              <li>AB201 - Intermediate Arabic 1</li>
             </ul>
           </div>
         </div>
@@ -149,7 +150,7 @@ class Schedule extends Component {
             <h3>Fall 2020</h3>
             <ul>
               <li><b>Intern - A nice company, hopefully</b></li>
-              <li>SI201 - Intermediate Arabic 1</li>
+              <li>SI202 - Intermediate Arabic 2</li>
             </ul>
           </div>
           <div className="term">
@@ -157,27 +158,20 @@ class Schedule extends Component {
             <ul>
               <li>BU432 - Consumer Behaviour</li>
               <li>BU??? - Marketing</li>
-              <li>SI202 - Intermediate Arabic 2</li>
               <li>CS451 - Data-Intensive Distributed Computing</li>
+              <li>CS449 - Human Computer Interaction</li>
               <li>CS492 - Implications of Computing</li>
             </ul>
           </div>
           <div className="term">
             <h3>Spring 2021</h3>
             <ul>
-              <li><b>Intern - maybe</b></li>
-            </ul>
-          </div>
-        </div>
-        <div className="term">
-            <h3>5B: Fall 2021</h3>
-            <ul>
               <li>BU??? - Marketing</li>
               <li>BU??? - Marketing</li>
               <li>CS486 - Artificial Intelligence</li>
-              <li>CS458 - Security</li>
             </ul>
           </div>
+        </div>
       </div>
       </div>
     );
