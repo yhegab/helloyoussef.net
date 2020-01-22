@@ -17,7 +17,7 @@ class Favourites extends Component {
   render() {
     return (
       <div>
-        <p>I've found that I <b>really</b> enjoy making lists of things that I like so I thought I'd put some (all?) of them here. <b>Bolded</b> means work in progress. Last updated August 2019.</p>
+        <p>I've found that I <b>really</b> enjoy making lists of things that I like so I thought I'd put some of them here. Last updated January 2020.</p>
 
         {/* <div className="root">
         <Grid container spacing={24}>
@@ -154,6 +154,7 @@ class Favourites extends Component {
             <li>Rick and Morty (2013-)</li>
             <li>BoJack Horseman (2014-)</li>
             <li>Master of None (2015-2017)</li>
+            <li>The Man in The High Castle (2015-2019)</li>
             <li>Narcos (2015-2016)</li>
             <li>Better Call Saul (2015-)</li>
             <li>Stranger Things (2016-)</li>
@@ -172,6 +173,9 @@ class Favourites extends Component {
             <li>The Umbrella Academy (2019)</li>
             <li>Chernobyl (2019)</li>
             <li>The Boys (2019-)</li>
+            <li>Undone (2019-)</li>
+            <li>The Witcher (2019-)</li>
+            <li>Watchmen (2019-)</li>
           </ul>
         </div>
 
