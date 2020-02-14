@@ -152,7 +152,7 @@ class Favourites extends Component {
             <li>Black Mirror (2011-)</li>
             <li>Brooklyn Nine-Nine (2013-)</li>
             <li>Rick and Morty (2013-)</li>
-            <li>BoJack Horseman (2014-)</li>
+            <li>BoJack Horseman (2014-2020)</li>
             <li>Master of None (2015-2017)</li>
             <li>The Man in The High Castle (2015-2019)</li>
             <li>Narcos (2015-2016)</li>
@@ -163,6 +163,7 @@ class Favourites extends Component {
             <li><b>Fleabag (2016-2019)</b></li>
             <li>Santa Clarita Diet (2017-2019)</li>
             <li>The Marvelous Mrs. Maisel (2017-)</li>
+            <li>Big Little Lies (2017-)</li>
             <li>Imposters (2017-2018)</li>
             <li>The Haunting of Hill House (2018-)</li>
             <li>Maniac (2018)</li>
