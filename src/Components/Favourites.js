@@ -31,7 +31,6 @@ class Favourites extends Component {
         <ul>
           <li>12 Angry Men (1957)</li>
           <li>The Shining (1980)</li>
-          <li><b>E.T. the Extra-Terrestrial</b> (1982)</li>
           <li>Back to the Future (1985)</li>
           <li>The Breakfast Club (1985)</li>
           <li><b>The Goonies</b> (1985)</li>
@@ -60,7 +59,7 @@ class Favourites extends Component {
           <li>Fight Club (1999)</li>
           <li>The Matrix (1999)</li>
           <li><b>American Beauty</b> (1999)</li>
-          <li><b>Memento</b> (2000)</li>
+          <li>Memento (2000)</li>
           <li>Cast Away (2000)</li>
           <li>O Brother, Where art thou? (2000)</li>
           <li>Gladiator (2000)</li>
@@ -141,6 +140,7 @@ class Favourites extends Component {
             <li>Avatar: The Last Airbender (2003-2008)</li>
             <li>Arrested Development (2003-2019)</li>
             <li>Lost (2004-2010)</li>
+            <li>Deadwood (2004-2006)</li>
             <li>The Office (2005-2013)</li>
             <li>30 Rock (2006-2013)</li>
             <li>Mad Men (2007-2015)</li>
@@ -159,11 +159,11 @@ class Favourites extends Component {
             <li>Better Call Saul (2015-)</li>
             <li>Stranger Things (2016-)</li>
             <li>Atlanta (2016-)</li>
-            <li>The Good Place (2016-)</li>
-            <li><b>Fleabag (2016-2019)</b></li>
+            <li>The Good Place (2016-2020)</li>
+            <li>The Tick (2016-2019)</li>
             <li>Santa Clarita Diet (2017-2019)</li>
             <li>The Marvelous Mrs. Maisel (2017-)</li>
-            <li>Big Little Lies (2017-)</li>
+            <li>Big Little Lies (2017-2019)</li>
             <li>Imposters (2017-2018)</li>
             <li>The Haunting of Hill House (2018-)</li>
             <li>Maniac (2018)</li>
@@ -200,15 +200,13 @@ class Favourites extends Component {
           <li>Until Dawn</li>
           <li>Super Smash Bros Ultimate</li>
           <li>Mario Kart 8</li>
-          <li>Mortal Kombat Armageddon</li>
-          <li>Mortal Kombat 11</li>
+          <li>Mortal Kombat</li>
           <li>Dead by Daylight</li>
           <li>Cuphead</li>
           <li>Celeste</li>
           <li>Uncharted 2</li>
-          <li><b>Red Dead Redemption</b></li>
+          <li>Red Dead Redemption</li>
           <li><b>GTA V</b></li>
-          <li><b>Horizon Zero Dawn</b></li>
           </ul>
           
           {/* <h3>Board Games</h3>
