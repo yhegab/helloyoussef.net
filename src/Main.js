@@ -43,7 +43,7 @@ class Main extends Component {
     loadScript(MATHJAX_SCRIPT, () => {
       window.MathJax.Hub.Config(MATHJAX_OPTIONS);
     });
-}
+  }
 
   render() {
     return (
@@ -53,8 +53,8 @@ class Main extends Component {
             <ul className="header">
               <li><NavLink exact to="/">Home</NavLink></li>
               <li><NavLink exact to="/technical">Technical</NavLink></li>
-              <li><NavLink to="/favourites">List of Favourites</NavLink></li>
-              <li><NavLink to="/schedule">Courses</NavLink></li>
+              <li><NavLink to="/favourites">Things I Love</NavLink></li>
+              <li><NavLink to="/schedule">Coursework</NavLink></li>
               <li><NavLink to="/resume">Resume</NavLink></li>
               <li><NavLink to="/show-predictor">TV Predictor</NavLink></li>
               <li><a href={"https://itsjafer.com/repo"} target="_blank" rel="noopener noreferrer">Cydia Repo</a></li>

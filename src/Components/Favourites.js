@@ -17,7 +17,7 @@ class Favourites extends Component {
   render() {
     return (
       <div>
-        <p>I've found that I <b>really</b> enjoy making lists of things that I like so I thought I'd put some of them here. Last updated January 2020.</p>
+        <p>I've found that I <b>really</b> enjoy making lists of things that I like so I thought I'd put some of them here. Last updated April 2020.</p>
 
         {/* <div className="root">
         <Grid container spacing={24}>
@@ -72,7 +72,6 @@ class Favourites extends Component {
           <li>Holes (2003)</li>
           <li>Finding Nemo (2003)</li>
           <li>Big Fish (2003)</li>
-          <li><b>Kill Bill</b> (2004)</li>
           <li>I, Robot (2004)</li>
           <li>Finding Neverland (2004)</li>
           <li>The Incredibles (2004)</li>
@@ -129,12 +128,13 @@ class Favourites extends Component {
           <li>I am Mother (2019)</li>
           <li>Once Upon A Time in Hollywood (2019)</li>
           <li>Joker (2019)</li>
+          <li>Parasite (2019)</li>
         </ul>
         </div>
         <div className="shows">
         <h3>TV Shows</h3>
           <ul>
-            <li><b>The Twilight Zone</b> (1959-1964)</li>
+            <li>The Twilight Zone (1959-1964)</li>
             <li>Friends (1994-2004)</li>
             <li>Firefly (2002-2003)</li>
             <li>Avatar: The Last Airbender (2003-2008)</li>
@@ -154,7 +154,6 @@ class Favourites extends Component {
             <li>Rick and Morty (2013-)</li>
             <li>BoJack Horseman (2014-2020)</li>
             <li>Master of None (2015-2017)</li>
-            <li>The Man in The High Castle (2015-2019)</li>
             <li>Narcos (2015-2016)</li>
             <li>Better Call Saul (2015-)</li>
             <li>Stranger Things (2016-)</li>
@@ -170,6 +169,7 @@ class Favourites extends Component {
             <li>You (2018-)</li>
             <li>Sabrina (2018-)</li>
             <li>Barry (2018-)</li>
+            <li>Altered Carbon (2018-)</li>
             <li>Death, Love, and Robots (2019)</li>
             <li>The Umbrella Academy (2019)</li>
             <li>Chernobyl (2019)</li>
