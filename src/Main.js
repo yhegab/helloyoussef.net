@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import {
   Route,
   NavLink,
-  HashRouter
+  BrowserRouter
 } from "react-router-dom";
 import withTracker from './withTracker'
 import ReactGA from "react-ga";
@@ -47,7 +47,7 @@ class Main extends Component {
 
   render() {
     return (
-      <HashRouter onUpdate={fireTracking}>
+      <BrowserRouter onUpdate={fireTracking}>
         <div>
           <div className="content">
             <ul className="header">
@@ -57,11 +57,15 @@ class Main extends Component {
               <li><NavLink to="/schedule">Courses</NavLink></li>
               <li><NavLink to="/resume">Resume</NavLink></li>
               <li><NavLink to="/show-predictor">TV Predictor</NavLink></li>
-              <li><a href={"https://itsjafer.com/repo"} target="_blank" rel="noopener noreferrer">Cydia Repo</a></li>
+              <li><a href={"http://repo.itsjafer.com"} target="_blank" rel="noopener noreferrer">Cydia Repo</a></li>
             </ul>
             <h1>Jafer Haider</h1>
             <Social/>
 
+            <Route path='/repo' component={() => { 
+                window.location.href = 'http://repo.itsjafer.com'; 
+                return null;
+            }}/>
             <Route exact path="/" component={withTracker(Home)}/>
             <Route exact path="/technical" component={withTracker(Technical)}/>
             <Route path="/resume" component={withTracker(Resume)}/>
@@ -76,7 +80,7 @@ class Main extends Component {
             file={CS341}/>)}/>
           </div>
         </div>
-        </HashRouter>
+        </BrowserRouter>
     );
   }
 }
