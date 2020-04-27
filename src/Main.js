@@ -63,9 +63,14 @@ class Main extends Component {
             <h1>Jafer Haider</h1>
             <Social/>
 
-            <Route path='/repo/:path' component={({ match }) => { 
+            <Route exact path='/repo' render={() => { 
+                window.location = `https://cydia.itsjafer.com`; 
+                return null;
+            }}/>
+
+            <Route path='/repo/:path' render={({ match }) => { 
                 const { path } = match.params
-                window.location.href = `https://cydia.itsjafer.com/${path}`; 
+                window.location = `https://cydia.itsjafer.com/${path}`; 
                 return null;
             }}/>
             <Route exact path="/" component={withTracker(Home)}/>
