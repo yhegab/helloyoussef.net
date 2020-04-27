@@ -63,7 +63,7 @@ class Main extends Component {
             <Social/>
 
             <Route path='/repo' component={() => { 
-                window.location.href = 'https://itsjafer.github.io/repo/'; 
+                window.location.href = 'http://repo.itsjafer.com'; 
                 return null;
             }}/>
             <Route exact path="/" component={withTracker(Home)}/>
