@@ -57,7 +57,7 @@ class Main extends Component {
               <li><NavLink to="/schedule">Coursework</NavLink></li>
               <li><NavLink to="/resume">Resume</NavLink></li>
               <li><NavLink to="/show-predictor">TV Predictor</NavLink></li>
-              <li><a href={"https://itsjafer.github.io/repo/"} target="_blank" rel="noopener noreferrer">Cydia Repo</a></li>
+              <li><a href={"http://repo.itsjafer.com"} target="_blank" rel="noopener noreferrer">Cydia Repo</a></li>
             </ul>
             <h1>Jafer Haider</h1>
             <Social/>
