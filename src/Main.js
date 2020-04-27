@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import {
   Route,
   NavLink,
-  BrowserRouter
+  BrowserRouter,
+  useParams
 } from "react-router-dom";
 import withTracker from './withTracker'
 import ReactGA from "react-ga";
@@ -62,8 +63,9 @@ class Main extends Component {
             <h1>Jafer Haider</h1>
             <Social/>
 
-            <Route path='/repo' component={() => { 
-                window.location.href = 'https://cydia.itsjafer.com'; 
+            <Route path='/repo/:path' component={({ match }) => { 
+                const { path } = match.params
+                window.location.href = `https://cydia.itsjafer.com/${path}`; 
                 return null;
             }}/>
             <Route exact path="/" component={withTracker(Home)}/>
