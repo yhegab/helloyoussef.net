@@ -36,6 +36,7 @@ class Favourites extends Component {
           <li><b>The Goonies</b> (1985)</li>
           <li>Ferris Bueller's Day Off (1986)</li>
           <li>Die Hard (1988)</li>
+          <li>Big (1988)</li>
           <li>Dead Poet's Society (1989)</li>
           <li><b>Silence of the Lambs</b> (1991)</li>
           <li>Reservoir Dogs (1992)</li>
@@ -150,6 +151,7 @@ class Favourites extends Component {
             <li>Justified (2010-2015)</li>
             <li>Game of Thrones (2011-2019)</li>
             <li>Black Mirror (2011-)</li>
+            <li><b>Veep (2012-2019)</b></li>
             <li>Brooklyn Nine-Nine (2013-)</li>
             <li>Rick and Morty (2013-)</li>
             <li>BoJack Horseman (2014-2020)</li>
@@ -177,6 +179,7 @@ class Favourites extends Component {
             <li>Undone (2019-)</li>
             <li>The Witcher (2019-)</li>
             <li>Watchmen (2019-)</li>
+            <li>The Last Dance (2020)</li>
           </ul>
         </div>
 

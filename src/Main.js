@@ -58,21 +58,11 @@ class Main extends Component {
               <li><NavLink to="/schedule">Coursework</NavLink></li>
               <li><NavLink to="/resume">Resume</NavLink></li>
               <li><NavLink to="/show-predictor">TV Predictor</NavLink></li>
-              <li><a href={"https://cydia.itsjafer.com"} target="_blank" rel="noopener noreferrer">Cydia Repo</a></li>
+              <li><a href={"https://itsjafer.com/repo"} target="_blank" rel="noopener noreferrer">Cydia Repo</a></li>
             </ul>
             <h1>Jafer Haider</h1>
             <Social/>
-
-            <Route exact path='/repo' render={() => { 
-                window.location = `https://cydia.itsjafer.com`; 
-                return null;
-            }}/>
-
-            <Route path='/repo/:path' render={({ match }) => { 
-                const { path } = match.params
-                window.location = `https://cydia.itsjafer.com/${path}`; 
-                return null;
-            }}/>
+            
             <Route exact path="/" component={withTracker(Home)}/>
             <Route exact path="/technical" component={withTracker(Technical)}/>
             <Route path="/resume" component={withTracker(Resume)}/>

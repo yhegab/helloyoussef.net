@@ -136,7 +136,7 @@ class Schedule extends Component {
               <li>BU491 - Business Policy II</li>
               <li>BU452 - Marketing Strategy</li>
               <li>CS490 - Information Systems</li>
-              <li>CS348 - Databases</li>
+              <li>CS492 - Social Implications of Computing</li>
               <li>AB201 - Intermediate Arabic 1</li>
             </ul>
           </div>
