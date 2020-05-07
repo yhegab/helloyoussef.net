@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import {
   Route,
   NavLink,
-  BrowserRouter,
+  HashRouter,
 } from "react-router-dom";
 import withTracker from './withTracker'
 import { withCookies } from 'react-cookie';
@@ -48,7 +48,7 @@ class Main extends Component {
 
   render() {
     return (
-      <BrowserRouter onUpdate={fireTracking}>
+      <HashRouter onUpdate={fireTracking}>
         <div>
           <div className="content">
             <ul className="header">
@@ -77,7 +77,7 @@ class Main extends Component {
             file={CS341}/>)}/>
           </div>
         </div>
-        </BrowserRouter>
+        </HashRouter>
     );
   }
 }
