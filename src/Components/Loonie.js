@@ -33,7 +33,7 @@ class Loonie extends Component {
         const { cookies } = this.props;
 
         // Get access_token from API using public token
-        const URI = 'http://127.0.0.1:5000'
+        const URI = 'https://loonie.itsjafer.com'
 
         // Simple POST request with a JSON body using fetch
         const formData  = new FormData();

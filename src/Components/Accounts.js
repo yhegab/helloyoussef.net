@@ -14,9 +14,8 @@ class Accounts extends Component {
     }
 
     updateData() {
-        const URI = 'http://127.0.0.1:5000'
+        const URI = 'https://loonie.itsjafer.com'
 
-        // Simple POST request with a JSON body using fetch
         const formData  = new FormData();
         formData.append('access_tokens', this.state.tokens.join(','));
         const requestOptions = {
