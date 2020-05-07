@@ -62,7 +62,7 @@ class Accounts extends Component {
               accessor: "name",
               Footer: true && <div/>,
               minWidth: 200
-
+              
             },
             {
               Header: 'Currency',
@@ -96,7 +96,9 @@ class Accounts extends Component {
                         />
                     }
                 </div>
-                Total net worth: <b>{Accounts.formattedAmount(this.state.data.reduce((a, b) => a + (b['amount'] || 0), 0))}</b>
+                Total net worth (USD): <b>{Accounts.formattedAmount(this.state.data.reduce((a, b) => a + (b['usd_amount'] || 0), 0))}</b>
+                <br/>
+                Total net worth (CAD): <b>{Accounts.formattedAmount(this.state.data.reduce((a, b) => a + (b['cad_amount'] || 0), 0))}</b>
             </div>
         )
     }
