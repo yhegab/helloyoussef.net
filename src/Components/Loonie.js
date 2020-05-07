@@ -29,7 +29,6 @@ class Loonie extends Component {
     }
 
     onSuccess(public_token, metadata) {
-        console.log(public_token)
         const { cookies } = this.props;
 
         // Get access_token from API using public token
@@ -65,7 +64,6 @@ class Loonie extends Component {
 
     render() {
         const tokens = this.state.access_tokens;
-        console.log(tokens)
 
         return (
             <div>
