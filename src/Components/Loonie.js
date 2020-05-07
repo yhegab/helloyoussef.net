@@ -46,6 +46,7 @@ class Loonie extends Component {
                     env="sandbox"
                     product={['transactions']}
                     publicKey="0bb843ebf87ff3cdf72ecace20b8ce"
+                    countryCodes={['US,CA']}
                     onSuccess={(token,metadata) => this.onSuccess(token,metadata)}>
                     Connect an account
                 </PlaidLink>
