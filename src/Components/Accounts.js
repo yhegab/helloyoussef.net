@@ -13,7 +13,7 @@ class Accounts extends Component {
     }
 
     componentDidMount() {
-        const URI = 'http://loonie.itsjafer.com'
+        const URI = 'https://loonie.itsjafer.com'
 
         // Simple POST request with a JSON body using fetch
         const formData  = new FormData();
