@@ -159,6 +159,7 @@ class Favourites extends Component {
             <li>Narcos (2015-2016)</li>
             <li>Better Call Saul (2015-)</li>
             <li>Stranger Things (2016-)</li>
+            <li>The People v. O. J. Simpson (2016)</li>
             <li>Atlanta (2016-)</li>
             <li>The Good Place (2016-2020)</li>
             <li>The Tick (2016-2019)</li>

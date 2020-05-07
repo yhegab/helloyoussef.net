@@ -4,7 +4,10 @@ class Technical extends Component {
   render() {
     return (
       <div>
-        <p>Here's a quick overview about my technical experience:</p>
+        <div className="Resume">
+          <p> Here is a <a href={"Resume.pdf"} target="_blank" rel="noopener noreferrer">direct link</a> to my resume; I am currently looking for internships and new grad opportunities! </p>
+        </div>
+        <p>Other than that, here's a quick overview about my experience:</p>
         <h3>Personal</h3>
         <ul>
           <li><a href="https://github.com/itsjafer/BetterMultitasking" target="_blank" rel="noopener noreferrer"><b>BetterMultitasking</b></a> - iOS tweak that enables iPads to run iPhone apps natively</li>
