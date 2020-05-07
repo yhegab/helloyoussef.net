@@ -20,16 +20,11 @@ input:focus {
 outline: none;
 }
 button {
-  padding: 10px 50px;
-  text-transform: uppercase;
-  border: 2px solid white;
-  color: black;
-  background-color: white;
-  font-weight: 400;
-  font-size: .75rem;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all .4s;
+  padding: 6px 4px; 
+  outline: none; 
+  background: rgb(255, 255, 255); 
+  border: 2px solid rgb(241, 241, 241); 
+  border-radius: 4px;
 }
 h1 {
   height: 100%;

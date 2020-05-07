@@ -3,9 +3,9 @@ import {
   Route,
   NavLink,
   BrowserRouter,
-  useParams
 } from "react-router-dom";
 import withTracker from './withTracker'
+import { withCookies } from 'react-cookie';
 import ReactGA from "react-ga";
 import loadScript from 'load-script'
 import Home from "./Components/Home";
@@ -15,6 +15,7 @@ import Favourites from "./Components/Favourites";
 import Schedule from "./Components/Schedule";
 import Reflection from "./Components/Reflection";
 import ShowPredictor from "./Components/ShowPredictor";
+import Loonie from "./Components/Loonie";
 import CS240 from "./Courses/CS240.md";
 import BU362 from "./Courses/BU362.md";
 import CS341 from "./Courses/CS341.md";
@@ -55,7 +56,8 @@ class Main extends Component {
               <li><NavLink exact to="/technical">Resume</NavLink></li>
               <li><NavLink to="/favourites">Things I Love</NavLink></li>
               <li><NavLink to="/schedule">Coursework</NavLink></li>
-              <li><NavLink to="/show-predictor">TV Predictor</NavLink></li>
+              <li><NavLink to="/show-predictor">TV Show Finder</NavLink></li>
+              <li><NavLink to="/loonie">Loonie</NavLink></li>
               <li><a href={"https://itsjafer.com/repo"} target="_blank" rel="noopener noreferrer">Cydia Repo</a></li>
             </ul>
             <h1>Jafer Haider</h1>
@@ -66,6 +68,7 @@ class Main extends Component {
             <Route path="/favourites" component={withTracker(Favourites)}/>
             <Route path="/schedule" component={withTracker(Schedule)}/>
             <Route path="/show-predictor" component={withTracker(ShowPredictor)}/>
+            <Route path="/loonie" component={withTracker(() => <Loonie cookies={this.props.cookies}/>)}/>
             <Route path="/cs240" component={withTracker(() => <Reflection title="CS240" date="Spring 2018"
             file={CS240}/>)}/>
             <Route path="/bu362" component={withTracker(() => <Reflection title="BU362" date="Winter 2019"
@@ -79,4 +82,4 @@ class Main extends Component {
   }
 }
  
-export default Main;
+export default withCookies(Main);
