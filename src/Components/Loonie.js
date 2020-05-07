@@ -6,45 +6,76 @@ import Accounts from './Accounts'
 
 class Loonie extends Component {
 
+
     constructor(props) {
         super(props);
         const { cookies } = props;
-        const tokens = cookies.get('tokens') || []
+        const access_tokens = cookies.get('access_tokens') || []
+        const public_tokens = cookies.get('public_tokens') || []
+        this._mounted = false;
+
         this.state = {
-            tokens
+            access_tokens,
+            public_tokens,
         }
     }
 
-    onSuccess(token, metadata) {
-        console.log(metadata)
+    componentDidMount() {
+        this._mounted = true;
+    }
+
+    componentWillMount() {
+        this._mounted = false;
+    }
+
+    onSuccess(public_token, metadata) {
+        console.log(public_token)
         const { cookies } = this.props;
-        this.setState(state => {
-            const tokens = state.tokens.concat(token);
-            return { tokens }
-        })
-        cookies.set('tokens', this.state.tokens, { path: '/'})
+
+        // Get access_token from API using public token
+        const URI = 'https://loonie.itsjafer.com'
+
+        // Simple POST request with a JSON body using fetch
+        const formData  = new FormData();
+        formData.append('token', public_token);
+        const requestOptions = {
+            method: 'POST',
+            body: formData
+        };
+        fetch(`${URI}/get_access_token`, requestOptions)
+            .then(response => response.json())
+            .then(data => {
+                console.log(data)
+                cookies.set('access_tokens', this.state.access_tokens.concat(data), { path: '/'})
+                this.setState(state => {
+                    const access_tokens = state.access_tokens.concat(data);
+                    return { access_tokens }
+                })
+            })
+            .catch(e => {
+                console.log(e)
+            })
     }
 
     removeToken() {
         const { cookies } = this.props;
-        cookies.remove('tokens')
+        cookies.remove('access_tokens')
     }
 
     render() {
-        const tokens = this.state.tokens;
+        const tokens = this.state.access_tokens;
+        console.log(tokens)
 
         return (
             <div>
-                Loonie is a work-in-progress personal finance manager that seeks to show your net worth at a glance.
-                <br/>
-                For now, actual bank credentials will not work; instead, use 'user_good' and 'user_pass' as username and password respectively.
+                Loonie is a personal finance dashboard that seeks to show your net worth at a glance.
                 <br/>
                 <br/>
                 
                 <PlaidLink
                     clientName="Loonie"
-                    env="sandbox"
-                    product={['transactions']}
+                    env="development"
+                    product={['auth']}
                     publicKey="0bb843ebf87ff3cdf72ecace20b8ce"
                     countryCodes={['US,CA']}
                     onSuccess={(token,metadata) => this.onSuccess(token,metadata)}>

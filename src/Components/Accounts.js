@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import ReactTable from 'react-table'
 import 'react-table/react-table.css'
   
+
 class Accounts extends Component {
     constructor(props) {
         super(props)
@@ -12,12 +13,12 @@ class Accounts extends Component {
         }
     }
 
-    componentDidMount() {
+    updateData() {
         const URI = 'https://loonie.itsjafer.com'
 
         // Simple POST request with a JSON body using fetch
         const formData  = new FormData();
-        formData.append('tokens', this.state.tokens.join(','));
+        formData.append('access_tokens', this.state.tokens.join(','));
         const requestOptions = {
             method: 'POST',
             body: formData
@@ -28,26 +29,29 @@ class Accounts extends Component {
                 if (contentType && contentType.indexOf("application/json") !== -1) {
                     return response.json()
                 }
-                // it's an error or something
-                const { cookies } = this.props;
-                cookies.remove('tokens');
                 throw new Error('invalid response');
             })
             .then(data => {
                 this.setState({ data })
+                localStorage.setItem('appState', JSON.stringify(this.state));
+
             })
             .catch(e => {
                 console.log(e)
             })
     }
 
-    static formattedAmount(data) {
-        const formatter = new Intl.NumberFormat(undefined, {
+    componentDidMount() {
+        this.updateData();
+    }
+
+    static formattedAmount(amount) {
+        const formatter = new Intl.NumberFormat('en-US', {
             style: 'currency',
-            currency: data.currency,
+            currency: 'USD',
         });
 
-        return formatter.format(data.amount);
+        return formatter.format(amount);
     }
 
     render() {
@@ -57,18 +61,19 @@ class Accounts extends Component {
               Header: 'Account',
               accessor: "name",
               Footer: true && <div/>,
-              minWidth: 250
+              minWidth: 200
 
             },
             {
               Header: 'Currency',
               accessor: "currency",
-              Footer: true && <div/>
+              Footer: true && <div/>,
+              
             },
             {
                 id: 'amount',
                 Header: 'Amount',
-                accessor: d => Accounts.formattedAmount(d),
+                accessor: d => Accounts.formattedAmount(d.amount),
                 Footer: true && <div/>
             }
         
@@ -90,7 +95,8 @@ class Accounts extends Component {
                             showPageSizeOptions={false}
                         />
                     }
-                    </div>
+                </div>
+                Total net worth: <b>{Accounts.formattedAmount(this.state.data.reduce((a, b) => a + (b['amount'] || 0), 0))}</b>
             </div>
         )
     }
