@@ -78,7 +78,7 @@ class Loonie extends Component {
                 
                 <PlaidLink
                     clientName="Loonie"
-                    env="sandbox"
+                    env="development"
                     product={['auth']}
                     publicKey="0bb843ebf87ff3cdf72ecace20b8ce"
                     countryCodes={['US,CA']}
