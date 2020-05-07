@@ -14,14 +14,15 @@ class Accounts extends Component {
     }
 
     updateData() {
-        const URI = 'https://loonie.itsjafer.com'
+        const URI = 'http://127.0.0.1:5000'
 
         // Simple POST request with a JSON body using fetch
         const formData  = new FormData();
         formData.append('access_tokens', this.state.tokens.join(','));
         const requestOptions = {
             method: 'POST',
-            body: formData
+            body: formData,
+            credentials: 'same-origin'
         };
         fetch(`${URI}/get_accounts`, requestOptions)
             .then(response => {
@@ -33,7 +34,7 @@ class Accounts extends Component {
             })
             .then(data => {
                 this.setState({ data })
-                localStorage.setItem('appState', JSON.stringify(this.state));
+                localStorage.setItem('tokens', JSON.stringify(this.state));
 
             })
             .catch(e => {

@@ -33,20 +33,21 @@ class Loonie extends Component {
         const { cookies } = this.props;
 
         // Get access_token from API using public token
-        const URI = 'https://loonie.itsjafer.com'
+        const URI = 'http://127.0.0.1:5000'
 
         // Simple POST request with a JSON body using fetch
         const formData  = new FormData();
         formData.append('token', public_token);
         const requestOptions = {
             method: 'POST',
-            body: formData
+            body: formData,
+            credentials: 'same-origin'
         };
         fetch(`${URI}/get_access_token`, requestOptions)
             .then(response => response.json())
             .then(data => {
-                console.log(data)
-                cookies.set('access_tokens', this.state.access_tokens.concat(data), { path: '/'})
+                // access_token allows us to query balances indefinitely; it does NOT give the ability to make purchases, etc.
+                cookies.set('access_tokens', this.state.access_tokens.concat(data), { path: '/', secure: true})
                 this.setState(state => {
                     const access_tokens = state.access_tokens.concat(data);
                     return { access_tokens }
@@ -68,13 +69,16 @@ class Loonie extends Component {
 
         return (
             <div>
-                Loonie is a personal finance dashboard that seeks to show your net worth at a glance.
-                <br/>
-                <br/>
+                Loonie is a personal finance dashboard I made using <a href='https://plaid.com'>Plaid API</a> that shows your net worth at a glance. Plaid brokers a connection between Loonie and your banks such that no bank information is stored locally or remotely on my website. From beginning to end: 
+                <ol>
+                    <li>Plaid connects you to your bank and gives me a temporary public token</li>
+                    <li>I send the public token to Loonie's <a href='https://github.com/itsjafer/loonie-backend'>backend</a> which, in turn, queries Plaid for a permanent access token</li>
+                    <li>Loonie stores the access token as an encrypted cookie for future queries.</li>
+                </ol>
                 
                 <PlaidLink
                     clientName="Loonie"
-                    env="development"
+                    env="sandbox"
                     product={['auth']}
                     publicKey="0bb843ebf87ff3cdf72ecace20b8ce"
                     countryCodes={['US,CA']}
@@ -87,6 +91,7 @@ class Loonie extends Component {
                 {tokens && tokens.length > 0 &&
                 // Render a table summarizing our accounts here probably
                 <div>
+                    <br/>
                     <Accounts tokens={tokens} cookies={this.props.cookies}/>
                     <br/>
                 </div>
