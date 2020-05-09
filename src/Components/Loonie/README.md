@@ -1,6 +1,6 @@
 # Loonie
 
-![Screnshot](screenshots/loonie.png)
+![Screenshot](loonie.png)
 
 Loonie is a web app to monitor financial accounts such as bank accounts and credit cards in one table. I used to use mint for the same functionality, but when given diffeerent currencies, Mint simply sums the absolute value of the numbers rather than converting to a single currency.
 

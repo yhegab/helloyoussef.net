@@ -9,19 +9,21 @@ export default function withTracker(WrappedComponent, options = {}) {
   const trackPage = (page) => {
     ReactGA.set({
       page,
-      ...options
+      ...options,
     });
     ReactGA.pageview(page);
   };
 
-  const HOC = class extends Component {
+  class HOC extends Component {
     componentDidMount() {
-      const page = this.props.location.pathname;
+      const { location } = this.props;
+      const page = location.pathname;
       trackPage(page);
     }
 
-    componentWillReceiveProps(nextProps) {
-      const currentPage = this.props.location.pathname;
+    UNSAFE_componentWillReceiveProps(nextProps) { // eslint-disable-line camelcase
+      const { location } = this.props;
+      const currentPage = location.pathname;
       const nextPage = nextProps.location.pathname;
 
       if (currentPage !== nextPage) {
@@ -32,7 +34,7 @@ export default function withTracker(WrappedComponent, options = {}) {
     render() {
       return <WrappedComponent {...this.props} />;
     }
-  };
+  }
 
   return HOC;
 }

@@ -1,32 +1,32 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 import {
   Route,
   NavLink,
   HashRouter,
-} from "react-router-dom";
-import withTracker from './withTracker'
+} from 'react-router-dom';
 import { withCookies } from 'react-cookie';
-import ReactGA from "react-ga";
-import loadScript from 'load-script'
-import Home from "./Components/Home";
-import Social from "./Components/Social";
-import Technical from "./Components/Technical";
-import Favourites from "./Components/Favourites";
-import Schedule from "./Components/Schedule";
-import Reflection from "./Components/Reflection";
-import ShowPredictor from "./Components/ShowPredictor";
-import Loonie from "./Components/Loonie/Loonie";
-import CS240 from "./Courses/CS240.md";
-import BU362 from "./Courses/BU362.md";
-import CS341 from "./Courses/CS341.md";
+import ReactGA from 'react-ga';
+import loadScript from 'load-script';
+import withTracker from './withTracker';
+import Home from './Components/Home';
+import Social from './Components/Social';
+import Technical from './Components/Technical';
+import Favourites from './Components/Favourites';
+import Schedule from './Components/Schedule';
+import Reflection from './Components/Reflection';
+import ShowPredictor from './Components/ShowPredictor';
+import Loonie from './Components/Loonie/Loonie';
+import CS240 from './Courses/CS240.md';
+import BU362 from './Courses/BU362.md';
+import CS341 from './Courses/CS341.md';
 
 const MATHJAX_SCRIPT = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML';
 
 const MATHJAX_OPTIONS = {
-  "fast-preview": {disabled:true},
+  'fast-preview': { disabled: true },
   tex2jax: {
-    inlineMath: [ ['$','$'], ['\\(','\\)'] ],
-    displayMath: [ ['$$','$$'], ['\\[','\\]'] ],
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']],
   },
   showMathMenu: false,
   showMathMenuMSIE: false,
@@ -47,6 +47,7 @@ class Main extends Component {
   }
 
   render() {
+    const { cookies } = this.props;
     return (
       <HashRouter onUpdate={fireTracking}>
         <div>
@@ -58,28 +59,52 @@ class Main extends Component {
               <li><NavLink to="/schedule">Coursework</NavLink></li>
               <li><NavLink to="/show-predictor">TV Show Finder</NavLink></li>
               <li><NavLink to="/loonie">Loonie</NavLink></li>
-              <li><a href={"https://itsjafer.com/repo"} target="_blank" rel="noopener noreferrer">Cydia Repo</a></li>
+              <li><a href="https://itsjafer.com/repo" target="_blank" rel="noopener noreferrer">Cydia Repo</a></li>
             </ul>
             <h1>Jafer Haider</h1>
-            <Social/>
-            
-            <Route exact path="/" component={withTracker(Home)}/>
-            <Route exact path="/technical" component={withTracker(Technical)}/>
-            <Route path="/favourites" component={withTracker(Favourites)}/>
-            <Route path="/schedule" component={withTracker(Schedule)}/>
-            <Route path="/show-predictor" component={withTracker(ShowPredictor)}/>
-            <Route path="/loonie" component={withTracker(() => <Loonie cookies={this.props.cookies}/>)}/>
-            <Route path="/cs240" component={withTracker(() => <Reflection title="CS240" date="Spring 2018"
-            file={CS240}/>)}/>
-            <Route path="/bu362" component={withTracker(() => <Reflection title="BU362" date="Winter 2019"
-            file={BU362}/>)}/>
-            <Route path="/cs341" component={withTracker(() => <Reflection title="CS341" date="Winter 2019"
-            file={CS341}/>)}/>
+            <Social />
+
+            <Route exact path="/" component={withTracker(Home)} />
+            <Route exact path="/technical" component={withTracker(Technical)} />
+            <Route path="/favourites" component={withTracker(Favourites)} />
+            <Route path="/schedule" component={withTracker(Schedule)} />
+            <Route path="/show-predictor" component={withTracker(ShowPredictor)} />
+            <Route path="/loonie" component={withTracker(() => <Loonie cookies={cookies} />)} />
+            <Route
+              path="/cs240"
+              component={withTracker(() => (
+                <Reflection
+                  title="CS240"
+                  date="Spring 2018"
+                  file={CS240}
+                />
+              ))}
+            />
+            <Route
+              path="/bu362"
+              component={withTracker(() => (
+                <Reflection
+                  title="BU362"
+                  date="Winter 2019"
+                  file={BU362}
+                />
+              ))}
+            />
+            <Route
+              path="/cs341"
+              component={withTracker(() => (
+                <Reflection
+                  title="CS341"
+                  date="Winter 2019"
+                  file={CS341}
+                />
+              ))}
+            />
           </div>
         </div>
-        </HashRouter>
+      </HashRouter>
     );
   }
 }
- 
+
 export default withCookies(Main);
