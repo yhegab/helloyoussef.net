@@ -9,7 +9,8 @@ class Accounts extends Component {
         const { tokens } = props;
         this.state = {
             tokens: tokens,
-            data: []
+            data: [],
+            error: false
         }
     }
 
@@ -38,6 +39,7 @@ class Accounts extends Component {
             })
             .catch(e => {
                 console.log(e)
+                this.error = true;
             })
     }
 
@@ -82,8 +84,12 @@ class Accounts extends Component {
             <div>
                 <div className="table">
                     {
-                        this.state.data.length === 0 &&
-                        'Loading...'
+                        this.state.data.length === 0 && !this.error &&
+                        'Loading your account balances...'
+                    }
+                    {
+                        this.error &&
+                        'Unable to load account information'
                     }
                     {
                         this.state.data.length > 0 &&

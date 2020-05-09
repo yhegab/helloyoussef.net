@@ -17,6 +17,7 @@ class Loonie extends Component {
         this.state = {
             access_tokens,
             public_tokens,
+            error: false
         }
     }
 
@@ -46,14 +47,15 @@ class Loonie extends Component {
             .then(response => response.json())
             .then(data => {
                 // access_token allows us to query balances indefinitely; it does NOT give the ability to make purchases, etc.
-                cookies.set('access_tokens', this.state.access_tokens.concat(data), { path: '/', secure: true})
+                cookies.set('access_tokens', this.state.access_tokens.concat(data), { path: '/', secure: true, sameSite: 'lax'})
                 this.setState(state => {
                     const access_tokens = state.access_tokens.concat(data);
                     return { access_tokens }
                 })
             })
-            .catch(e => {
-                console.log(e)
+            .catch(error => {
+                this.setState({ error })
+                console.log(error)
             })
     }
 
@@ -71,18 +73,19 @@ class Loonie extends Component {
                 <ol>
                     <li>Plaid connects you to your bank and gives me a temporary public token</li>
                     <li>I send the public token to Loonie's <a href='https://github.com/itsjafer/loonie-backend'>backend</a> which, in turn, queries Plaid for a permanent access token</li>
-                    <li>Loonie stores the access token as an encrypted cookie for future queries.</li>
+                    <li>Loonie stores the access token as a secure, same site cookie for future queries.</li>
                 </ol>
                 
                 <PlaidLink
                     clientName="Loonie"
-                    env="development"
+                    env="sandbox"
                     product={['auth']}
                     publicKey="0bb843ebf87ff3cdf72ecace20b8ce"
                     countryCodes={['US,CA']}
                     onSuccess={(token,metadata) => this.onSuccess(token,metadata)}>
                     Connect an account
                 </PlaidLink>
+                {this.state.error && ` Unable to connect to your account (${this.state.error})`}
                 {tokens && tokens.length > 0 && 
                 <Button onClick={() => this.removeToken()} variant="raised">Clear accounts</Button>}
 

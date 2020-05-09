@@ -15,7 +15,7 @@ import Favourites from "./Components/Favourites";
 import Schedule from "./Components/Schedule";
 import Reflection from "./Components/Reflection";
 import ShowPredictor from "./Components/ShowPredictor";
-import Loonie from "./Components/Loonie";
+import Loonie from "./Components/Loonie/Loonie";
 import CS240 from "./Courses/CS240.md";
 import BU362 from "./Courses/BU362.md";
 import CS341 from "./Courses/CS341.md";
