@@ -34,7 +34,7 @@ class Loonie extends Component {
       .then((data) => {
         // access_token allows us to query balances indefinitely; it does NOT give the ability to make purchases, etc.
         const { accessTokens } = this.state;
-        cookies.set('accessTokens', accessTokens.concat(data), { path: '/', secure: true, sameSite: 'lax' });
+        cookies.set('access_tokens', accessTokens.concat(data), { path: '/', secure: true, sameSite: 'lax' });
         this.setState({ accessTokens: accessTokens.concat(data) });
       })
       .catch((error) => {
@@ -45,7 +45,7 @@ class Loonie extends Component {
 
   removeToken() {
     const { cookies } = this.props;
-    cookies.remove('accessTokens');
+    cookies.remove('access_tokens');
   }
 
   render() {
