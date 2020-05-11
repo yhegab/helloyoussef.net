@@ -7,7 +7,7 @@ class Loonie extends Component {
   constructor(props) {
     super(props);
     const { cookies } = props;
-    const accessTokens = cookies.get('accessTokens') || [];
+    const accessTokens = cookies.get('access_tokens') || [];
 
     this.state = {
       accessTokens,
@@ -32,10 +32,11 @@ class Loonie extends Component {
     fetch(`${URI}/get_access_token`, requestOptions)
       .then((response) => response.json())
       .then((data) => {
-        // access_token allows us to query balances indefinitely; it does NOT give the ability to make purchases, etc.
-        const { accessTokens } = this.state;
-        cookies.set('access_tokens', accessTokens.concat(data), { path: '/', secure: true, sameSite: 'lax' });
-        this.setState({ accessTokens: accessTokens.concat(data) });
+        cookies.set('access_tokens', this.state.accessTokens.concat(data), { path: '/', secure: true });
+        this.setState(state => {
+          const accessTokens = state.accessTokens.concat(data);
+          return { accessTokens }
+        })
       })
       .catch((error) => {
         this.setState({ error });
@@ -78,7 +79,7 @@ class Loonie extends Component {
           product={['auth']}
           publicKey="0bb843ebf87ff3cdf72ecace20b8ce"
           countryCodes={['US,CA']}
-          onSuccess={(token, metadata) => this.onSuccess(token, metadata)}
+          onSuccess={(token, metadata) => this.onSuccess(token)}
         >
           Connect an account
         </PlaidLink>
