@@ -89,13 +89,28 @@ ul.header li a.active {
   width: 100%;
   flex: 1 0 auto;
 }
-.baby img {
-  max-width: 70%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: auto;
-  padding-right: auto;
+/* here the rules for small windows */
+@media (max-width: 800px) { 
+  .baby img {
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+  }
+}
+
+/* here the rules for windows between 500px and 900px */
+@media (min-width: 800px) {
+  .baby img {
+    max-width: 70%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+  }
 }
 .baby {
   text-align: center;
