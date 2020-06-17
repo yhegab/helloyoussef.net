@@ -163,6 +163,7 @@ class Favourites extends Component {
             <li>A Quiet Place (2018)</li>
             <li>A Simple Favour (2018)</li>
             <li>Game Night (2018)</li>
+            <li>Freaks (2018)</li>
             <li>Shazam (2019)</li>
             <li>I am Mother (2019)</li>
             <li>Once Upon A Time in Hollywood (2019)</li>
