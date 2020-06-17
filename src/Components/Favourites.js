@@ -97,6 +97,7 @@ class Favourites extends Component {
             <li>The Lord of the Rings (2001)</li>
             <li>Shrek (2001)</li>
             <li>Monsters, Inc. (2001)</li>
+            <li>Spirited Away (2001)</li>
             <li>Spider-Man (2002)</li>
             <li>Signs (2002)</li>
             <li>Holes (2003)</li>
@@ -217,6 +218,7 @@ class Favourites extends Component {
             <li>Undone (2019-)</li>
             <li>The Witcher (2019-)</li>
             <li>Watchmen (2019-)</li>
+            <li>Dead to Me (2019-)</li>
             <li>The Last Dance (2020)</li>
           </ul>
         </div>
