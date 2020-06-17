@@ -17,6 +17,11 @@ class Technical extends Component {
 
         <p>Here's a brief summary of my work experience:</p>
         <ul>
+        <li>
+            <b>Software Development Engineer</b>
+            {' '}
+            Intern at Amazon (Septemer 2020 - December 2020, 4 months)
+          </li>
           <li>
             <b>Software Engineer - Infrastructure</b>
             {' '}

@@ -32,7 +32,7 @@ class Home extends Component {
           , having grown up in the Greater Toronto Area and willing to work anywhere in the world that will offer me a great learning experience and a chance to better myself and others.
         </p>
 
-        <p>I have completed one research assistantship and five internships; <a href="/#/technical">check out my resume</a>!</p>
+        <p>I have completed one research assistantship and six internships; <a href="/#/technical">check out my resume</a>!</p>
 
         <p>
           Apart from all that, I&apos;m a big fan of board games, movies, and TV Shows (for real, I even have a
