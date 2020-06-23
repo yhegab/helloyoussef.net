@@ -56,6 +56,23 @@ class Technical extends Component {
         <p>Other than that, here&apos;s a few projects I'm particularly proud of:</p>
         <ul>
           <li>
+            <a href="#/show-predictor">
+              {' '}
+              <b>TV Show Recommendation Engine</b>
+              {' '}
+            </a>
+            {' '}
+            - a mathematical model that scrapes data off metacritic and imdb and uses cosine_similarities to predict and recommend TV Shows.
+          </li>
+          <li>
+            <a href="#/loonie">
+              <b>Loonie</b>
+              {' '}
+            </a>
+            {' '}
+            - a personal finance dashboard using Plaid API.
+          </li>
+          <li>
             <a href="https://github.com/itsjafer/BetterMultitasking" target="_blank" rel="noopener noreferrer"><b>BetterMultitasking</b></a>
             {' '}
             - iOS tweak that enables iPads to run iPhone apps natively
@@ -69,15 +86,6 @@ class Technical extends Component {
             <a href="https://github.com/itsjafer/BigPiPEnergy" target="_blank" rel="noopener noreferrer"><b>BigPiPEnergy</b></a>
             {' '}
             - iOS tweak that increases the Picture-in-Picture size limit
-          </li>
-          <li>
-            <a href="https://github.com/itsjafer/tv_recommendation_engine" target="_blank" rel="noopener noreferrer">
-              {' '}
-              <b>TV Show Recommendation Engine</b>
-              {' '}
-            </a>
-            {' '}
-            - a mathematical model that scrapes data off metacritic and imdb and uses cosine_similarities to predict and recommend TV Shows.
           </li>
           <li>
             <a href="https://github.com/itsjafer/meal-recommendations" target="_blank" rel="noopener noreferrer">

@@ -9,7 +9,7 @@ class Schedule extends Component {
       <div>
         <p>
           I am currently in my
-          <b> 4A</b>
+          <b> 4B</b>
           {' '}
           term.
         </p>
@@ -67,7 +67,7 @@ class Schedule extends Component {
               <h3>Winter 2018</h3>
               <ul>
                 <li>CO250 - Introduction to Optimization</li>
-                <li><b>Software Developer - BMO Capital Markets</b></li>
+                <li><b>Software Developer (Trading Products) - BMO Capital Markets</b></li>
               </ul>
             </div>
             <div className="term">
@@ -99,7 +99,7 @@ class Schedule extends Component {
                 <li>BU354 - Marketing</li>
                 <li>CS350 - Operating Systems</li>
                 <li>MATH239- Graph Theory</li>
-                <li><b>Mobile Developer - National Logistics Services</b></li>
+                <li><b>Software Developer (Mobile) - NLS</b></li>
               </ul>
             </div>
             <div className="term">
@@ -122,7 +122,7 @@ class Schedule extends Component {
             <div className="term">
               <h3>Spring 2019</h3>
               <ul>
-                <li><b>Data Science Intern - Vida Health</b></li>
+                <li><b>Software Engineer (Data Science) - Vida Health</b></li>
               </ul>
             </div>
           </div>
@@ -170,21 +170,27 @@ class Schedule extends Component {
               </ul>
             </div>
             <div className="term">
-              <h3>5A: Winter 2021</h3>
+              <h3>Winter 2021</h3>
               <ul>
-                <li>BU432 - Consumer Behaviour</li>
-                <li>BU491 - Policy 2</li>
-                <li>CS451 - Data-Intensive Distributed Computing</li>
-                <li>CS449 - Human Computer Interaction</li>
-                <li>CS492 - Implications of Computing</li>
+                <li><b>Software Engineer - Level</b></li>
+                <li>SI202 - Intermediate Arabic 2</li>
               </ul>
             </div>
             <div className="term">
-              <h3>Spring 2021</h3>
+              <h3>5A: Spring 2021</h3>
+              <ul>
+                <li>BU4?? - Elective</li>
+                <li>BU4?? - Elective</li>
+                <li>BU491 - Policy 2</li>
+                <li>CS451 - Data-Intensive Distributed Computing</li>
+              </ul>
+            </div>
+            <div className="term">
+              <h3>5B: Fall 2021</h3>
               <ul>
                 <li>BU??? - Marketing</li>
                 <li>BU??? - Marketing</li>
-                <li>CS486 - Artificial Intelligence</li>
+                <li>CS4?? - Artificial Intelligence</li>
               </ul>
             </div>
           </div>

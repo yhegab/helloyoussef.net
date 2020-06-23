@@ -32,9 +32,9 @@ class Loonie extends Component {
     fetch(`${URI}/get_access_token`, requestOptions)
       .then((response) => response.json())
       .then((data) => {
-        cookies.set('access_tokens', this.state.accessTokens.concat(data), { path: '/', secure: true });
         this.setState(state => {
           const accessTokens = state.accessTokens.concat(data);
+          cookies.set('access_tokens', accessTokens, { path: '/', secure: true });
           return { accessTokens }
         })
       })
