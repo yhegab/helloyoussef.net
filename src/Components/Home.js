@@ -20,19 +20,10 @@ class Home extends Component {
           and an
           <b> Honours Bachelor of Business Administration</b>
           {' '}
-          respectively. I've been fascinated by the world of computers from a very young age.
+          respectively.
         </p>
 
-        <p>
-          I am a
-          <b> Canadian citizen</b>
-          {' '}
-          as well as a
-          <b> permanent resident of the United States</b>
-          , having grown up in the Greater Toronto Area and willing to work anywhere in the world that will offer me a great learning experience and a chance to better myself and others.
-        </p>
-
-        <p>I have completed one research assistantship and six internships; <a href="/#/technical">check out my resume</a>!</p>
+        <p>I&apos;ve one research assistantship and six internships under my belt including experience in DevOps, Capital Markets, Mobile, Data Science, Infrastructure, and AWS; <a href="/#/technical">check out my resume here</a>!</p>
 
         <p>
           Apart from all that, I&apos;m a big fan of board games, movies, and TV Shows (for real, I even have a
