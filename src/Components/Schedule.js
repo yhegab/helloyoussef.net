@@ -15,9 +15,6 @@ class Schedule extends Component {
         </p>
         <div className="schedule">
           <div className="year">
-            <div className="title">
-              <h4>2016-2017</h4>
-            </div>
             <div className="term">
               <h3>1A: Fall 2016</h3>
               <ul>
@@ -49,9 +46,6 @@ class Schedule extends Component {
           </div>
 
           <div className="year">
-            <div className="title">
-              <h4>2017-2018</h4>
-            </div>
             <div className="term">
               <h3>2A: Fall 2017</h3>
               <ul>
@@ -88,9 +82,6 @@ class Schedule extends Component {
           </div>
 
           <div className="year">
-            <div className="title">
-              <h4>2018-2019</h4>
-            </div>
             <div className="term">
               <h3>3A: Fall 2018</h3>
               <ul>
@@ -128,9 +119,6 @@ class Schedule extends Component {
           </div>
 
           <div className="year">
-            <div className="title">
-              <h4>2019-2020</h4>
-            </div>
             <div className="term">
               <h3>4A: Fall 2019</h3>
               <ul>
@@ -159,9 +147,6 @@ class Schedule extends Component {
           </div>
 
           <div className="year">
-            <div className="title">
-              <h4>2020-2021</h4>
-            </div>
             <div className="term">
               <h3>Fall 2020</h3>
               <ul>
