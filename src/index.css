@@ -90,7 +90,7 @@ ul.header li a.active {
   flex: 1 0 auto;
 }
 /* here the rules for small windows */
-@media (max-width: 900px) { 
+@media (max-width: 950px) { 
   .baby img {
     max-width: 100%;
     height: auto;
@@ -101,11 +101,15 @@ ul.header li a.active {
   }
   .year,.term {
     float: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
   }
 }
 
 /* here the rules for windows above 900px */
-@media (min-width: 900px) {
+@media (min-width: 950px) {
   .baby img {
     max-width: 70%;
     height: auto;
