@@ -99,6 +99,9 @@ ul.header li a.active {
     padding-left: auto;
     padding-right: auto;
   }
+  .year,.term {
+    float: none;
+  }
 }
 
 /* here the rules for windows between 500px and 900px */
@@ -110,6 +113,9 @@ ul.header li a.active {
     margin-right: auto;
     padding-left: auto;
     padding-right: auto;
+  }
+  .year,.term {
+    float: left;
   }
 }
 .baby {
@@ -133,7 +139,7 @@ ul.header li a.active {
   width: 25px;
   margin-bottom: 1em;
 }
-.movies,.shows,.games,.books,.boardgames,.year,.term {
+.movies,.shows,.games,.books,.boardgames {
   float: left;
 }
 .term {
