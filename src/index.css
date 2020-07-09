@@ -90,7 +90,7 @@ ul.header li a.active {
   flex: 1 0 auto;
 }
 /* here the rules for small windows */
-@media (max-width: 800px) { 
+@media (max-width: 900px) { 
   .baby img {
     max-width: 100%;
     height: auto;
@@ -104,8 +104,8 @@ ul.header li a.active {
   }
 }
 
-/* here the rules for windows between 500px and 900px */
-@media (min-width: 800px) {
+/* here the rules for windows above 900px */
+@media (min-width: 900px) {
   .baby img {
     max-width: 70%;
     height: auto;
