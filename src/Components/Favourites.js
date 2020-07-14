@@ -35,23 +35,14 @@ class Favourites extends Component {
           <h3>Movies</h3>
           <ul>
             <li>12 Angry Men (1957)</li>
+            <li>Taxi Driver (1976)</li>
             <li>The Shining (1980)</li>
             <li>Back to the Future (1985)</li>
             <li>The Breakfast Club (1985)</li>
-            <li>
-              <b>The Goonies</b>
-              {' '}
-              (1985)
-            </li>
             <li>Ferris Bueller&apos;s Day Off (1986)</li>
             <li>Die Hard (1988)</li>
             <li>Big (1988)</li>
             <li>Dead Poet&apos;s Society (1989)</li>
-            <li>
-              <b>Silence of the Lambs</b>
-              {' '}
-              (1991)
-            </li>
             <li>Reservoir Dogs (1992)</li>
             <li>Schindler&apos;s List (1993)</li>
             <li>Jurassic Park (1993)</li>
@@ -62,33 +53,13 @@ class Favourites extends Component {
             <li>Forrest Gump (1994)</li>
             <li>Apollo 13 (1994)</li>
             <li>Jumanji (1995)</li>
-            <li>
-              <b>Heat</b>
-              {' '}
-              (1995)
-            </li>
             <li>Good Will Hunting (1997)</li>
             <li>Saving Private Ryan (1998)</li>
             <li>The Truman Show (1998)</li>
-            <li>
-              <b>The Big Lebowski</b>
-              {' '}
-              (1998)
-            </li>
-            <li>
-              <b>The Insider</b>
-              {' '}
-              (1999)
-            </li>
             <li>The Green Mile (1999)</li>
             <li>Toy Story 2 (1999)</li>
             <li>Fight Club (1999)</li>
             <li>The Matrix (1999)</li>
-            <li>
-              <b>American Beauty</b>
-              {' '}
-              (1999)
-            </li>
             <li>Memento (2000)</li>
             <li>Cast Away (2000)</li>
             <li>O Brother, Where art thou? (2000)</li>
@@ -110,11 +81,6 @@ class Favourites extends Component {
             <li>The Dark Knight trilogy (2005)</li>
             <li>Coach Carter (2005)</li>
             <li>War of the Worlds (2005)</li>
-            <li>
-              <b>The New World</b>
-              {' '}
-              (2005)
-            </li>
             <li>The Prestige (2006)</li>
             <li>The Departed (2006)</li>
             <li>Blood Diamond (2006)</li>
@@ -137,11 +103,6 @@ class Favourites extends Component {
             <li>Looper (2012)</li>
             <li>Django Unchained (2012)</li>
             <li>21 Jump Street (2012)</li>
-            <li>
-              <b>12 Years a Slave</b>
-              {' '}
-              (2013)
-            </li>
             <li>The Grand Budapest Hotel (2014)</li>
             <li>John Wick (2014)</li>
             <li>Gardians of the Galaxy (2014)</li>
@@ -197,6 +158,7 @@ class Favourites extends Component {
             <li>Master of None (2015-2017)</li>
             <li>Narcos (2015-2016)</li>
             <li>Better Call Saul (2015-)</li>
+            <li>Schitt's Creek (2015-)</li>
             <li>Stranger Things (2016-)</li>
             <li>The People v. O. J. Simpson (2016)</li>
             <li>Atlanta (2016-)</li>
