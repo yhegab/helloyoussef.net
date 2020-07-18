@@ -150,7 +150,7 @@ class Schedule extends Component {
             <div className="term">
               <h3>Fall 2020</h3>
               <ul>
-                <li><b>Software Development Engineer - Amazon</b></li>
+                <li><b>Software Development Engineer - Amazon (AWS Step Functions)</b></li>
                 <li>SI201 - Intermediate Arabic 1</li>
               </ul>
             </div>
@@ -162,7 +162,15 @@ class Schedule extends Component {
               </ul>
             </div>
             <div className="term">
-              <h3>5A: Spring 2021</h3>
+              <h3>Spring 2021</h3>
+              <ul>
+                <li><b>Internship - somewhere nice</b></li>
+              </ul>
+            </div>
+          </div>
+          <div className="year">
+            <div className="term">
+              <h3>5A: Fall 2021</h3>
               <ul>
                 <li>BU4?? - Elective</li>
                 <li>BU4?? - Elective</li>
@@ -171,7 +179,7 @@ class Schedule extends Component {
               </ul>
             </div>
             <div className="term">
-              <h3>5B: Fall 2021</h3>
+              <h3>5B: Winter 2022</h3>
               <ul>
                 <li>BU??? - Marketing</li>
                 <li>BU??? - Marketing</li>

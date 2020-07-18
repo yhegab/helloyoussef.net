@@ -23,7 +23,7 @@ class Home extends Component {
           respectively.
         </p>
 
-        <p>I&apos;ve one research assistantship and six internships under my belt including experience in DevOps, Capital Markets, Mobile, Data Science, Infrastructure, and AWS; <a href="/#/technical">check out my resume here</a>!</p>
+        <p>I&apos;ve one research assistantship and six internships under my belt including experience at BMO Capital Markets, Vida Health, Yelp, and Amazon; <a href="/#/technical">check out my resume here</a>!</p>
 
         <p>
           Apart from all that, I&apos;m a big fan of board games, movies, and TV Shows (for real, I even have a
