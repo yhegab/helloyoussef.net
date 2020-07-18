@@ -43,6 +43,8 @@ class Favourites extends Component {
             <li>Die Hard (1988)</li>
             <li>Big (1988)</li>
             <li>Dead Poet&apos;s Society (1989)</li>
+            <li>Total Recall (1990)</li>
+            <li>The Silence of the Lambs (1991) </li>
             <li>Reservoir Dogs (1992)</li>
             <li>Schindler&apos;s List (1993)</li>
             <li>Jurassic Park (1993)</li>
