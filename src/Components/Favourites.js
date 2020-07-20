@@ -101,6 +101,7 @@ class Favourites extends Component {
             <li>Inception (2010)</li>
             <li>Shutter Island (2010)</li>
             <li>The Other Guys (2010)</li>
+            <li>The Lincoln Lawyer (2011) </li>
             <li>Moneyball (2011)</li>
             <li>Life of Pi (2012)</li>
             <li>Looper (2012)</li>
