@@ -43,6 +43,7 @@ class Favourites extends Component {
             <li>The Terminator (1985)</li>
             <li>Back to the Future (1985)</li>
             <li>The Breakfast Club (1985)</li>
+            <li>The Goonies (1985)</li>
             <li>Ferris Bueller&apos;s Day Off (1986)</li>
             <li>Stand by Me (1986)</li>
             <li>Die Hard (1988)</li>
