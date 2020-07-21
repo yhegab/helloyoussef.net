@@ -14,7 +14,7 @@
     "mathjax-electron": "^3.0.0",
     "minimatch": "^3.0.4",
     "muicss": "^0.9.43",
-    "prop-types": "^15.7.2",
+    "prop-types": "^15.6.1",
     "react": "^16.13.1",
     "react-cookie": "^4.0.3",
     "react-dom": "^16.13.1",
@@ -28,6 +28,7 @@
     "react-rich-markdown": "^1.0.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "^3.4.1",
+    "react-sizeme": "^2.6.12",
     "react-table": "^6.11.5"
   },
   "scripts": {

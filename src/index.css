@@ -174,3 +174,9 @@ canvas {
 a { 
   text-decoration: none; 
 }
+.Resume {
+  text-align:center;
+}
+.react-pdf__Document {
+  margin-right: 40px;
+}

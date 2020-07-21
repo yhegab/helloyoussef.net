@@ -1,6 +1,21 @@
 import React, { Component } from 'react';
+import { Document, Page } from 'react-pdf'
+import { pdfjs } from 'react-pdf';
+import { SizeMe } from 'react-sizeme'
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 class Technical extends Component {
+
+  removeTextLayerOffset() {
+    const textLayers = document.querySelectorAll(".react-pdf__Page__textContent");
+      textLayers.forEach(layer => {
+        const { style } = layer;
+        style.top = "0";
+        style.left = "0";
+        style.transform = "";
+    });
+  }
+
   render() {
     return (
       <div>
@@ -13,47 +28,17 @@ class Technical extends Component {
             I'm currently looking for internships and new grad opportunities!
             {' '}
           </p>
-        </div>
 
-        <p>Here's a brief summary of my work experience:</p>
-        <ul>
-        <li>
-            <b>Software Development Engineer</b>
-            {' '}
-            Intern at Amazon (Septemer 2020 - December 2020, 4 months)
-          </li>
-          <li>
-            <b>Software Engineer - Infrastructure</b>
-            {' '}
-            Intern at Yelp (January 2020 - April 2020, 4 months)
-          </li>
-          <li>
-            <b>Research Assistant</b>
-            {' '}
-            at University of Waterloo (September 2019 - December 2019, 4 months)
-          </li>
-          <li>
-            <b>Software Engineer - Data Science</b>
-            {' '}
-            Intern at Vida Health (May 2019 - August 2019, 4 months)
-          </li>
-          <li>
-            <b>Mobile Developer</b>
-            {' '}
-            Part-time Intern at National Logistics Services (September 2018 - December 2018, 4 months)
-          </li>
-          <li>
-            <b>Software Developer</b>
-            {' '}
-            Intern at BMO Capital Markets (January 2018 - April 2018, 4 months)
-          </li>
-          <li>
-            <b>DevOps Engineer</b>
-            {' '}
-            Intern at Camis Inc. (May 2017 - August 2017, 4 months)
-          </li>
-        </ul>
-        <p>Other than that, here&apos;s a few projects I'm particularly proud of:</p>
+        <SizeMe>
+            {({ size }) => (
+              <Document file={"Resume.pdf"}>
+                <Page pageNumber={1}  onLoadSuccess={this.removeTextLayerOffset} width={size.width ? size.width : 1} />
+              </Document>
+            )}
+        </SizeMe>
+            </div>
+
+        {/* <p>Here are a few projects I'm particularly proud of:</p>
         <ul>
           <li>
             <a href="#/show-predictor">
@@ -114,7 +99,7 @@ class Technical extends Component {
             {' '}
             - an open-source JupyterLab extension to track progress of Spark jobs
           </li>
-        </ul>
+        </ul> */}
       </div>
     );
   }
