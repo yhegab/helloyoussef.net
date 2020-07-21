@@ -37,13 +37,19 @@ class Favourites extends Component {
             <li>12 Angry Men (1957)</li>
             <li>Taxi Driver (1976)</li>
             <li>The Shining (1980)</li>
+            <li>Raiders of the Lost Ark (1981)</li>
+            <li>Ghostbusters (1984)</li>
+            <li>Karate Kid (1984)</li>
+            <li>The Terminator (1985)</li>
             <li>Back to the Future (1985)</li>
             <li>The Breakfast Club (1985)</li>
             <li>Ferris Bueller&apos;s Day Off (1986)</li>
+            <li>Stand by Me (1986)</li>
             <li>Die Hard (1988)</li>
             <li>Big (1988)</li>
             <li>Dead Poet&apos;s Society (1989)</li>
             <li>Total Recall (1990)</li>
+            <li>Awakenings (1990) </li>
             <li>The Silence of the Lambs (1991) </li>
             <li>Reservoir Dogs (1992)</li>
             <li>Schindler&apos;s List (1993)</li>
@@ -100,6 +106,7 @@ class Favourites extends Component {
             <li>Inception (2010)</li>
             <li>Shutter Island (2010)</li>
             <li>The Other Guys (2010)</li>
+            <li>The Lincoln Lawyer (2011) </li>
             <li>Moneyball (2011)</li>
             <li>Life of Pi (2012)</li>
             <li>Looper (2012)</li>
