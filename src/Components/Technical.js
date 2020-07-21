@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Document, Page } from 'react-pdf'
 import { pdfjs } from 'react-pdf';
 import { SizeMe } from 'react-sizeme'
+import 'react-pdf/dist/Page/AnnotationLayer.css';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 class Technical extends Component {
