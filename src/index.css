@@ -106,6 +106,9 @@ ul.header li a.active {
     padding-left: auto;
     padding-right: auto;
   }
+  .react-pdf__Document {
+    visibility: hidden;
+  } 
 }
 
 /* here the rules for windows above 900px */
@@ -121,6 +124,9 @@ ul.header li a.active {
   .year,.term {
     float: left;
   }
+  .react-pdf__Document {
+    margin-right: 40px;
+  }  
 }
 .baby {
   text-align: center;
@@ -173,10 +179,4 @@ canvas {
 }
 a { 
   text-decoration: none; 
-}
-.Resume {
-  text-align:center;
-}
-.react-pdf__Document {
-  margin-right: 40px;
 }
