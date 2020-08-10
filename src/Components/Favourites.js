@@ -170,6 +170,7 @@ class Favourites extends Component {
             <li>Better Call Saul (2015-)</li>
             <li>Schitt's Creek (2015-)</li>
             <li>Stranger Things (2016-)</li>
+            <li>Fleabag (2016-2019)</li>
             <li>The People v. O. J. Simpson (2016)</li>
             <li>Atlanta (2016-)</li>
             <li>The Good Place (2016-2020)</li>
@@ -185,7 +186,7 @@ class Favourites extends Component {
             <li>Barry (2018-)</li>
             <li>Altered Carbon (2018-)</li>
             <li>Death, Love, and Robots (2019)</li>
-            <li>The Umbrella Academy (2019)</li>
+            <li>The Umbrella Academy (2019-)</li>
             <li>Chernobyl (2019)</li>
             <li>The Boys (2019-)</li>
             <li>Undone (2019-)</li>
@@ -193,6 +194,7 @@ class Favourites extends Component {
             <li>Watchmen (2019-)</li>
             <li>Dead to Me (2019-)</li>
             <li>The Last Dance (2020)</li>
+            <li>Upload 2020-)</li>
           </ul>
         </div>
 
