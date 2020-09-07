@@ -21,7 +21,7 @@ class Favourites extends Component {
           I&apos;ve found that I
           <b> really</b>
           {' '}
-          enjoy making lists of things that I like so I thought I&apos;d put some of them here. Last updated April 2020.
+          enjoy making lists of things that I like so I thought I&apos;d put some of them here. Last updated September 2020.
         </p>
 
         {/* <div className="root">
@@ -115,7 +115,7 @@ class Favourites extends Component {
             <li>21 Jump Street (2012)</li>
             <li>The Grand Budapest Hotel (2014)</li>
             <li>John Wick (2014)</li>
-            <li>Gardians of the Galaxy (2014)</li>
+            <li>Guardians of the Galaxy (2014)</li>
             <li>Gone Girl (2014)</li>
             <li>The Hateful Eight (2015)</li>
             <li>The Martian (2015)</li>
@@ -194,7 +194,7 @@ class Favourites extends Component {
             <li>Watchmen (2019-)</li>
             <li>Dead to Me (2019-)</li>
             <li>The Last Dance (2020)</li>
-            <li>Upload 2020-)</li>
+            <li>Upload (2020-)</li>
           </ul>
         </div>
 
