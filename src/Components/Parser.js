@@ -9,6 +9,20 @@ class Parser extends Component {
       data: null,
       positions: null,
     };
+    this.updatePredicate = this.updatePredicate.bind(this);
+  }
+
+  componentDidMount() {
+    this.updatePredicate();
+    window.addEventListener('resize', this.updatePredicate);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updatePredicate);
+  }
+
+  updatePredicate() {
+    this.setState({ isDesktop: window.innerWidth > 800 });
   }
 
   onUploadHandler(event) {
@@ -39,8 +53,13 @@ class Parser extends Component {
         const positions = resume.positions ? resume.positions.map((position) => ({
           company: position.org ?? '??', position: position.title ?? '??', date: `${position.start ? position.start.month : '??'}/${position.start ? position.start.year : '??'} - ${position.end ? position.end.month : '??'}/${position.end ? position.end.year : '??'}`, summary: position.summary ?? '??',
         })) : [];
+        const limitedPositions = resume.positions ? resume.positions.map((position) => ({
+          company: `${position.org} -- 
+            ${position.title} (${position.start ? position.start.month : '??'}/${position.start ? position.start.year : '??'} - ${position.end ? position.end.month : '??'}/${position.end ? position.end.year : '??'}` ?? '??',
+          summary: position.summary ?? '??',
+        })) : [];
 
-        this.setState({ data, positions });
+        this.setState({ data, positions, limitedPositions });
       })
       .catch((error) => {
         console.log(error);
@@ -52,7 +71,8 @@ class Parser extends Component {
       {
         Header: 'Information',
         accessor: 'info',
-        minWidth: 15,
+        style: { whiteSpace: 'unset' },
+        minWidth: 50,
       },
       {
         id: 'parsed',
@@ -88,9 +108,25 @@ class Parser extends Component {
       },
 
     ];
-    const { resume } = this.state;
-    const { data } = this.state;
-    const { positions } = this.state;
+    const limitedColumns = [
+      {
+        Header: 'Company',
+        accessor: 'company',
+        style: { whiteSpace: 'unset' },
+        minWidth: 60,
+        Footer: true && <div />,
+      },
+      {
+        Header: 'Summary',
+        accessor: 'summary',
+        style: { whiteSpace: 'unset' },
+        Footer: true && <div />,
+      },
+
+    ];
+    const {
+      resume, data, positions, limitedPositions, isDesktop,
+    } = this.state;
 
 
     return (
@@ -120,8 +156,8 @@ class Parser extends Component {
                   <br />
                   <p>Work Experience</p>
                   <ReactTable
-                    data={positions}
-                    columns={jobColumns}
+                    data={isDesktop ? positions : limitedPositions}
+                    columns={isDesktop ? jobColumns : limitedColumns}
                     defaultPageSize={positions.length}
                     showPaginationBottom={false}
                     showPageSizeOptions={false}
