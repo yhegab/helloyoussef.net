@@ -21,7 +21,7 @@ class Favourites extends Component {
           I&apos;ve found that I
           <b> really</b>
           {' '}
-          enjoy making lists of things that I like so I thought I&apos;d put some of them here. Last updated April 2020.
+          enjoy making lists of things that I like so I thought I&apos;d put some of them here. Last updated September 2020.
         </p>
 
         {/* <div className="root">
@@ -43,6 +43,7 @@ class Favourites extends Component {
             <li>The Terminator (1985)</li>
             <li>Back to the Future (1985)</li>
             <li>The Breakfast Club (1985)</li>
+            <li>The Goonies (1985)</li>
             <li>Ferris Bueller&apos;s Day Off (1986)</li>
             <li>Stand by Me (1986)</li>
             <li>Die Hard (1988)</li>
@@ -114,7 +115,7 @@ class Favourites extends Component {
             <li>21 Jump Street (2012)</li>
             <li>The Grand Budapest Hotel (2014)</li>
             <li>John Wick (2014)</li>
-            <li>Gardians of the Galaxy (2014)</li>
+            <li>Guardians of the Galaxy (2014)</li>
             <li>Gone Girl (2014)</li>
             <li>The Hateful Eight (2015)</li>
             <li>The Martian (2015)</li>
@@ -169,6 +170,7 @@ class Favourites extends Component {
             <li>Better Call Saul (2015-)</li>
             <li>Schitt's Creek (2015-)</li>
             <li>Stranger Things (2016-)</li>
+            <li>Fleabag (2016-2019)</li>
             <li>The People v. O. J. Simpson (2016)</li>
             <li>Atlanta (2016-)</li>
             <li>The Good Place (2016-2020)</li>
@@ -184,7 +186,7 @@ class Favourites extends Component {
             <li>Barry (2018-)</li>
             <li>Altered Carbon (2018-)</li>
             <li>Death, Love, and Robots (2019)</li>
-            <li>The Umbrella Academy (2019)</li>
+            <li>The Umbrella Academy (2019-)</li>
             <li>Chernobyl (2019)</li>
             <li>The Boys (2019-)</li>
             <li>Undone (2019-)</li>
@@ -192,6 +194,7 @@ class Favourites extends Component {
             <li>Watchmen (2019-)</li>
             <li>Dead to Me (2019-)</li>
             <li>The Last Dance (2020)</li>
+            <li>Upload (2020-)</li>
           </ul>
         </div>
 
