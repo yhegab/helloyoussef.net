@@ -72,7 +72,6 @@ class Main extends Component {
             <Route path="/schedule" component={withTracker(Schedule)} />
             <Route path="/show-predictor" component={withTracker(ShowPredictor)} />
             <Route path="/loonie" component={withTracker(() => <Loonie cookies={cookies} />)} />
-            <Route path="/taqibat" component={withTracker(Taqibat)} />
             <Route path="/parser" component={withTracker(Parser)} />
             <Route
               path="/cs240"
