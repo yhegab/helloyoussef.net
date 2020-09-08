@@ -15,6 +15,7 @@ import Favourites from './Components/Favourites';
 import Schedule from './Components/Schedule';
 import Reflection from './Components/Reflection';
 import ShowPredictor from './Components/ShowPredictor';
+import Parser from './Components/Parser';
 import Loonie from './Components/Loonie/Loonie';
 import CS240 from './Courses/CS240.md';
 import BU362 from './Courses/BU362.md';
@@ -57,6 +58,7 @@ class Main extends Component {
               <li><NavLink exact to="/technical">Resume</NavLink></li>
               <li><NavLink to="/favourites">Things I Love</NavLink></li>
               <li><NavLink to="/schedule">Coursework</NavLink></li>
+              <li><NavLink to="/parser">Parser</NavLink></li>
               {/* <li><NavLink to="/show-predictor">TV Show Finder</NavLink></li> */}
               {/* <li><NavLink to="/loonie">Loonie</NavLink></li> */}
               <li><a href="https://itsjafer.com/repo" target="_blank" rel="noopener noreferrer">Cydia Repo</a></li>
@@ -70,6 +72,8 @@ class Main extends Component {
             <Route path="/schedule" component={withTracker(Schedule)} />
             <Route path="/show-predictor" component={withTracker(ShowPredictor)} />
             <Route path="/loonie" component={withTracker(() => <Loonie cookies={cookies} />)} />
+            <Route path="/taqibat" component={withTracker(Taqibat)} />
+            <Route path="/parser" component={withTracker(Parser)} />
             <Route
               path="/cs240"
               component={withTracker(() => (

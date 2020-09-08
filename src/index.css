@@ -183,3 +183,6 @@ canvas {
 a { 
   text-decoration: none; 
 }
+.ReactTable .rt-tbody{
+  overflow: overlay;
+  }
