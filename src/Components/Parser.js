@@ -135,13 +135,13 @@ class Parser extends Component {
       <div>
         This tool uses Lever's resume parsing API, which is unintentionally public, to parse resumes.
         This is a useful tool to see how well your resume is being parsed when you apply to jobs.
-        Companies that use Lever for job apps include: Figma, Palantir, Plaid, and several others.
+        Companies that use Lever for job apps include: Figma, Palantir, Netflix, Twitch, Yelp and several others.
         Take a look at the backend source code <a href="https://github.com/itsjafer/parser-backend">here</a>!
         <div>
           <br/>
           <form method="post" action="#" id="#">
             <div className="form-group files">
-              <label for="file">Upload resume:</label>
+              <label for="file">Upload resume (docx or pdf):</label>
               <input type="file" name="file" className="form-control" onChange={(event) => this.onUploadHandler(event)} />
             </div>
           </form>
