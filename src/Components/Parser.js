@@ -39,8 +39,8 @@ class Parser extends Component {
       .then((response) => response.json())
       .then((resume) => {
         this.setState({ resume });
-        const degrees = resume.schools ? resume.schools.map((school) => `${school.degree ?? '??'}. Major: ${school.field ?? '??'}`) : [];
-        const schools = resume.schools ? resume.schools.map((school) => `${school.org ?? '??'} from ${school.start ? school.start.month : '??'}/${school.start ? school.start.year : '??'} to ${school.end ? school.end.month : '??'}/${school.end ? school.end.year : '??'}`) : [];
+        const degrees = resume.schools ? resume.schools.map((school) => `Degree: ${school.degree ?? '??'}. Major: ${school.field ?? '??'}.`) : [];
+        const schools = resume.schools ? resume.schools.map((school) => `${school.org ?? '??'} from ${school.start ? school.start.month : '??'}/${school.start ? school.start.year : '??'} to ${school.end ? school.end.month : '??'}/${school.end ? school.end.year : '??'}.`) : [];
         const links = resume.links ? resume.links.map((link) => link.url ?? '??').join(', ') : [];
         const data = [
           { info: 'Name', parsed: resume.names ? resume.names.join(', ') : [] },
@@ -48,7 +48,6 @@ class Parser extends Component {
           { info: 'Phone', parsed: resume.phones ? resume.phones[0].value : [] },
           { info: 'University', parsed: schools.join(', ') },
           { info: 'Degree', parsed: degrees.join(', ') },
-          { info: 'Phone', parsed: resume.phones ? resume.phones[0].value : [] },
           { info: 'Links', parsed: links },
           { info: 'Summary', parsed: resume.summary && resume.summary.experience ? resume.summary.experience : '??' },
           { info: 'Skills', parsed: resume.summary && resume.summary.skills ? resume.summary.skills : '??' },
