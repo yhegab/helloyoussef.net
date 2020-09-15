@@ -58,10 +58,16 @@ class Main extends Component {
               <li><NavLink exact to="/technical">Resume</NavLink></li>
               <li><NavLink to="/favourites">Things I Love</NavLink></li>
               <li><NavLink to="/schedule">Coursework</NavLink></li>
-              <li><NavLink to="/parser">Parser</NavLink></li>
-              {/* <li><NavLink to="/show-predictor">TV Show Finder</NavLink></li> */}
-              {/* <li><NavLink to="/loonie">Loonie</NavLink></li> */}
-              <li><a href="https://itsjafer.com/repo" target="_blank" rel="noopener noreferrer">Cydia Repo</a></li>
+              <li>
+                <div class="dropdown">
+                <label class="dropbtn">Projects</label>
+                <div class="dropdown-content">
+                <NavLink to="/parser">Resume Parser</NavLink>
+                <NavLink to="/show-predictor">TV Show Recommender</NavLink>
+                <NavLink to="/loonie">Loonie</NavLink>
+                <a href="https://itsjafer.com/repo" target="_blank" rel="noopener noreferrer">Cydia Repo</a>
+                </div>
+              </div></li>
             </ul>
             <h1>Jafer Haider</h1>
             <Social />

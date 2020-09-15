@@ -133,10 +133,15 @@ class Parser extends Component {
 
     return (
       <div>
-        This tool uses Lever's resume parsing API, which is unintentionally public, to parse resumes.
-        This is a useful tool to see how well your resume is being parsed when you apply to jobs.
-        Companies that use Lever for job apps include: Figma, Palantir, Netflix, Twitch, Yelp and several others.
-        Take a look at the backend source code <a href="https://github.com/itsjafer/parser-backend">here</a>!
+        <p>
+        This tool uses Lever's resume parsing API, which is unintentionally public, to parse resumes. Companies that use Lever for job apps include: Figma, Palantir, Netflix, Twitch, Yelp and several others.
+        </p>
+
+        <p>
+        This is a useful tool to see how well your resume is being parsed by Automated Tracking Systems (ATS) when you apply to jobs.
+        </p>
+        
+        <p>Take a look at the backend source code <a href="https://github.com/itsjafer/parser-backend">here</a>!</p>
         <div>
           <br/>
           <form method="post" action="#" id="#">

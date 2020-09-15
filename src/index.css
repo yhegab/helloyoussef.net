@@ -59,11 +59,11 @@ ul.header li {
   list-style-type: none;
   margin: 0;
 }
-ul.header {
+.header {
   text-align: center;
   padding: 0;
 }
-ul.header li a {
+.header li a, .dropbtn {
   color: #000;
   font-size: 1.5em;
   font-weight: 300;
@@ -72,11 +72,29 @@ ul.header li a {
   display: inline-block;
   outline: none;
 }
-ul.header li a:hover {
+.header li a:hover, .dropbtn:hover {
   font-style: italic;
 }
-ul.header li a.active {
+.header li a.active {
   font-weight: 500;
+}
+.dropdown {
+  display: inline;
+  overflow: auto;
+}
+.dropbtn {
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #f9f9f9;
+}
+.dropdown:hover .dropdown-content {
+  display: inline-block;
 }
 .content {
   display: block;

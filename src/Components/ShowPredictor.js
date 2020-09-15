@@ -132,7 +132,7 @@ class ShowPredictor extends Component {
     const { value, data } = this.state;
     return (
       <div className="show-predictor">
-        <p> Enter in a TV Show and I will recommend 10 other TV Shows you might like based on their similarity and ratings.</p>
+        <p> Enter in a TV Show and I will recommend 10 other TV Shows you might like based on their similarity and ratings. (update: the model hasnt been updated since August 2019 so new TV Shows will not appear)</p>
         <p> Similarity is based on: genre, keywords, plot, cast, production company, number of seasons, and episode length. Ratings are based on a combination of IMDB rating, Metacritic Score, and Metacritic user score.</p>
         <p>
           {' '}
