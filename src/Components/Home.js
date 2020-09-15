@@ -12,7 +12,7 @@ class Home extends Component {
 
         <p>
           My name is
-          <b> Syed Jafer Haider</b>
+          <b> Jafer Haider</b>
           {' '}
           and I&apos;m a student studying concurrently at the University of Waterloo and Wilfrid Laurier University working towards an
           <b> Honours Bachelor of Computer Science</b>
@@ -23,7 +23,9 @@ class Home extends Component {
           respectively.
         </p>
 
-        <p>I&apos;ve one research assistantship and six internships under my belt including experience at BMO Capital Markets, Vida Health, Yelp, and Amazon; <a href="/#/technical">check out my resume here</a>!</p>
+        <p>I&apos;ve got one research assistantship and six internships under my belt including experience at BMO Capital Markets, Vida, Yelp, and Amazon; <a href="/#/technical">check out my resume here</a>!</p>
+        
+        <p>The most popular page on this website, by far, is my <a href="/#/parser">Resume Parser project</a> which is a tool to show how well your resume gets parsed by online job tracking systems (ATS). Chances are, if you've stumbled across my website, you probably came for that project!</p>
 
         <p>
           Apart from all that, I&apos;m a big fan of board games, movies, and TV Shows (for real, I even have a
@@ -34,9 +36,11 @@ class Home extends Component {
           on occasion.
         </p>
 
-        <p>If you're reading this and you play Rocket League, send a message my way and let's grind to Grand Champ
-          <span role="img" aria-label="sunglasses"> 😎</span>.
+
+        <p>If you have any questions about my experiences, education, projects or want to connect about an opportunity, I'd love to <a href="https://linkedin.com/in/itsjafer">connect on LinkedIn</a> or have an <a href="mailto:itsjafer@gmail.com">exchange over email</a>!
         </p>
+
+        <p>You can view the source code for this website and the projects it hosts <a href="https://github.com/itsjafer/itsjafer.github.io">here</a>.</p>
 
       </div>
     );
