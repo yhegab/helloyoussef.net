@@ -23,7 +23,7 @@ class Home extends Component {
           respectively.
         </p>
 
-        <p>I&apos;ve got one research assistantship and six internships under my belt including experience at BMO Capital Markets, Vida, Yelp, and Amazon; <a href="/#/technical">check out my resume here</a>!</p>
+        <p>I&apos;ve got one research assistantship and six internships under my belt including experience at Google, Amazon, Yelp, Vida, and BMO Capital Markets; <a href="/#/technical">check out my resume here</a>!</p>
         
         <p>The most popular page on this website, by far, is my <a href="/#/parser">Resume Parser project</a> which is a tool to show how well your resume gets parsed by online job tracking systems (ATS). Chances are, if you've stumbled across my website, you probably came for that project!</p>
 
