@@ -25,22 +25,28 @@ class Parser extends Component {
     this.setState({ isDesktop: window.innerWidth > 800 });
   }
 
-  onUploadHandler(event) {
-    const file = event.target.files[0];
-
+  async onUploadHandler(event) {
+    const toBase64 = file => new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.readAsDataURL(file);
+      reader.onload = () => resolve(reader.result);
+      reader.onerror = error => reject(error);
+    });
+    const file = await toBase64(event.target.files[0]);
+    console.log(file.split(',')[1])
     // Simple POST request with a JSON body using fetch
-    const formData = new FormData();
-    formData.append('file', file);
     const requestOptions = {
       method: 'POST',
-      body: formData,
+      body: `{"content": "${file.split(',')[1]}"}`,
+      headers: { "content-type": "application/json"}
     };
-    fetch('https://parser.itsjafer.com/parse', requestOptions)
+    console.log(requestOptions)
+    fetch('https://g5wkkduchj.execute-api.us-east-2.amazonaws.com/Prod', requestOptions)
       .then((response) => response.json())
       .then((resume) => {
         this.setState({ resume });
-        const degrees = resume.schools ? resume.schools.map((school) => `Degree: ${school.degree ?? '??'}. Major: ${school.field ?? '??'}.`) : [];
-        const schools = resume.schools ? resume.schools.map((school) => `${school.org ?? '??'} from ${school.start ? school.start.month : '??'}/${school.start ? school.start.year : '??'} to ${school.end ? school.end.month : '??'}/${school.end ? school.end.year : '??'}.`) : [];
+        const degrees = resume.schools ? resume.schools.map((school) => `Degree: ${school.degree ?? '??'}. Major: ${school.field ?? '??'}`) : [];
+        const schools = resume.schools ? resume.schools.map((school) => `${school.org ?? '??'} from ${school.start ? school.start.month : '??'}/${school.start ? school.start.year : '??'} to ${school.end ? school.end.month : '??'}/${school.end ? school.end.year : '??'}`) : [];
         const links = resume.links ? resume.links.map((link) => link.url ?? '??').join(', ') : [];
         const data = [
           { info: 'Name', parsed: resume.names ? resume.names.join(', ') : [] },
