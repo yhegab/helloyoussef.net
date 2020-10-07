@@ -147,7 +147,7 @@ class Parser extends Component {
         This is a useful tool to see how well your resume is being parsed by Automated Tracking Systems (ATS) when you apply to jobs.
         </p>
         
-        <p>Take a look at the backend source code <a href="https://github.com/itsjafer/parser-backend">here</a>!</p>
+        <p>Take a look at the backend source code <a href="https://github.com/itsjafer/resume-parser">here</a>! The functionality is hosted on AWS Lambda which is queried using AWS API Gateway.</p>
         <div>
           <br/>
           <form method="post" action="#" id="#">
