@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactTable from 'react-table';
 import 'react-table/react-table.css';
+import {Helmet} from "react-helmet";
 
 class Parser extends Component {
   constructor(props) {
@@ -32,15 +33,19 @@ class Parser extends Component {
       reader.onload = () => resolve(reader.result);
       reader.onerror = error => reject(error);
     });
+    console.log(event.target.files[0].size)
+    if (event.target.files[0].size > 5242880) {
+      alert('File size too large (limit 5 MB)')
+      console.error("File size too large")
+      return;
+    }
     const file = await toBase64(event.target.files[0]);
-    console.log(file.split(',')[1])
     // Simple POST request with a JSON body using fetch
     const requestOptions = {
       method: 'POST',
       body: `{"content": "${file.split(',')[1]}"}`,
       headers: { "content-type": "application/json"}
     };
-    console.log(requestOptions)
     fetch('https://g5wkkduchj.execute-api.us-east-2.amazonaws.com/Prod', requestOptions)
       .then((response) => response.json())
       .then((resume) => {
@@ -139,8 +144,13 @@ class Parser extends Component {
 
     return (
       <div>
+        <Helmet>
+          <title>Jafer Haider -- Resume Parser</title>
+          <meta name="description" content="Resume Parser using the Lever API"/>
+          <link rel="canonical" href="http://itsjaffer.com/#/parser" />
+        </Helmet>
 
-        <p><b>How well does you resume get parsed?</b></p>
+        <p><b>How well does your resume get parsed?</b></p>
 
         <p>
         This tool uses Lever's resume parsing API to parse resumes. Use this to see how well your resume is read by Application Tracking Systems (ATS) when applying to jobs. Companies that use Lever for job apps include: Figma, Palantir, Netflix, Twitch, Yelp and several others.
