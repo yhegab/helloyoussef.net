@@ -151,27 +151,12 @@ class Schedule extends Component {
               <h3>Fall 2020</h3>
               <ul>
                 <li><b>Software Development Engineer - Amazon (AWS Step Functions)</b></li>
-                <li>SI201 - Intermediate Arabic 1</li>
               </ul>
             </div>
             <div className="term">
-              <h3>Winter 2021</h3>
+              <h3>5A: Winter 2021</h3>
               <ul>
-                <li><b>Software Engineer - Level</b></li>
-                <li>SI202 - Intermediate Arabic 2</li>
-              </ul>
-            </div>
-            <div className="term">
-              <h3>Spring 2021</h3>
-              <ul>
-                <li><b>Internship - somewhere nice</b></li>
-              </ul>
-            </div>
-          </div>
-          <div className="year">
-            <div className="term">
-              <h3>5A: Fall 2021</h3>
-              <ul>
+                <li>Elective</li>
                 <li>BU4?? - Elective</li>
                 <li>BU4?? - Elective</li>
                 <li>BU491 - Policy 2</li>
@@ -179,11 +164,21 @@ class Schedule extends Component {
               </ul>
             </div>
             <div className="term">
-              <h3>5B: Winter 2022</h3>
+              <h3>Spring 2021</h3>
               <ul>
-                <li>BU??? - Marketing</li>
-                <li>BU??? - Marketing</li>
-                <li>CS4?? - Artificial Intelligence</li>
+                <li><b>Software Engineer - Google</b></li>
+              </ul>
+            </div>
+          </div>
+          <div className="year">
+            <div className="term">
+              <h3>5B: Fall 2021</h3>
+              <ul>
+                <li>Elective</li>
+                <li>BU4?? - Elective</li>
+                <li>BU4?? - Elective</li>
+                <li>BU491 - Policy 2</li>
+                <li>CS451 - Data-Intensive Distributed Computing</li>
               </ul>
             </div>
           </div>
