@@ -147,7 +147,7 @@ class Parser extends Component {
         <Helmet>
           <title>Jafer Haider -- Resume Parser</title>
           <meta name="description" content="Resume Parser using the Lever API"/>
-          <link rel="canonical" href="http://itsjaffer.com/#/parser" />
+          <link rel="canonical" href="http://itsjafer.com/#/parser" />
         </Helmet>
 
         <p><b>How well does your resume get parsed?</b></p>

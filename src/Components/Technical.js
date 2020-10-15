@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Document, Page } from 'react-pdf'
 import { pdfjs } from 'react-pdf';
 import { SizeMe } from 'react-sizeme'
+import {Helmet} from "react-helmet";
+
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
@@ -20,6 +22,12 @@ class Technical extends Component {
   render() {
     return (
       <div>
+        <Helmet>
+          <title>Jafer Haider -- Resume</title>
+          <meta name="description" content="My most up-to-date resume."/>
+          <link rel="canonical" href="http://itsjafer.com/#/technical" />
+          <meta name="image" property="og:image" content="/Resume.jpg"/>
+        </Helmet>
         <div className="Resume">
           <p>
             {' '}
