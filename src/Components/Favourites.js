@@ -97,6 +97,7 @@ class Favourites extends Component {
             <li>Ratatouille (2007)</li>
             <li>Gone Baby Gone (2007)</li>
             <li>No Country for Old Men (2007)</li>
+            <li>The Mist (2007)</li>
             <li>Slumdog Millionaire (2008)</li>
             <li>Iron Man (2008)</li>
             <li>Wall-E (2008)</li>
@@ -140,6 +141,7 @@ class Favourites extends Component {
             <li>Once Upon A Time in Hollywood (2019)</li>
             <li>Joker (2019)</li>
             <li>Parasite (2019)</li>
+            <li>Tenet (2020)</li>
           </ul>
         </div>
         <div className="shows">
@@ -161,7 +163,8 @@ class Favourites extends Component {
             <li>Justified (2010-2015)</li>
             <li>Game of Thrones (2011-2019)</li>
             <li>Black Mirror (2011-)</li>
-            <li><b>Veep (2012-2019)</b></li>
+            <li>Veep (2012-2019)</li>
+            <li>Key & Peele (2012-2015)</li>
             <li>Brooklyn Nine-Nine (2013-)</li>
             <li>Rick and Morty (2013-)</li>
             <li>BoJack Horseman (2014-2020)</li>
