@@ -142,6 +142,7 @@ class Favourites extends Component {
             <li>Joker (2019)</li>
             <li>Parasite (2019)</li>
             <li>Tenet (2020)</li>
+            <li>Enola Holmes (2020)</li>
           </ul>
         </div>
         <div className="shows">
@@ -180,6 +181,7 @@ class Favourites extends Component {
             <li>The Tick (2016-2019)</li>
             <li>Santa Clarita Diet (2017-2019)</li>
             <li>The Marvelous Mrs. Maisel (2017-)</li>
+            <li>Big Mouth (2017-)</li>
             <li>Big Little Lies (2017-2019)</li>
             <li>Imposters (2017-2018)</li>
             <li>The Haunting of Hill House (2018-)</li>
@@ -198,6 +200,7 @@ class Favourites extends Component {
             <li>Dead to Me (2019-)</li>
             <li>The Last Dance (2020)</li>
             <li>Upload (2020-)</li>
+            <li>Mrs. America (2020)</li>
           </ul>
         </div>
 
