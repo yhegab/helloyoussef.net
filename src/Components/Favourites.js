@@ -98,6 +98,7 @@ class Favourites extends Component {
             <li>Gone Baby Gone (2007)</li>
             <li>No Country for Old Men (2007)</li>
             <li>The Mist (2007)</li>
+            <li>Superbad (2007)</li>
             <li>Slumdog Millionaire (2008)</li>
             <li>Iron Man (2008)</li>
             <li>Wall-E (2008)</li>
@@ -143,6 +144,7 @@ class Favourites extends Component {
             <li>Parasite (2019)</li>
             <li>Tenet (2020)</li>
             <li>Enola Holmes (2020)</li>
+            <li>His House (2020)</li>
           </ul>
         </div>
         <div className="shows">
@@ -177,6 +179,7 @@ class Favourites extends Component {
             <li>Fleabag (2016-2019)</li>
             <li>The People v. O. J. Simpson (2016)</li>
             <li>Atlanta (2016-)</li>
+            <li>The Crown (2016-)</li>
             <li>The Good Place (2016-2020)</li>
             <li>The Tick (2016-2019)</li>
             <li>Santa Clarita Diet (2017-2019)</li>
@@ -201,46 +204,8 @@ class Favourites extends Component {
             <li>The Last Dance (2020)</li>
             <li>Upload (2020-)</li>
             <li>Mrs. America (2020)</li>
+            <li>The Queen's Gambit (2020)</li>
           </ul>
-        </div>
-
-        <div className="games">
-          <h3>Video Games</h3>
-          <ul>
-            <li>Spider-Man</li>
-            <li>Breath of the Wild</li>
-            <li>The Last of Us</li>
-            <li>Infamous 2</li>
-            <li>GTA IV</li>
-            <li>God of War III</li>
-            <li>God of War (PS4)</li>
-            <li>Portal</li>
-            <li>Portal 2</li>
-            <li>BioShock Infinite</li>
-            <li>Borderlands 2</li>
-            <li>CoD: Black Ops 1/2</li>
-            <li>Rocket League</li>
-            <li>FIFA</li>
-            <li>Until Dawn</li>
-            <li>Super Smash Bros Ultimate</li>
-            <li>Mario Kart 8</li>
-            <li>Mortal Kombat</li>
-            <li>Dead by Daylight</li>
-            <li>Cuphead</li>
-            <li>Celeste</li>
-            <li>Uncharted 2</li>
-            <li>Red Dead Redemption</li>
-            <li><b>GTA V</b></li>
-          </ul>
-
-          {/* <h3>Board Games</h3>
-          <ul>
-          <li>The Resistance: Avalon</li>
-          <li>Coup</li>
-          <li>Codenames</li>
-          <li>Bang</li>
-          <li>Exploding Kittens</li>
-          </ul> */}
         </div>
 
         <div className="books">
