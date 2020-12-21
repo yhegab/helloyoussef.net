@@ -34,7 +34,7 @@ class Technical extends Component {
             Here is a
             <a href="Resume.pdf" target="_blank" rel="noopener noreferrer"> direct link to my resume;</a>
             {' '}
-            I'm currently looking for internships and new grad opportunities!
+            As a 2021 graduate, I'm currently looking for new grad opportunities!
             {' '}
           </p>
 

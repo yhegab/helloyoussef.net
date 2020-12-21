@@ -21,7 +21,7 @@ class Favourites extends Component {
           I&apos;ve found that I
           <b> really</b>
           {' '}
-          enjoy making lists of things that I like so I thought I&apos;d put some of them here. Last updated September 2020.
+          enjoy making lists of things that I like so I thought I&apos;d put some of them here. Last updated December 2020.
         </p>
 
         {/* <div className="root">
@@ -142,6 +142,7 @@ class Favourites extends Component {
             <li>Once Upon A Time in Hollywood (2019)</li>
             <li>Joker (2019)</li>
             <li>Parasite (2019)</li>
+            <li>Klaus (2019)</li>
             <li>Tenet (2020)</li>
             <li>Enola Holmes (2020)</li>
             <li>His House (2020)</li>
