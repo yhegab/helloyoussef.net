@@ -16,6 +16,7 @@ import Schedule from './Components/Schedule';
 import Reflection from './Components/Reflection';
 import ShowPredictor from './Components/ShowPredictor';
 import Parser from './Components/Parser';
+import Farwa from './Components/Farwa';
 import Trader from './Components/Trader';
 import Loonie from './Components/Loonie/Loonie';
 import CS240 from './Courses/CS240.md';
@@ -76,6 +77,7 @@ class Main extends Component {
             <Route exact path="/" component={withTracker(Home)} />
             <Route exact path="/technical" component={withTracker(Technical)} />
             <Route path="/favourites" component={withTracker(Favourites)} />
+            <Route path="/chai" component={withTracker(Farwa)} />
             <Route path="/schedule" component={withTracker(Schedule)} />
             <Route path="/show-predictor" component={withTracker(ShowPredictor)} />
             <Route path="/loonie" component={withTracker(() => <Loonie cookies={cookies} />)} />
