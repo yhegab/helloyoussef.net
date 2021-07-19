@@ -59,7 +59,7 @@ class Main extends Component {
               <li><NavLink exact to="/">Home</NavLink></li>
               <li><NavLink exact to="/technical">Resume</NavLink></li>
               <li><NavLink to="/favourites">Things I Love</NavLink></li>
-              <li><NavLink to="/loml">loml</NavLink></li>
+              <li><NavLink to="/chai">chai</NavLink></li>
               <li><NavLink to="/schedule">Coursework</NavLink></li>
               <li>
                 <div class="dropdown">
@@ -79,6 +79,7 @@ class Main extends Component {
             <Route exact path="/technical" component={withTracker(Technical)} />
             <Route path="/favourites" component={withTracker(Favourites)} />
             <Route path="/loml" component={withTracker(Farwa)} />
+            <Route path="/chai" component={withTracker(Farwa)} />
             <Route path="/chai" component={withTracker(Farwa)} />
             <Route path="/schedule" component={withTracker(Schedule)} />
             <Route path="/show-predictor" component={withTracker(ShowPredictor)} />
