@@ -59,7 +59,7 @@ class Main extends Component {
               <li><NavLink exact to="/">Home</NavLink></li>
               <li><NavLink exact to="/technical">Resume</NavLink></li>
               <li><NavLink to="/favourites">Things I Love</NavLink></li>
-              <li><NavLink to="/chai">chai</NavLink></li>
+              <li><NavLink to="/chai">Chai</NavLink></li>
               <li><NavLink to="/schedule">Coursework</NavLink></li>
               <li>
                 <div class="dropdown">
