@@ -140,6 +140,8 @@ class Favourites extends Component {
             <li>His House (2020)</li>
             <li>The Social Dilemma (2020)</li>
             <li>A Quiet Place 2 (2021)</li>
+            <li>Luca (2021)</li>
+            <li>Jungle Cruise (2021)</li>
           </ul>
         </div>
         <div className="shows">
