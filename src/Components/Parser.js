@@ -46,7 +46,7 @@ class Parser extends Component {
       body: `{"content": "${file.split(',')[1]}"}`,
       headers: { "content-type": "application/json"}
     };
-    fetch('https://g5wkkduchj.execute-api.us-east-2.amazonaws.com/Prod', requestOptions)
+    fetch('https://us-central1-resume-parser-322517.cloudfunctions.net/parseResume', requestOptions)
       .then((response) => response.json())
       .then((resume) => {
         this.setState({ resume });
