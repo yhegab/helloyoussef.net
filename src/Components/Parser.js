@@ -33,7 +33,6 @@ class Parser extends Component {
       reader.onload = () => resolve(reader.result);
       reader.onerror = error => reject(error);
     });
-    console.log(event.target.files[0].size)
     if (event.target.files[0].size > 5242880) {
       alert('File size too large (limit 5 MB)')
       console.error("File size too large")
@@ -44,10 +43,14 @@ class Parser extends Component {
     const requestOptions = {
       method: 'POST',
       body: `{"content": "${file.split(',')[1]}"}`,
-      headers: { "content-type": "application/json"}
+      headers: { 
+        "Content-Type": "application/json",
+        "Accept": 'application/json',
+      }
     };
-    fetch('https://us-central1-resume-parser-322517.cloudfunctions.net/parseResume', requestOptions)
+    fetch('https://us-central1-resume-parser-322517.cloudfunctions.net/parseResume-1', requestOptions)
       .then((response) => response.json())
+      .then((resume) => JSON.parse(resume.body))
       .then((resume) => {
         this.setState({ resume });
         const degrees = resume.schools ? resume.schools.map((school) => `Degree: ${school.degree ?? '??'}. Major: ${school.field ?? '??'}`) : [];
@@ -150,7 +153,7 @@ class Parser extends Component {
           <link rel="canonical" href="http://itsjafer.com/#/parser" />
         </Helmet>
 
-        <h2>This tool is now permanently disabled. Lever has disabled access to their API.</h2>
+        <h2>Update: This works again!</h2>
 
         <p><b>How well does your resume get parsed?</b></p>
         
@@ -158,7 +161,7 @@ class Parser extends Component {
         This tool uses Lever's resume parsing API to parse resumes. Use this to see how well your resume is read by Application Tracking Systems (ATS) when applying to jobs. Companies that use Lever for job apps include: Figma, Palantir, Netflix, Twitch, Yelp and several others.
         </p>
         
-        <p>Take a look at the backend source code <a href="https://github.com/itsjafer/resume-parser">here</a>! The functionality is hosted as an AWS Lambda function which gets queried through AWS API Gateway.</p>
+        <p>Take a look at the source code <a href="https://github.com/itsjafer/resume-parser">here</a>! The functionality is hosted as an GCP Cloud function that serves as a middle man to the lever API.</p>
         <div>
           <br/>
           <form method="post" action="#" id="#">
