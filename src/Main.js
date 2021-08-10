@@ -65,7 +65,6 @@ class Main extends Component {
                 <div class="dropdown">
                 <label class="dropbtn">Projects</label>
                 <div class="dropdown-content">
-                <NavLink to="/trader">Algo Trader</NavLink>
                 <NavLink to="/parser">Resume Parser</NavLink>
                 <NavLink to="/show-predictor">TV Show Recommender</NavLink>
                 <a href="https://itsjafer.com/repo" target="_blank" rel="noopener noreferrer">Jailbreak Tweaks</a>
