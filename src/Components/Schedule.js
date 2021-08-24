@@ -159,7 +159,6 @@ class Schedule extends Component {
                 <li>SDS131R - Intro to Political Ideologies</li>
                 <li>BU493V - Investment Strategies</li>
                 <li>BU491 - Policy 2</li>
-                <li>CS451 - Data-Intensive Distributed Computing</li>
                 <li>CS486 - Artificial Intelligence</li>
               </ul>
             </div>
@@ -167,6 +166,8 @@ class Schedule extends Component {
               <h3>Spring 2021</h3>
               <ul>
                 <li><b>Software Engineer - Google</b></li>
+                <li>BU473 - Investment Management</li>                
+                <li>CS456 - Computer Networks</li>
               </ul>
             </div>
           </div>
@@ -174,11 +175,10 @@ class Schedule extends Component {
             <div className="term">
               <h3>5B: Fall 2021</h3>
               <ul>
-                <li>Elective</li>
-                <li>BU4?? - Elective</li>
-                <li>BU4?? - Elective</li>
-                <li>BU4?? - Elective</li>
-                <li>CS??? - Elective</li>
+                <li>BU413 - Personal Financial Planning</li>
+                <li>BU495R - Data Visualization</li>
+                <li>GEOG101 - Introduction to Geography </li>
+                <li>SCWRK101 - Introduction to Social Work </li>
               </ul>
             </div>
           </div>
