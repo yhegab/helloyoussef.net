@@ -59,7 +59,7 @@ class Parser extends Component {
         const data = [
           { info: 'Name', parsed: resume.names ? resume.names.join(', ') : [] },
           { info: 'Email', parsed: resume.emails ? resume.emails[0].value : [] },
-          { info: 'Phone', parsed: resume.phones ? resume.phones[0].value : [] },
+          { info: 'Phone', parsed: resume.phones && resume.phones[0] ? resume.phones[0].value : [] },
           { info: 'University', parsed: schools.join(', ') },
           { info: 'Degree', parsed: degrees.join(', ') },
           { info: 'Links', parsed: links },
