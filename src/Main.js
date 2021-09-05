@@ -15,6 +15,7 @@ import Favourites from './Components/Favourites';
 import Schedule from './Components/Schedule';
 import Reflection from './Components/Reflection';
 import ShowPredictor from './Components/ShowPredictor';
+import ReverseSplit from './Components/ReverseSplit';
 import Parser from './Components/Parser';
 import Farwa from './Components/Farwa';
 import Trader from './Components/Trader';
@@ -80,6 +81,7 @@ class Main extends Component {
             <Route path="/loml" component={withTracker(Farwa)} />
             <Route path="/chai" component={withTracker(Farwa)} />
             <Route path="/chai" component={withTracker(Farwa)} />
+            <Route path="/reversesplit" component={withTracker(ReverseSplit)} />
             <Route path="/schedule" component={withTracker(Schedule)} />
             <Route path="/show-predictor" component={withTracker(ShowPredictor)} />
             <Route path="/loonie" component={withTracker(() => <Loonie cookies={cookies} />)} />
