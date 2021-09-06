@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import GoogleLogin from 'react-google-login';
 
 class ReverseSplit extends Component {
   constructor(props) {
