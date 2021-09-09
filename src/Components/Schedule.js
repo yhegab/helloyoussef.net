@@ -175,10 +175,10 @@ class Schedule extends Component {
             <div className="term">
               <h3>5B: Fall 2021</h3>
               <ul>
-                <li>BU413 - Personal Financial Planning</li>
+                <li>BU423 - Options, Futures, Swaps</li>
                 <li>BU495R - Data Visualization</li>
                 <li>GEOG101 - Introduction to Geography </li>
-                <li>SCWRK101 - Introduction to Social Work </li>
+                <li>CLAS104 - Introduction to Classical Mythology </li>
               </ul>
             </div>
           </div>
