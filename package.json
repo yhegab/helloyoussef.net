@@ -25,6 +25,7 @@
     "react-helmet": "^6.1.0",
     "react-highcharts": "^16.1.0",
     "react-image": "^4.0.1",
+    "react-json-pretty": "^2.2.0",
     "react-markdown": "^7.0.1",
     "react-pdf": "^4.1.0",
     "react-pdf-js": "^4.2.3",

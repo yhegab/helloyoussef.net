@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import ReactTable from 'react-table';
 import 'react-table/react-table.css';
+import 'react-json-pretty/themes/monikai.css';
 import {Helmet} from "react-helmet";
+import JSONPretty from 'react-json-pretty';
 
 class Parser extends Component {
   constructor(props) {
@@ -63,7 +65,7 @@ class Parser extends Component {
           { info: 'University', parsed: schools.join(', ') },
           { info: 'Degree', parsed: degrees.join(', ') },
           { info: 'Links', parsed: links },
-          { info: 'Summary', parsed: resume.summary && resume.summary.experience ? resume.summary.experience : '??' },
+          { info: 'Summary', parsed: resume.summary && resume.summary.executiveSummary ? resume.summary.executiveSummary : '??' },
           { info: 'Skills', parsed: resume.summary && resume.summary.skills ? resume.summary.skills : '??' },
         ];
         const positions = resume.positions ? resume.positions.map((position) => ({
@@ -144,7 +146,7 @@ class Parser extends Component {
       resume, data, positions, limitedPositions, isDesktop,
     } = this.state;
 
-
+    var JSONPrettyMon = require('react-json-pretty/dist/monikai');
     return (
       <div>
         <Helmet>
@@ -164,7 +166,7 @@ class Parser extends Component {
           <br/>
           <form method="post" action="#" id="#">
             <div className="form-group files">
-              <label for="file">Upload resume (docx or pdf):</label>
+              <label htmlFor="file">Upload resume (docx or pdf):</label>
               <input type="file" name="file" className="form-control" onChange={(event) => this.onUploadHandler(event)} />
             </div>
           </form>
@@ -190,6 +192,8 @@ class Parser extends Component {
                     showPaginationBottom={false}
                     showPageSizeOptions={false}
                   />
+                  <p>Raw JSON Output:</p>
+                  <JSONPretty id="json-pretty" theme={JSONPrettyMon} data={resume}></JSONPretty>
                 </div>
                 )}
       </div>
