@@ -10,8 +10,7 @@ class ReverseSplit extends Component {
         loading: false,
         account: "schwab",
         totpSchwab: "",
-        totpTS: "",
-        accts: null
+        totpTS: ""
     }
   }
 
@@ -100,7 +99,7 @@ class ReverseSplit extends Component {
               <input type="submit" value="Place Trade"/>
               </form>
               {
-                this.state.loading && 'Loading...'
+                this.state.loading && 'Loading... (this will take up to 5 minutes)'
               }
           </div>
         

@@ -153,8 +153,6 @@ class Parser extends Component {
           <link rel="canonical" href="http://itsjafer.com/#/parser" />
         </Helmet>
 
-        <h2>Update: This works again!</h2>
-
         <p><b>How well does your resume get parsed?</b></p>
         
         <p>
