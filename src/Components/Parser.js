@@ -50,12 +50,14 @@ class Parser extends Component {
         "Accept": 'application/json',
       }
     };
+    this.setState({ loading: true });
+
     fetch('https://us-central1-resume-parser-322517.cloudfunctions.net/parseResume-1', requestOptions)
       .then((response) => response.json())
       .then((resume) => JSON.parse(resume.body))
       .then((resume) => {
         this.setState({ resume });
-        const degrees = resume.schools ? resume.schools.map((school) => `Degree: ${school.degree ?? '??'}. Major: ${school.field ?? '??'}`) : [];
+        const degrees = resume.schools ? resume.schools.map((school) => `Degree: ${school.degree ?? '??'} (GPA: ${school.gpa ?? "??"}).`) : [];
         const schools = resume.schools ? resume.schools.map((school) => `${school.org ?? '??'} from ${school.start ? school.start.month : '??'}/${school.start ? school.start.year : '??'} to ${school.end ? school.end.month : '??'}/${school.end ? school.end.year : '??'}`) : [];
         const links = resume.links ? resume.links.map((link) => link.url ?? '??').join(', ') : [];
         const data = [
@@ -78,6 +80,8 @@ class Parser extends Component {
         })) : [];
 
         this.setState({ data, positions, limitedPositions });
+        this.setState({ loading: false });
+
       })
       .catch((error) => {
         console.log(error);
@@ -171,31 +175,35 @@ class Parser extends Component {
             </div>
           </form>
         </div>
+        {
+          this.state.loading && 'Loading...'
+        }
         {resume && data && positions
-                // Render a table summarizing our accounts here probably
-                && (
-                <div>
-                  <p>Resume Summary:</p>
-                  <ReactTable
-                    data={data}
-                    columns={summaryColumns}
-                    defaultPageSize={data.length}
-                    showPaginationBottom={false}
-                    showPageSizeOptions={false}
-                  />
-                  <br />
-                  <p>Work Experience</p>
-                  <ReactTable
-                    data={isDesktop ? positions : limitedPositions}
-                    columns={isDesktop ? jobColumns : limitedColumns}
-                    defaultPageSize={positions.length}
-                    showPaginationBottom={false}
-                    showPageSizeOptions={false}
-                  />
-                  <p>Raw JSON Output:</p>
-                  <JSONPretty id="json-pretty" theme={JSONPrettyMon} data={resume}></JSONPretty>
-                </div>
-                )}
+          // Render a table summarizing our accounts here probably
+          && (
+          <div>
+            <p>Resume Summary:</p>
+            <ReactTable
+              data={data}
+              columns={summaryColumns}
+              defaultPageSize={data.length}
+              showPaginationBottom={false}
+              showPageSizeOptions={false}
+            />
+            <br />
+            <p>Work Experience</p>
+            <ReactTable
+              data={isDesktop ? positions : limitedPositions}
+              columns={isDesktop ? jobColumns : limitedColumns}
+              defaultPageSize={positions.length}
+              showPaginationBottom={false}
+              showPageSizeOptions={false}
+            />
+            <p>Raw JSON Output:</p>
+            <JSONPretty id="json-pretty" theme={JSONPrettyMon} data={resume}></JSONPretty>
+          </div>
+          )}
+              
       </div>
     );
   }
