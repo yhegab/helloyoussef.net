@@ -45,7 +45,7 @@ class Chai extends Component {
       <div>
         <p>Enter Password</p>
         <form onSubmit={this.onSubmit}>
-          <input value={password} onChange={this.onChange} />
+          <input value={password} type="password" onChange={this.onChange} />
           <input type="submit" value="submit" />
         </form>
       </div>

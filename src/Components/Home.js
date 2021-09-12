@@ -37,6 +37,8 @@ class Home extends Component {
         <p>If you want to connect, we can hop on a call to talk about experiences, education, connect about an opportunity, or just hangout -- <a href="https://calendly.com/itsjafer/coffee-chat"> schedule a coffee chat on my calendar</a>!
         </p>
 
+        <p>Check out the source code for this website <a href="https://github.com/itsjafer/itsjafer.github.io">here</a>.</p>
+
       </div>
     );
   }
