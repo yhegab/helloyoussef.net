@@ -9,7 +9,7 @@ class Schedule extends Component {
       <div>
         <p>
           I am currently in my
-          <b> 5A</b>
+          <b> 5B</b>
           {' '}
           term.
         </p>

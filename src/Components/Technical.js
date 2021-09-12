@@ -34,7 +34,7 @@ class Technical extends Component {
             Here is a
             <a href="Jafer_Haider_Resume.pdf" target="_blank" rel="noopener noreferrer"> direct link to my resume;</a>
             {' '}
-            Ahead of my graduation in 2021, I'm currently looking for new grad opportunities!
+            Ahead of my graduation in 2021, I'm currently looking for new grad opportunities! <a href="https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs">This is the template I used</a> as the basis for my resume.
             {' '}
           </p>
 
