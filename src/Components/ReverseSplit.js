@@ -66,7 +66,7 @@ class ReverseSplit extends Component {
     return (
         <div>
       <div className="reverse-split">
-        <p>This is a tool to place trades on multiple accounts on either Schwab or Tradestation.</p>
+        <p>This is a tool to place bulk trades on multiple accounts on either Schwab or Tradestation.</p>
           <div className="schwab">
               <form onSubmit={this.onSubmit}>
               <p>Account Info:</p>
