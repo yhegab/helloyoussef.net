@@ -14,30 +14,20 @@ class Home extends Component {
           My name is
           <b> Jafer Haider</b>
           {' '}
-          and I&apos;m a student studying concurrently at the University of Waterloo and Wilfrid Laurier University working towards an
-          <b> Honours Bachelor of Computer Science</b>
-          {' '}
-          and an
-          <b> Honours Bachelor of Business Administration</b>
-          {' '}
-          respectively.
-        </p>
-
-        <p>This past Summer, I interned at Google within the Cloud Compute VMWare Engine team; ahead of my graduation this December, I'm currently looking for New Grad opportunities to start in 2022!</p>
+          and I&apos;m a double-degree student at the University of Waterloo and Wilfrid Laurier University. </p>
         
         <p>
-          Apart from all that, I&apos;m a big fan of board games, movies, and TV Shows (for real, I even have a
+          In my free time, I&apos;m a big fan of board games, movies, and TV Shows (for real, I even have a
           <a href="/#/favourites"> list</a>
-          ), I love good shawarma, and I like to
+          ). I love good shawarma, bubble tea, I occasionally like to
           <a href="/repo"> write tweaks for jailbroken iPhones</a>
-          {' '}
-          on occasion.
+          {' '}, as well as building projects in general. In particular, there's a good chance you've come across my website because of my popular <a href="/#/parser">resume parser project</a>.
         </p>
         
-        <p>If you want to connect, we can hop on a call to talk about experiences, education, connect about an opportunity, or just hangout -- <a href="https://calendly.com/itsjafer/coffee-chat"> schedule a coffee chat on my calendar</a>!
+        <p>If you're to connect, we can hop on a Google Meet to talk about experiences, education, connect about an opportunity, or just hangout -- <a href="https://calendly.com/itsjafer/coffee-chat"> schedule a coffee chat on my calendar</a>!
         </p>
 
-        <p>Check out the source code for this website <a href="https://github.com/itsjafer/itsjafer.github.io">here</a>.</p>
+        <p>Most of my projects are hosted right here on my website; check out the source code <a href="https://github.com/itsjafer/itsjafer.github.io">here</a>.</p>
 
       </div>
     );
