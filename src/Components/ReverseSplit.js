@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import 'react-json-pretty/themes/monikai.css';
+import JSONPretty from 'react-json-pretty';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import ReactTable from 'react-table';
 
 class ReverseSplit extends Component {
   constructor(props) {
@@ -12,6 +16,8 @@ class ReverseSplit extends Component {
         totpSchwab: "",
         totpTS: "",
         isDryRun: false,
+        data: null,
+        messages: null
     }
   }
 
@@ -34,9 +40,13 @@ class ReverseSplit extends Component {
         body: formData
       };
       fetch('https://server-22cbpdc3ea-uc.a.run.app/trade_'+this.state.account, requestOptions)
-        .then(response => response.text())
-        .then((text) => {
-            alert(text)
+        .then(response => response.json())
+        .then((data) => {
+            if (data.hasOwnProperty("messages")) {
+              this.setState({ messages: data })
+            } else {
+              this.setState({ data: data})
+            }
             this.setState({ loading: false })
         })
   }
@@ -64,11 +74,28 @@ class ReverseSplit extends Component {
         console.log(res.profileObj)
         this.setState({ accessToken: res.tokenId })
     }
-    
+    var JSONPrettyMon = require('react-json-pretty/dist/monikai');
+    const columns = [{
+      Header: 'Symbol',
+      accessor: 'symbol' // String-based value accessors!
+    }, {
+      Header: 'Description',
+      accessor: 'description',
+    }, {
+      Header: 'Total Cost',
+      accessor: 'cost',
+    }, {
+      Header: 'Quantity Owned',
+      accessor: 'quantity',
+    }, {
+      Header: 'Total Value',
+      accessor: 'market_value',
+    }]
+
     return (
         <div>
       <div className="reverse-split">
-        <p>This is a tool to place trades on either Schwab or Tradestation.</p>
+        <p>This is a tool to place bulk trades on either Schwab or Tradestation for anyone with multiple accounts. You can find the source code for the backend <a href="https://github.com/itsjafer/trade-server/">here.</a></p>
           <div className="schwab">
               <form onSubmit={this.onSubmit}>
               <p>Account Info:</p>
@@ -77,7 +104,7 @@ class ReverseSplit extends Component {
               <input type="password" value={this.state.password} placeholder="password" 
               onChange={(e)=> this.setState({password: e.target.value })}/>
 
-              <p>One-time TOTP secret</p>
+              <p><a href="https://www.reddit.com/r/personalfinance/comments/hvvuwl/using_google_auth_or_your_totp_app_of_choice_for/">TOTP secret:</a></p>
               {
                 this.state.account == "schwab" &&
               <input type="text" value={this.state.totpSchwab} placeholder="Schwab TOTP" 
@@ -107,10 +134,47 @@ class ReverseSplit extends Component {
               <input type="number" value={this.state.accts} placeholder="Number of Accounts" pattern="[0-9]+"
               onChange={(e)=> {this.setState({accts: e.target.value }); localStorage.setItem('accts', e.target.value)}}/>
               }
-              <input type="submit" value="Place Trade"/>
+              <input type="submit" value={this.state.stock ? "Place Trade (on all accounts)" : "Get Account Info"}/>
               </form>
               {
-                this.state.loading && 'Loading... (this will take up to 5 minutes)'
+                this.state.loading && <span>Loading... (this will take up to {this.state.account == "schwab" ? "1" : "5"} minute(s))</span>
+              }
+              {
+                this.state.data && 
+                (
+                  <div>
+                    <Tabs>
+                      <TabList>
+                          {Object.keys(this.state.data).map(account => <Tab>{account}</Tab>)}
+                      </TabList>
+
+                      {
+                        Object.keys(this.state.data).map(account => 
+                          <TabPanel>
+                            <p><b>Account ID:</b> {this.state.data[account]["account_id"]}</p>
+                            <p><b>Account Value:</b> ${this.state.data[account]["account_value"]}</p>
+                            <p><b>Market Value:</b> ${this.state.data[account]["market_value"]}</p>
+                            <p><b>Available Cash:</b> ${this.state.data[account]["available_cash"]}</p>
+                            <p><b>Cost Basis:</b> ${this.state.data[account]["cost_basis"]}</p>
+                            <ReactTable
+                              data={this.state.data[account]["positions"]}
+                              columns={columns}
+                              showPaginationBottom={false}
+                              showPageSizeOptions={false}
+                            />
+                          </TabPanel>)
+                      }
+                  </Tabs>
+                  </div>
+                )
+              }
+              {
+                (this.state.messages || this.state.data) && (
+                  <div>
+                  <p>Raw JSON Output:</p>
+                  <JSONPretty id="json-pretty" theme={JSONPrettyMon} data={this.state.data ? this.state.data : this.state.messages}></JSONPretty>
+                  </div>
+                )
               }
           </div>
         
