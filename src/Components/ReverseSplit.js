@@ -10,7 +10,8 @@ class ReverseSplit extends Component {
         loading: false,
         account: "schwab",
         totpSchwab: "",
-        totpTS: ""
+        totpTS: "",
+        isDryRun: false,
     }
   }
 
@@ -27,6 +28,7 @@ class ReverseSplit extends Component {
       formData.append("password", this.state.password)
       formData.append("totp", this.state.account == "schwab" ? this.state.totpSchwab : this.state.totpTS)
       formData.append("accounts", this.state.accts)
+      formData.append("dry_run", this.state.isDryRun)
       const requestOptions = {
         method: 'POST',
         body: formData
@@ -66,7 +68,7 @@ class ReverseSplit extends Component {
     return (
         <div>
       <div className="reverse-split">
-        <p>This is a tool to place bulk trades on multiple accounts on either Schwab or Tradestation.</p>
+        <p>This is a tool to place trades on either Schwab or Tradestation.</p>
           <div className="schwab">
               <form onSubmit={this.onSubmit}>
               <p>Account Info:</p>
@@ -76,10 +78,16 @@ class ReverseSplit extends Component {
               onChange={(e)=> this.setState({password: e.target.value })}/>
 
               <p>One-time TOTP secret</p>
+              {
+                this.state.account == "schwab" &&
               <input type="text" value={this.state.totpSchwab} placeholder="Schwab TOTP" 
               onChange={(e)=> {this.setState({totpSchwab: e.target.value }); localStorage.setItem('totpSchwab', e.target.value)}}/>
+              }
+              {
+                this.state.account == "ts" &&
               <input type="text" value={this.state.totpTS} placeholder="Tradestation TOTP" 
               onChange={(e)=> {this.setState({totpTS: e.target.value }); localStorage.setItem('totpTS', e.target.value)}}/>
+              }
 
               <p>Trade:</p>
               <input type="text" value={this.state.stock} placeholder="stock ticker" 
@@ -94,8 +102,16 @@ class ReverseSplit extends Component {
                 <option value="ts">TradeStation</option>
                 <option value="schwab">Schwab</option>
               </select>
+              {
+                this.state.account == "ts" &&
               <input type="number" value={this.state.accts} placeholder="Number of Accounts" pattern="[0-9]+"
               onChange={(e)=> {this.setState({accts: e.target.value }); localStorage.setItem('accts', e.target.value)}}/>
+              }
+              {
+                this.state.account == "schwab" &&
+                <label><input type="checkbox" id="dryRun" name="dryRun" value="Dry Run" checked={this.state.isDryRun} 
+                onChange={e => this.setState({isDryRun: !this.state.isDryRun })} /> Dry Run? </label>
+              }
               <input type="submit" value="Place Trade"/>
               </form>
               {
