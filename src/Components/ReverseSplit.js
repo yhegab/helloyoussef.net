@@ -107,11 +107,6 @@ class ReverseSplit extends Component {
               <input type="number" value={this.state.accts} placeholder="Number of Accounts" pattern="[0-9]+"
               onChange={(e)=> {this.setState({accts: e.target.value }); localStorage.setItem('accts', e.target.value)}}/>
               }
-              {
-                this.state.account == "schwab" &&
-                <label><input type="checkbox" id="dryRun" name="dryRun" value="Dry Run" checked={this.state.isDryRun} 
-                onChange={e => this.setState({isDryRun: !this.state.isDryRun })} /> Dry Run? </label>
-              }
               <input type="submit" value="Place Trade"/>
               </form>
               {
