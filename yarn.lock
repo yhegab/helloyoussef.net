@@ -7249,6 +7249,11 @@ kleur@^3.0.3:
   resolved "https://registry.yarnpkg.com/kleur/-/kleur-3.0.3.tgz#a79c9ecc86ee1ce3fa6206d1216c501f147fc07e"
   integrity sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==
 
+knope@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/knope/-/knope-1.1.2.tgz#e89ca83f4af0b790018448c319d612cc89b07b5f"
+  integrity sha1-6JyoP0rwt5ABhEjDGdYSzImwe18=
+
 last-call-webpack-plugin@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/last-call-webpack-plugin/-/last-call-webpack-plugin-3.0.0.tgz#9742df0e10e3cf46e5c0381c2de90d3a7a2d7555"
