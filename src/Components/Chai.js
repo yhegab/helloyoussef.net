@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactMarkdown from 'react-markdown';
+const knope = require('knope')
 
 class Chai extends Component {
   constructor(props) {
@@ -8,6 +9,7 @@ class Chai extends Component {
       secretVisible: false,
       password: '',
       letter: '',
+      name: ''
     };
     this.chai = this.chai.bind(this);
     this.password = this.password.bind(this);
@@ -37,6 +39,12 @@ class Chai extends Component {
       .then((text) => {
         this.setState({ letter: text });
       });
+    
+    fetch(`https://us-central1-chaishai.cloudfunctions.net/getName?password=${password}`)
+      .then((res) => res.text())
+      .then((text) => {
+        this.setState({ name: text, compliment: knope.getOfficialCompliment(text)});
+      });
   }
 
   password() {
@@ -53,9 +61,12 @@ class Chai extends Component {
   }
 
   chai() {
+    // Pass in the name as a parameter
+
     const { letter, password } = this.state;
     return (
       <div>
+        <h2 onClick={() => this.setState({compliment: knope.getCompliment(this.state.name)})}>{this.state.compliment}</h2>
         <div className="pictures">
           <div className="row">
             <div className="column">

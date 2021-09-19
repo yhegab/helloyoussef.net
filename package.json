@@ -6,6 +6,7 @@
   "dependencies": {
     "@material-ui/core": "^3.9.4",
     "highlightjs": "^9.16.2",
+    "knope": "^1.1.2",
     "load-script": "^1.0.0",
     "markdown-it": "^8.4.2",
     "markdown-it-imsize": "^2.0.1",
