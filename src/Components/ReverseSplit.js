@@ -3,7 +3,6 @@ import 'react-json-pretty/themes/monikai.css';
 import JSONPretty from 'react-json-pretty';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import ReactTable from 'react-table';
-
 class ReverseSplit extends Component {
   constructor(props) {
     super(props)
@@ -21,6 +20,34 @@ class ReverseSplit extends Component {
     }
   }
 
+  getUri(secret) {
+    return "otpauth://totp/schwab?algorithm=SHA1&digits=6&period=30&secret=" + secret + "&issuer=schwab"
+  }
+
+  onGenerate = () => {
+    this.setState({ loading: true})
+    fetch('https://server-22cbpdc3ea-uc.a.run.app/generate_totp')
+      .then(response => response.json())
+      .then((data) => {
+          localStorage.setItem('symantec_id', data['symantec_id'])
+          this.setState({uri: this.getUri(data['totp'])})
+          this.setState({
+            symantecID: data['symantec_id'],
+            generated_totp: data['totp']
+          })
+          if (this.state.totpSchwab.length <= 0) {
+            this.setState({
+              totpSchwab: data['totp']
+            })
+            localStorage.setItem('totpSchwab', data['totp'])
+            localStorage.setItem('uri', this.state.uri)
+
+          }
+          this.setState({ loading: false })
+
+
+      })
+  }
 
   onSubmit = (event) => {
       event.preventDefault()
@@ -62,9 +89,11 @@ class ReverseSplit extends Component {
   componentDidMount() {
     this.setState({
       totpSchwab: localStorage.getItem('totpSchwab'),
+      symantecID: localStorage.getItem('symantec_id'),
       totpTS: localStorage.getItem('totpTS'),
       accts: localStorage.getItem('accts'),
-      username: localStorage.getItem('username')
+      username: localStorage.getItem('username'),
+      uri: localStorage.getItem('uri')
     })
   }
 
@@ -92,10 +121,12 @@ class ReverseSplit extends Component {
       accessor: 'market_value',
     }]
 
+    var QRCode = require('qrcode.react')
     return (
         <div>
       <div className="reverse-split">
-        <p>This is a tool to place bulk trades on either Schwab or Tradestation for anyone with multiple accounts. You can find the source code for the backend <a href="https://github.com/itsjafer/trade-server/">here.</a></p>
+        <p>This is a tool to place bulk trades on Schwab for anyone with multiple accounts. You can find the source code for the backend <a href="https://github.com/itsjafer/trade-server/">here.</a></p>
+          
           <div className="schwab">
               <form onSubmit={this.onSubmit}>
               <p>Account Info:</p>
@@ -104,11 +135,43 @@ class ReverseSplit extends Component {
               <input type="password" value={this.state.password} placeholder="password" 
               onChange={(e)=> this.setState({password: e.target.value })}/>
 
-              <p><a href="https://www.reddit.com/r/personalfinance/comments/hvvuwl/using_google_auth_or_your_totp_app_of_choice_for/">TOTP secret:</a></p>
+              <p>TOTP secret:</p>
               {
                 this.state.account == "schwab" &&
-              <input type="text" value={this.state.totpSchwab} placeholder="Schwab TOTP" 
-              onChange={(e)=> {this.setState({totpSchwab: e.target.value }); localStorage.setItem('totpSchwab', e.target.value)}}/>
+                <div>
+                <input type="text" value={this.state.totpSchwab} placeholder="Schwab TOTP" 
+                onChange={(e)=> {
+                  this.setState({
+                    totpSchwab: e.target.value,
+                    uri: this.getUri(e.target.value),
+                    symantecID: null
+                  }); 
+                  localStorage.removeItem('symantec_id'); 
+                  localStorage.setItem('uri', this.state.uri)
+                  localStorage.setItem('totpSchwab', e.target.value)}}/>
+                {
+                  this.state.totpSchwab.length <= 0 &&
+                  <button type="button" onClick={this.onGenerate} value="Generate TOTP">Generate TOTP</button>
+                }
+                {
+                this.state.symantecID &&
+                <div>
+                  <p>Symantec VIP ID: {this.state.symantecID}</p>
+                  <p><b>Instructions:</b></p>
+                  <p>Enter the Symantec VIP ID above in your <a href="https://client.schwab.com/clientapps/access/securityCenter#/main/epass">security center</a> for two-step verification. Select 'always at login' and then Security Token.</p>
+                </div>
+                }
+                { 
+                this.state.totpSchwab &&
+                <div>
+                <p>Scan this QR code on your phone and add the verification code to an authenticator of your choosing:</p>
+                  {
+                    this.state.uri &&
+                    <QRCode value={this.state.uri}/>
+                  }
+                  </div>
+                }
+                </div>
               }
               {
                 this.state.account == "ts" &&
@@ -126,7 +189,7 @@ class ReverseSplit extends Component {
                 <option value="Sell">Sell</option>
               </select>
               <select value={this.state.account} onChange={(e)=> this.setState({account: e.target.value })}>
-                <option value="ts">TradeStation</option>
+                <option value="ts">TradeStation (unreliable)</option>
                 <option value="schwab">Schwab</option>
               </select>
               {
