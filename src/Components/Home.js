@@ -27,8 +27,6 @@ class Home extends Component {
         <p>If you're to connect, we can hop on a Google Meet to talk about experiences, education, connect about an opportunity, or just hangout -- <a href="https://calendly.com/itsjafer/coffee-chat"> schedule a coffee chat on my calendar</a>!
         </p>
 
-        <p>Most of my projects are hosted right here on my website; check out the source code <a href="https://github.com/itsjafer/itsjafer.github.io">here</a>.</p>
-
       </div>
     );
   }
