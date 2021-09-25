@@ -18,11 +18,9 @@ import ShowPredictor from './Components/ShowPredictor';
 import ReverseSplit from './Components/ReverseSplit';
 import Parser from './Components/Parser';
 import Chai from './Components/Chai';
+import {Blog, BlogEntry} from './Components/Blog';
 import Trader from './Components/Trader';
 import Loonie from './Components/Loonie/Loonie';
-import CS240 from './Courses/CS240.md';
-import BU362 from './Courses/BU362.md';
-import CS341 from './Courses/CS341.md';
 
 const MATHJAX_SCRIPT = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML';
 
@@ -61,6 +59,7 @@ class Main extends Component {
               <li><NavLink exact to="/technical">Resume</NavLink></li>
               <li><NavLink to="/favourites">Things I Love</NavLink></li>
               <li><NavLink to="/schedule">Coursework</NavLink></li>
+              <li><NavLink to="/blog">Blog</NavLink></li>
               <li>
                 <div class="dropdown">
                 <label class="dropbtn">Projects</label>
@@ -79,6 +78,8 @@ class Main extends Component {
             <Route exact path="/technical" component={withTracker(Technical)} />
             <Route path="/favourites" component={withTracker(Favourites)} />
             <Route path="/chai" component={withTracker(Chai)} />
+            <Route exact path="/blog" component={withTracker(Blog)} />
+            <Route exact path="/blog/:file/" component={withTracker(BlogEntry)} />
             <Route path="/reversesplit" component={withTracker(ReverseSplit)} />
             <Route path="/schwab" component={withTracker(ReverseSplit)} />
             <Route path="/schedule" component={withTracker(Schedule)} />
@@ -86,36 +87,6 @@ class Main extends Component {
             <Route path="/loonie" component={withTracker(() => <Loonie cookies={cookies} />)} />
             <Route path="/parser" component={withTracker(Parser)} />
             <Route path="/trader" component={withTracker(Trader)} />
-            <Route
-              path="/cs240"
-              component={withTracker(() => (
-                <Reflection
-                  title="CS240"
-                  date="Spring 2018"
-                  file={CS240}
-                />
-              ))}
-            />
-            <Route
-              path="/bu362"
-              component={withTracker(() => (
-                <Reflection
-                  title="BU362"
-                  date="Winter 2019"
-                  file={BU362}
-                />
-              ))}
-            />
-            <Route
-              path="/cs341"
-              component={withTracker(() => (
-                <Reflection
-                  title="CS341"
-                  date="Winter 2019"
-                  file={CS341}
-                />
-              ))}
-            />
           </div>
         </div>
       </HashRouter>

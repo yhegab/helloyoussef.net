@@ -69,11 +69,7 @@ class Schedule extends Component {
               <ul>
                 <li>BU231 - Business Law</li>
                 <li>BU247 - Managerial Accounting</li>
-                <li>
-                  <NavLink to="/cs240">CS240</NavLink>
-                  {' '}
-                  - Data Structures
-                </li>
+                <li>CS240 - Data Structures</li>
                 <li>CS241 - Compilers</li>
                 <li>CS251 - Computer/Circuit Design</li>
                 <li>STAT231 - Statistics</li>
@@ -96,18 +92,10 @@ class Schedule extends Component {
             <div className="term">
               <h3>3B: Winter 2019</h3>
               <ul>
-                <li>
-                  <NavLink to="/bu362">BU362</NavLink>
-                  {' '}
-                  - Product management
-                </li>
+                <li>BU362 - Product management</li>
                 <li>BU375 - Operations management</li>
                 <li>BU398 - Organizational Behaviour II</li>
-                <li>
-                  <NavLink to="/cs341">CS341</NavLink>
-                  {' '}
-                  - Algorithms
-                </li>
+                <li>CS341 - Algorithms</li>
               </ul>
             </div>
             <div className="term">

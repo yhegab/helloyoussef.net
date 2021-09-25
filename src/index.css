@@ -247,3 +247,12 @@ a {
   clear: both;
   display: table;
 }
+.blog {
+  width: 80%;
+  text-align: center;
+  margin:0 auto;
+}
+.blogEntry {
+  display: inline-block;
+  text-align: left;
+}
