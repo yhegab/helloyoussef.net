@@ -44,14 +44,14 @@ h2 {
 h3 {
   height: 100%;
   margin: 0;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 300;
 }
 h4 {
   height: 100%;
   margin: 0;
-  font-size: 1.5em;
-  font-weight: 100;
+  font-size: 1.25em;
+  font-weight: 300;
 }
 ul.header li {
   display: inline;
@@ -248,11 +248,15 @@ a {
   display: table;
 }
 .blog {
-  width: 80%;
+  width: 70%;
   text-align: center;
   margin:0 auto;
 }
+.blog > *:not(:last-child) {
+  display: block;
+  margin-bottom: 40px; 
+} 
+
 .blogEntry {
-  display: inline-block;
   text-align: left;
 }

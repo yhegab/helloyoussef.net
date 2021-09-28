@@ -47,6 +47,12 @@ class Blog extends Component {
             * Negotiating between Microsoft, Google, Robinhood
           */}
           <BlogEntry 
+            title="Getting the Google Internship"
+            date="September 27, 2021" 
+            description="I reflect about the journey to actually securing my Summer 2021 internship at Google." 
+            file="google_internship"
+          />
+          <BlogEntry 
             title="This is my first blog post"
             date="September 25, 2021" 
             description="Testing out my first blog post is exciting!" 
