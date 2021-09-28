@@ -19,8 +19,7 @@ class Home extends Component {
         <p>
           In my free time, I&apos;m a big fan of board games, movies, and TV Shows (for real, I even have a
           <a href="/#/favourites"> list</a>
-          ). I'm a big fan of shawarma and bubble tea (taro milk tea with brown sugar boba is undefeated); I also occasionally like to
-          <a href="/repo"> write tweaks for jailbroken iPhones</a> generally enjoy working on side projects that make my life easier. In particular, there's a good chance you've come across my website because of my popular <a href="/#/parser">resume parser project</a>.
+          ). I also generally enjoy working on side projects that make my life easier. In particular, there's a good chance you've come across my website because of my popular <a href="/#/parser">resume parser project</a>.
         </p>
         
         <p>If you're looking to connect, we can hop on a Google Meet to talk about experiences, education, connect about an opportunity, or just hangout -- <a href="https://calendly.com/itsjafer/coffee-chat"> schedule a coffee chat on my calendar</a>!

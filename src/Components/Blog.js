@@ -65,6 +65,12 @@ class Blog extends Component {
             * Negotiating between Microsoft, Google, Robinhood
           */}
           <BlogEntry 
+            title="Negotiating New Grad Offers"
+            date="September 28, 2021" 
+            description="When looking for a 2022 new grad opportunity, I was fortunate to have received offers from Google, Microsoft, and Robinhood." 
+            file="negotiating"
+          />
+          <BlogEntry 
             title="Getting the Google Internship"
             date="September 27, 2021" 
             description="I reflect about the journey to actually securing my Summer 2021 internship at Google." 

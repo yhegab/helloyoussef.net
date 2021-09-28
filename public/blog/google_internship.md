@@ -1,4 +1,5 @@
 ## Getting an Internship at Google
+*September 27, 2021*
 
 This past Summer of 2021, I interned at Google. This blog post is a summary of the recruitment process that I went through.
 

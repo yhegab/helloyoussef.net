@@ -6,14 +6,12 @@ import {
 } from 'react-router-dom';
 import { withCookies } from 'react-cookie';
 import ReactGA from 'react-ga';
-import loadScript from 'load-script';
 import withTracker from './withTracker';
 import Home from './Components/Home';
 import Social from './Components/Social';
 import Technical from './Components/Technical';
 import Favourites from './Components/Favourites';
 import Schedule from './Components/Schedule';
-import Reflection from './Components/Reflection';
 import ShowPredictor from './Components/ShowPredictor';
 import ReverseSplit from './Components/ReverseSplit';
 import Parser from './Components/Parser';
@@ -21,18 +19,6 @@ import Chai from './Components/Chai';
 import {Blog, BlogEntry} from './Components/Blog';
 import Trader from './Components/Trader';
 import Loonie from './Components/Loonie/Loonie';
-
-const MATHJAX_SCRIPT = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML';
-
-const MATHJAX_OPTIONS = {
-  'fast-preview': { disabled: true },
-  tex2jax: {
-    inlineMath: [['$', '$'], ['\\(', '\\)']],
-    displayMath: [['$$', '$$'], ['\\[', '\\]']],
-  },
-  showMathMenu: false,
-  showMathMenuMSIE: false,
-};
 
 ReactGA.initialize('UA-123367662-1');
 
@@ -43,9 +29,6 @@ function fireTracking() {
 class Main extends Component {
   constructor(props) {
     super(props);
-    loadScript(MATHJAX_SCRIPT, () => {
-      window.MathJax.Hub.Config(MATHJAX_OPTIONS);
-    });
   }
 
   render() {
