@@ -8,7 +8,7 @@
   - [Personal Circumstances](/#/blog/negotiating#personal-circumstances)
   - [The initial offers on hand](/#/blog/negotiating#the-initial-offers-on-hand)
   - [Location Adjustments](/#/blog/negotiating#location-adjustments)
-  - [Round 1: Send Robinhood to Google](#round-1-send-robinhood-to-google)
+  - [Round 1: Send Robinhood to Google](/#/blog/negotiating#round-1-send-robinhood-to-google)
   - [Round 2: Send Robinhood and Google to Microsoft](/#/blog/negotiating#round-2-send-robinhood-and-google-to-microsoft)
   - [Round 3: Send Google the updated Microsoft Offer](/#/blog/negotiating#round-3-send-google-the-updated-microsoft-offer)
   - [Round 4: Accepting Google?](/#/blog/negotiating#round-4-accepting-google)
