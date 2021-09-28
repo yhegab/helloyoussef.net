@@ -2,6 +2,15 @@
 
 This past Summer of 2021, I interned at Google. This blog post is a summary of the recruitment process that I went through.
 
+- [Getting an Internship at Google](/#/blog/google_internship#getting-an-internship-at-google)
+  * [The First Try](#/blog/google_internship#the-first-try)
+  * [The Second Try](#/blog/google_internship#the-second-try)
+  * [Third time's the charm](#/blog/google_internship#third-times-the-charm)
+    + [Phone Interviews](#/blog/google_internship#phone-interviews)
+    + [The waiting game](#/blog/google_internship#the-waiting-game)
+    + [Host matching](#/blog/google_internship#host-matching)
+  * [Offer Signed!](#/blog/google_internship#offer-signed)
+
 ### The First Try
 
 

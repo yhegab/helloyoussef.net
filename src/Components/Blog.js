@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import MarkdownComponent from './MarkdownComponent';
+import ReactMarkdown from 'react-markdown';
+import rehypeRaw from 'rehype-raw'
+import remarkSlug from 'remark-slug'
+import { ScrollIntoView } from 'rrc'
 
 class BlogEntry extends Component {
     constructor(props) {
@@ -8,16 +11,31 @@ class BlogEntry extends Component {
             title: props.title,
             date: props.date,
             description: props.description,
-            file: props.file
+            file: props.file,
+            markdown: null
         }
     }
 
+    componentDidMount() {
+        if (!this.props.match) {
+            return
+        }
+        const location = '/blog/' + this.props.match.params.file + ".md"
+        // const file = require(location)
+        fetch(location).then((response) => response.text()).then((text) => {
+            this.setState({ markdown: text})
+        })
+    }
+
     render() {
-        if (this.props.match) {
+        if (this.state.markdown) {
             return (
-                <div className="blogEntry">
-                    <MarkdownComponent markdownSrcPromise={"/blog/" + this.props.match.params.file + ".md"} />
-                </div>
+                <ScrollIntoView id={this.props.location.hash}>
+                    <div className="blogEntry" id="test">
+                        <ReactMarkdown remarkPlugins={[remarkSlug]} rehypePlugins={[rehypeRaw]}>{this.state.markdown}</ReactMarkdown>
+                        {/* <MarkdownComponent markdownSrcPromise={"/blog/" + this.props.match.params.file + ".md"} /> */}
+                    </div>
+                </ScrollIntoView>
             )
         }
         return (
@@ -39,7 +57,7 @@ class Blog extends Component {
 
   render() {
     return (
-      <div className="blog">
+      <div className="blog" id="test">
           {/* 
             Blog Ideas:
             * Reflecting on Google Internship
