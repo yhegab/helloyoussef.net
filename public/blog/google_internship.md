@@ -16,7 +16,7 @@ This past Summer of 2021, I interned at Google. This blog post is a summary of t
 
 The first time I ever heard back from Google was for the *Software Developer Intern, Winter 2019* role. The recruiter emailed me to let me know I'd soon be receiving a coding sample exercise and a snapshot survey. I was excited but mostly I was terrified -- I'd never done a *real* coding challenge before. There's no way I was good enough for Google, right? So I ignored the assessment and let the deadline pass and pushed it to the back of my mind. Instead, I decided to do a normal school term in Winter 2019 and try to get a more "achievable" internship in the summer -- which I did, so not a terrible loss altogether. 
 
-<img src="firstrejection.png" width="80%" style="display: block;margin-left: auto;margin-right: auto;">
+<img src="firstrejection.png" width="100%" style="display: block;margin-left: auto;margin-right: auto;">
 
 Looking back, I definitely agree with my past self; I was not capable, at the time, of passing the interviews and assessments that Google would throw at me. Skipping the assessment, however, was a huge mistake. Failure is an opportunity to identify your shortcomings, and avoiding failure, as I was doing, is a great way to stunt your growth. If I did fail the assessment, it would have been wise to figure out *why* I wasn't ready and evaluate what needed to be done in order to pass the next time around.
 
@@ -31,7 +31,7 @@ This time I applied, and with a referral! Around a year later, and I was feeling
 
 On September 4, 2019, I received the same coding exercise and snapshot survey and actually went ahead and completed them. The coding sample was fine, I thought, but not particularly great either; I'd realized afterwards that I'd missed a few test cases and my solutions were actually far worse than I realized.
 
-<img src="secondrejection.png" width="80%" style="display: block;margin-left: auto;margin-right: auto;">
+<img src="secondrejection.png" width="100%" style="display: block;margin-left: auto;margin-right: auto;">
 
 Understandably, I received an email on October 7, 2019, letting me know they would not be moving forward with my application. That Winter, I interned at **Yelp** instead, and had an amazing time in San Francisco.
 
@@ -62,7 +62,7 @@ Read on for a little more detail...
 
 #### Phone Interviews
 
-<img src="phonescheduling.png" width="80%" style="display: block;margin-left: auto;margin-right: auto;">
+<img src="phonescheduling.png" width="100%" style="display: block;margin-left: auto;margin-right: auto;">
 
 I had around a week to prepare for these interviews which, in all honestly, is not a lot of time at all. I focused on covering concepts from the [Blind 75](https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions). I didn't do every question on that list, but I made sure to understand the approaches to all 10 of the general patterns listed there.
 
@@ -78,7 +78,7 @@ In the second interview, the interviewer introduced me a well-known unix command
 
 Having finished the phone interviews on August 25, I was expecting to hear back from the hiring committee about the results around 2-3 weeks afterwards (as my recruiter had mentioned in her initial email). Around a week after the interviews, I received an update that the recruiter had received the interviewer feedback and would be sending it over to the hiring commitee.
 
-<img src="initialupdate.png" width="80%" style="display: block;margin-left: auto;margin-right: auto;">
+<img src="initialupdate.png" width="100%" style="display: block;margin-left: auto;margin-right: auto;">
 
 After that, silence.
 
@@ -88,7 +88,7 @@ Another two weeks pass with no update.
 
 And then on September 29, I receive an update from the recruiter asking to schedule a call! And the following day, we hop on a call where she reveals that I've passed the hiring committee and that they've actually gone one step further and decided to give me a guaranteed team match, meaning they can give me an offer right away to sign! 
 
-<img src="offerapproved.png" width="80%" style="display: block;margin-left: auto;margin-right: auto;">
+<img src="offerapproved.png" width="100%" style="display: block;margin-left: auto;margin-right: auto;">
 
 
 #### Host matching
@@ -132,6 +132,6 @@ The call was very straightforward: my (future) host described the project and ma
 
 After the host matching call, I found out the following day that there was a mutual interest and that everything was set for me to start my internship the upcoming May! 
 
-<img src="hostapproved.png" width="80%" style="display: block;margin-left: auto;margin-right: auto;">
+<img src="hostapproved.png" width="100%" style="display: block;margin-left: auto;margin-right: auto;">
 
 The actual internship itself was a fantastic experience, and I have plans to write a separate blog post about that as well :)
