@@ -54,10 +54,10 @@ tl;dr:
 * September 29, 2020: I received an email from the recruiter to schedule a call!!
 * September 30, 2020: The recruiter let me know I had passed the hiring committee stage with a guaranteed offer!
 * October 1, 2020: I received the offer letter.
-* October 30, 2020: I formally signed and accepted the offer!
-* January 20, 2020: I receive an email from the recruiter to set up a host matching call with a team in Google Cloud!
-* January 25, 2020: I have a quick 30 minute call where the host details the project, asks if I'm interested, and lets me asks questions.
-* January 26, 2020: Project matched! Everything was ready for my internship to start in May.
+* October 30, 2021: I formally signed and accepted the offer!
+* January 20, 2021: I receive an email from the recruiter to set up a host matching call with a team in Google Cloud!
+* January 25, 2021: I have a quick 30 minute call where the host details the project, asks if I'm interested, and lets me asks questions.
+* January 26, 2021: Project matched! Everything was ready for my internship to start in May.
 
 Read on for a little more detail...
 
