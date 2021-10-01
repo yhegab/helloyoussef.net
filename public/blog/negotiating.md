@@ -42,7 +42,7 @@ Relocation Bonus: $5,500 (after-tax)
 
 #### Microsoft
 
-This offer was for the commerce+ecosystems business group and was based in Redmond, Washington. The interview process was a phone and 4 round final; all five of these had a strong behavioural component and around 20 minutes of solving straightforward leetcode easy level questions:
+This offer was for the commerce+ecosystems business group and was based in Redmond, Washington. The interview process was a phone screen and 4 round final; all five of these had a strong behavioural component and around 20 minutes of solving straightforward leetcode easy level questions:
 
 Base Salary: $112,500\
 Equity: $120,000 vesting equally over 4 years\
@@ -125,7 +125,7 @@ Robinhood (Menlo Park): 230k first year TC\
 Google (Chicago): 184k first year TC
 </blockquote>
 
-The result was an update Microsoft Offer at L60:
+The result was an updated Microsoft Offer at L60:
 
 Base Salary: $121,000\
 Equity: $130,000 vesting equally over 4 years\
@@ -169,3 +169,9 @@ Note that I was able to get the relocation bonus by choosing to relocate from my
 This was a fantastic offer, when taking into account cost of living, and the offers that I had in hand!
 
 <img src="costofliving2.png" width="100%" style="display: block;margin-left: auto;margin-right: auto;">
+
+### Learnings
+
+Most companies will not negotiate if you don't have a competing offer. Google, for example, only increased its offer when another offer was higher. I've heard murmurs that Microsoft sometimes increases offer based on experience.
+
+In general, it's best not to ask for a specific number. This is advice that I've heard from other people and found to be pretty useful in my negotiations. When increasing my initial Google Chicago offer, I was aiming for at least 170k; had I told the recruiter that, I am confident I would be taking away a much lower offer today than I actually am. Going forward, when negotiating, I'll be continuing to avoid asking for specific figures and just use offers against one another to get the best value, only stating numbers when I've maxed out that route.
