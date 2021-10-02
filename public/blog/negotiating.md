@@ -17,6 +17,14 @@ I just wanted to start off and make it clear that there is nothing ground-breaki
 
 ### tl;dr:
 
+I had the following offers in hand:
+
+* Robinhood (Menlo Park) at around 230k
+* Microsoft (Redmond) at around 184k
+* Google (Chicago) at around 155k
+
+I used those offers to negotiate as follows:
+
 1. I used Robinhood (~230k) to negotiate Google from ~155k to ~184k
 1. I used Robinhood (~230k) and Google (~184k) to negotiate Microsoft from ~184k to ~220k
 1. I used Microsoft (~220k) to negotiate Google from ~184k to ~199k
