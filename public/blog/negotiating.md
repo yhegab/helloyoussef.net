@@ -11,7 +11,7 @@
   - [Round 1: Send Robinhood to Google](/#/blog/negotiating#round-1-send-robinhood-to-google)
   - [Round 2: Send Robinhood and Google to Microsoft](/#/blog/negotiating#round-2-send-robinhood-and-google-to-microsoft)
   - [Round 3: Send Google the updated Microsoft Offer](/#/blog/negotiating#round-3-send-google-the-updated-microsoft-offer)
-  - [Round 4: Accepting Google?](/#/blog/negotiating#round-4-accepting-google)
+  - [Learning](/#/blog/learnings)
 
 I just wanted to start off and make it clear that there is nothing ground-breaking in this blog post; I didn't do anything new or special to negotiate -- this is just to share my personal experience negotiating the offers that I had and attempting to make the best of them!
 
@@ -183,3 +183,7 @@ This was a fantastic offer, when taking into account cost of living, and the off
 Most companies will not negotiate if you don't have a competing offer. Google, for example, only increased its offer when another offer was higher. I've heard murmurs that Microsoft sometimes increases offer based on experience.
 
 In general, it's best not to ask for a specific number. This is advice that I've heard from other people and found to be pretty useful in my negotiations. When increasing my initial Google Chicago offer, I was aiming for at least 170k; had I told the recruiter that, I am confident I would be taking away a much lower offer today than I actually am. Going forward, when negotiating, I'll be continuing to avoid asking for specific figures and just use offers against one another to get the best value, only stating numbers when I've maxed out that route.
+
+### Accepting an Offer
+
+I...still haven't decided.
