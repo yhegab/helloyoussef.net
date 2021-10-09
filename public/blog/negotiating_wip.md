@@ -22,17 +22,18 @@ I had the following offers in hand:
 * Robinhood (Menlo Park) at around 230k
 * Microsoft (Redmond) at around 184k
 * Google (Chicago) at around 155k
+* Confluent (Remote) at around 185k -- I got this offer right at the tail end of my negotiations
 
 I used those offers to negotiate as follows:
 
 1. I used Robinhood (~230k) to negotiate Google from ~155k to ~184k
 1. I used Robinhood (~230k) and Google (~184k) to negotiate Microsoft from ~184k to ~220k
 1. I used Microsoft (~220k) to negotiate Google from ~184k to ~199k
-1. I accepted ?
+1. I used Confluent (~204k) to negotiate Google from ~199k to ???
 
 ### Personal Circumstances
 
-Going into this search, I was almost entirely set on finding a job in Chicago or an opportunity that would allow me to stay in Chicago (through remote work). This was *the* driving factor in making my decision. For that reason, I was mostly set on *which* offer I was going to accept; however, I needed to use the other offers to maximize the value of the offer I was planning to accept.
+Going into this search, I was almost entirely set on finding a job in Chicago or an opportunity that would allow me to stay in Chicago (through remote work). This was *the* driving factor in making my decision. For that reason, I was mostly set on either Google or Confluent; however, I needed to use the other offers to maximize the value of the offer I was hoping to accept.
 
 ### The initial offers on hand
 
@@ -70,12 +71,22 @@ Yearly Target Bonus: $16,650 (15% of base)\
 Signing Bonus: $0\
 Relocation Bonus: $0
 
-**Total Compensation Year 1: $155,700**
+#### Confluent
 
-I was located within 50 miles of the office, so, at the time, I wasn't eligible for relocation.
+With about a week left to accept Google, I started the interview process at Confluent, which meant I had to get my Google deadline extended by 1 week. This is the initial offer from Confluent for remote in Chicago (note that this was non-negotiable):
+
+Base Salary: $121,500\
+Equity: $130,000
+Yearly Target Bonus: $6,075 (5% of base)\
+Signing Bonus: $25,000\
+Relocation Bonus: $0
+
+**Total Compensation Year 1: $185,075**
+
 
 ### Location Adjustments
 
+#### Google
 The cost of living in Chicago is remarkably cheaper than in Seattle or the Bay Area. Google, however, does not consider the cost of *living* when negotiating offers; rather, the compensation team considers the cost of *labour*. Take that as you will, but it translated as follows:
 
 1. Chicago is 15% cheaper than HCOL areas (Bay Area, NYC, etc.).
@@ -83,9 +94,15 @@ The cost of living in Chicago is remarkably cheaper than in Seattle or the Bay A
 
 Therefore, when sending Google offers from other locations, they would discount those offers by 15% or 5% accordingly and *then* match them.
 
+#### Confluent
+
+On the other hand, Confluent splits up the USA into prime areas and non-prime, with a flat salary across prime areas (such as Seattle, Bay Area, NYC) and a lower flat salary across everywhere else (like Chicago).
+
+In particular, the prime offer from Confluent was 10% higher. **You might have noticed this leaves 5% of arbitrage between Confluent and Google if I requested an offer for the location of, say, Seattle...**
+
 ### Round 1: Send Robinhood to Google
 
-First, I sent my Robinhood offer to my recruiter at Google and asked her to forward it to the compensation team. They discounted the Robinhood offer by 15%, and then matched it:
+First, I sent my Robinhood offer to my recruiter at Google and asked her to forward it to the compensation team. They discounted the Robinhood offer by 15% (to account for location), and then matched it:
 
 <blockquote style="background: #f9f9f9;border-left: 10px solid #ccc;margin: 1.5em 10px;padding: 0.5em 10px;">
 I want to let you know that I've negotiated with compensation using your RobinHood offer (since that is higher). The compensation team says "We’re matching the competing offer in region (Bay Area), and transferring over to the permanent location (Chicago) to take into consideration the Cost of Labor difference, and therefore under competing offer by 15% in Y1/2."
@@ -103,9 +120,9 @@ I was more than happy with this offer; when you take into account the cost of li
 
 ### Round 2: Send Robinhood and Google to Microsoft
 
-I was pretty happy with the Google offer as it was, but I wanted to see if I could increase Microsoft to a point where the 5% location discount would still be higher than the update Chicago Salary.
+I was pretty happy with the Google offer as it was, but I wanted to see if I could increase Microsoft to a point where the 5% location discount would still be higher than the updated Chicago Salary.
 
-To do this, I had to get an L60 offer. I explictly asked my recruiter if this was possible and she let me know that I'll have to write an email that she'll be sending to the compensation team to make my case. This is what I wrote in the email:
+To do this, I had to get an L60 offer (as opposed to the default L59 offer, check out levels.fyi if you don't recognize these terms). I explicitly asked my recruiter if this was possible and she let me know that I'll have to write an email that she'll be sending to the compensation team to make my case. This is what I wrote in the email:
 
 <blockquote style="background: #f9f9f9;border-left: 10px solid #ccc;margin: 1.5em 10px;padding: 0.5em 10px;">
 I’m writing this email to make my case for an increase in compensation and/or starting level as a new grad at Microsoft.
@@ -147,7 +164,7 @@ Again, this was a fantastic offer and I was pleasantly surprised at how high the
 
 ### Round 3: Send Google the updated Microsoft Offer
 
-I wasn't sure if the increased Microsoft offer would result in any action from Google's compensation team, considering that the salary was objectively less than Robinhood. However, I didn't think there was any harm in sending the offer anyway.
+I wasn't sure if the increased Microsoft offer would result in any action from Google's compensation team, considering that the salary was, in absolute values, less than Robinhood. However, I didn't think there was any harm in sending the offer anyway.
 
 Soon after, my recruiter told me that they compensation team *were* able to increase the offer:
 
@@ -178,11 +195,56 @@ This was a fantastic offer, when taking into account cost of living, and the off
 
 <img src="costofliving2.png" width="100%" style="display: block;margin-left: auto;margin-right: auto;">
 
+### Round 4: Send Google the offer from Confluent
+
+At this point, I had successfully passed the Confluent interviews and received an offer for Chicago. The terms of the offer were quite similar to Google's, but I thought it'd be worth sending it to them anyway. Unfortunately, this time I was not as fortunate and my recruiter was not able to increase the Google offer:
+
+<blockquote style="background: #f9f9f9;border-left: 10px solid #ccc;margin: 1.5em 10px;padding: 0.5em 10px;">
+Looking at the Confluent and Google offer side by side it seems that the Google offer is coming in at 104% of the Confluent offer over 2 years. It's hard to model accurately after 2 years because of the variability regarding your bonus and equity refresh grants (based on your performance). Because the Google offer is higher over 2 years the compensation team won't be able to increase.
+</blockquote>
+
+*However*, all was not lost. I was curious about Confluent's offer if I were to relocate to, say, *Seattle* and my Confluent recruiter was able to come back with the following numbers:
+
+Base Salary: $135,000\
+Equity: $150,000
+Yearly Target Bonus: $6,750 (5% of base)\
+Signing Bonus: $25,000\
+Relocation Bonus: $0
+
+**Total Compensation Year 1: $204,250**
+
+By my math, even with a 5% discount adjusting from Seattle to Chicago, this offer was higher than Google's and so I sent this new offer to my recruiter and crossed my fingers that she'd get back to me before my deadline (which was the following business day).
+
 ### Learnings
 
-Most companies will not negotiate if you don't have a competing offer. Google, for example, only increased its offer when another offer was higher. I've heard murmurs that Microsoft sometimes increases offer based on experience.
+Most companies will not negotiate if you don't have a competing offer. Google, for example, only increased its offer when another offer was higher. I've heard murmurs that Microsoft sometimes increases offer based soley on experience and added value.
 
-In general, it's best not to ask for a specific number. This is advice that I've heard from other people and found to be pretty useful in my negotiations. When increasing my initial Google Chicago offer, I was aiming for at least 170k; had I told the recruiter that, I am confident I would be taking away a much lower offer today than I actually am. Going forward, when negotiating, I'll be continuing to avoid asking for specific figures and just use offers against one another to get the best value, only stating numbers when I've maxed out that route.
+In general, it's best not to ask for a specific number. This is advice that I've heard from other people and found to be pretty useful in my negotiations. When increasing my initial Google Chicago offer, I was initially aiming for at least 170k; had I told the recruiter that, I am confident I would be taking away a much lower offer today than I actually am. Going forward, when negotiating, I'll be continuing to avoid asking for specific figures and just use offers against one another to get the best value, only stating numbers when I've maxed out that route.
+
+#### Templates
+
+For sending a competing offer:
+<blockquote style="background: #f9f9f9;border-left: 10px solid #ccc;margin: 1.5em 10px;padding: 0.5em 10px;">
+  Hi [recruiter],
+I’ve received a competing offer from [company] that I was hoping you might be able to send to the compensation team. In summary:
+
+[offer details]
+
+[explanation of why this is a competitive offer]
+  
+I’ve attached the updated offer letter in this email; please keep me updated!
+</blockquote>
+
+For rejecting a company:
+<blockquote style="background: #f9f9f9;border-left: 10px solid #ccc;margin: 1.5em 10px;padding: 0.5em 10px;">
+Hi [recruiter],
+
+ 
+I wanted to let you know that, although [company] aligns really well with my career goals, I’ve done some self-evaluation and realized that from a personal goals perspective, [reason for declining] and so I will not be able to accept the offer.
+
+I just wanted to say that this was an amazing recruiting experience and I very strongly appreciated how quickly the interview process progressed and that you, yourself, were a great recruiting point of contact. I really hope I get another chance down the line to work with you and with [company] when my goals better align; it’s been a pleasure!
+  
+</blockquote>
 
 ### Accepting an Offer
 
