@@ -64,12 +64,12 @@ class Blog extends Component {
             * 2022 New Grad Grind
             * Negotiating between Microsoft, Google, Robinhood
           */}
-          {/*<BlogEntry 
+          <BlogEntry 
             title="Negotiating New Grad Offers"
             date="September 28, 2021" 
             description="When looking for a 2022 new grad opportunity, I was fortunate to have received offers from Google, Microsoft, and Robinhood." 
             file="negotiating"
-          />*/}
+          />
           <BlogEntry 
             title="Getting the Google Internship"
             date="September 27, 2021" 

@@ -3,7 +3,7 @@
 
 ### Table of contents
 
-- [Negotiating New Grad Offers (work-in-progress)](/#/blog/negotiating#negotiating-new-grad-offers-work-in-progress)
+- [Negotiating New Grad Offers](/#/blog/negotiating#negotiating-new-grad-offers)
   - [tl;dr:](/#/blog/negotiating#tldr)
   - [Personal Circumstances](/#/blog/negotiating#personal-circumstances)
   - [The initial offers on hand](/#/blog/negotiating#the-initial-offers-on-hand)
@@ -11,7 +11,12 @@
   - [Round 1: Send Robinhood to Google](/#/blog/negotiating#round-1-send-robinhood-to-google)
   - [Round 2: Send Robinhood and Google to Microsoft](/#/blog/negotiating#round-2-send-robinhood-and-google-to-microsoft)
   - [Round 3: Send Google the updated Microsoft Offer](/#/blog/negotiating#round-3-send-google-the-updated-microsoft-offer)
-  - [Learning](/#/blog/learnings)
+  - [Round 4: Send Google the offer from Confluent](/#/blog/negotiating#round-4--send-google-the-offer-from-confluent)
+  - [Accepting an Offer](/#/blog/negotiating#accepting-an-offer)
+  - [Learnings](/#/blog/negotiating#learnings)
+    + [Templates](/#/blog/negotiating#templates)
+    + [Obligatory Sankey](/#/blog/negotiating#obligatory-sankey)
+
 
 I just wanted to start off and make it clear that there is nothing ground-breaking in this blog post; I didn't do anything new or special to negotiate -- this is just to share my personal experience negotiating the offers that I had and attempting to make the best of them!
 
@@ -29,7 +34,8 @@ I used those offers to negotiate as follows:
 1. I used Robinhood (~230k) to negotiate Google from ~155k to ~184k
 1. I used Robinhood (~230k) and Google (~184k) to negotiate Microsoft from ~184k to ~220k
 1. I used Microsoft (~220k) to negotiate Google from ~184k to ~199k
-1. I used Confluent (~204k) to negotiate Google from ~199k to ???
+1. I used Confluent (~204k) to negotiate Google from ~199k to ~212k
+1. I accepted Google!
 
 ### Personal Circumstances
 
@@ -193,8 +199,6 @@ Note that I was able to get the relocation bonus by choosing to relocate from my
 
 This was a fantastic offer, when taking into account cost of living, and the offers that I had in hand!
 
-<img src="costofliving2.png" width="100%" style="display: block;margin-left: auto;margin-right: auto;">
-
 ### Round 4: Send Google the offer from Confluent
 
 At this point, I had successfully passed the Confluent interviews and received an offer for Chicago. The terms of the offer were quite similar to Google's, but I thought it'd be worth sending it to them anyway. Unfortunately, this time I was not as fortunate and my recruiter was not able to increase the Google offer:
@@ -221,14 +225,17 @@ I heard back from the comp team and they were able to increase your Google offer
 
 Amazingly, it seemed that the Google compensation team treated the Confluent offer based out of Seattle as the same cost of living as Chicago, so they didn't actually discount it at all! The result was the maxed out Google Chicago offer:
 
-Base: $111,000
-Bonus: 15.00%
-Equity: $155,000
-Sign-on: $25,000
-Relocation Bonus: $8,400
+Base: $111,000 \
+Bonus: 15.00% \
+Equity: $155,000 \
+Sign-on: $25,000 \
+Relocation Bonus: $8,400 
+
 **Total Comp Year 1: $212,200**
 
 This was a fantastic offer and I was super happy with the results of my negotiations with Google.
+
+<img src="costofliving3.png" width="100%" style="display: block;margin-left: auto;margin-right: auto;">
 
 ### Accepting an Offer
 
@@ -264,3 +271,8 @@ I wanted to let you know that, although [company] aligns really well with my car
 I just wanted to say that this was an amazing recruiting experience and I very strongly appreciated how quickly the interview process progressed and that you, yourself, were a great recruiting point of contact. I really hope I get another chance down the line to work with you and with [company] when my goals better align; it’s been a pleasure!
   
 </blockquote>
+
+#### Obligatory Sankey
+
+<img src="sankey.png" width="80%" style="display: block;margin-left: auto;margin-right: auto;">
+
