@@ -206,6 +206,7 @@ class Favourites extends Component {
             <li>Solar Opposites (2020-)</li>
             <li>Ted Lasso (2020-)</li>
             <li>Invincible (2021-)</li>
+            <li>WandaVision (2021)</li>
           </ul>
         </div>
 
