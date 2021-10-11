@@ -11,7 +11,7 @@
   - [Round 1: Send Robinhood to Google](/#/blog/negotiating#round-1-send-robinhood-to-google)
   - [Round 2: Send Robinhood and Google to Microsoft](/#/blog/negotiating#round-2-send-robinhood-and-google-to-microsoft)
   - [Round 3: Send Google the updated Microsoft Offer](/#/blog/negotiating#round-3-send-google-the-updated-microsoft-offer)
-  - [Round 4: Send Google the offer from Confluent](/#/blog/negotiating#round-4--send-google-the-offer-from-confluent)
+  - [Round 4: Send Google the offer from Confluent](/#/blog/negotiating#round-4-send-google-the-offer-from-confluent)
   - [Accepting an Offer](/#/blog/negotiating#accepting-an-offer)
   - [Learnings](/#/blog/negotiating#learnings)
     + [Templates](/#/blog/negotiating#templates)
