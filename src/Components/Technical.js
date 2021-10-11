@@ -25,17 +25,14 @@ class Technical extends Component {
         <Helmet>
           <title>Jafer Haider -- Resume</title>
           <meta name="description" content="My most up-to-date resume."/>
-          <link rel="canonical" href="http://itsjafer.com/#/technical" />
+          <link rel="canonical" href="http://itsjafer.com/#/resume" />
           <meta name="image" property="og:image" content="/Resume.jpg"/>
         </Helmet>
         <div className="Resume">
           <p>
             {' '}
             Here is a
-            <a href="Jafer_Haider_Resume.pdf" target="_blank" rel="noopener noreferrer"> direct link to my resume;</a>
-            {' '}
-            Ahead of my graduation in 2021, I'm currently looking for new grad opportunities! <a href="https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs">This is the template I used</a> as the basis for my resume.
-            {' '}
+            <a href="Jafer_Haider_Resume.pdf" target="_blank" rel="noopener noreferrer"> direct link to my resume;</a>  I used <a href="https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs">this template</a> as the basis for my resume.
           </p>
 
           <SizeMe>

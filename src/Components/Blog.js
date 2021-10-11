@@ -66,8 +66,8 @@ class Blog extends Component {
           */}
           <BlogEntry 
             title="Negotiating New Grad Offers"
-            date="September 28, 2021" 
-            description="When looking for a 2022 new grad opportunity, I was fortunate to have received offers from Google, Microsoft, and Robinhood." 
+            date="October 11, 2021" 
+            description="When looking for a 2022 new grad opportunity, I was fortunate to have received offers from Google, Microsoft, Confluent, and Robinhood." 
             file="negotiating"
           />
           <BlogEntry 

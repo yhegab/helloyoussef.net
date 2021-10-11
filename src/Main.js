@@ -39,7 +39,7 @@ class Main extends Component {
           <div className="content">
             <ul className="header">
               <li><NavLink exact to="/">Home</NavLink></li>
-              <li><NavLink exact to="/technical">Resume</NavLink></li>
+              <li><NavLink exact to="/resume">Resume</NavLink></li>
               <li><NavLink to="/favourites">Things I Love</NavLink></li>
               <li><NavLink to="/schedule">Coursework</NavLink></li>
               <li><NavLink to="/blog">Blog</NavLink></li>
@@ -59,6 +59,7 @@ class Main extends Component {
 
             <Route exact path="/" component={withTracker(Home)} />
             <Route exact path="/technical" component={withTracker(Technical)} />
+            <Route exact path="/resume" component={withTracker(Technical)} />
             <Route path="/favourites" component={withTracker(Favourites)} />
             <Route path="/chai" component={withTracker(Chai)} />
             <Route exact path="/blog" component={withTracker(Blog)} />

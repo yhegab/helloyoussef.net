@@ -14,7 +14,7 @@ class Home extends Component {
           My name is
           <b> Jafer Haider</b>
           {' '}
-          and I&apos;m a double-degree student at the University of Waterloo and Wilfrid Laurier University. </p>
+          and I&apos;m a double-degree student at the University of Waterloo and Wilfrid Laurier University. In 2022, I will be starting work as a Software Engineer at Google within GCP Privacy and Security.</p>
         
         <p>
           In my free time, I&apos;m a big fan of board games, movies, and TV Shows (for real, I even have a
