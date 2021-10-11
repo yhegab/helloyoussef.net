@@ -213,7 +213,26 @@ Relocation Bonus: $0
 
 **Total Compensation Year 1: $204,250**
 
-By my math, even with a 5% discount adjusting from Seattle to Chicago, this offer was higher than Google's and so I sent this new offer to my recruiter and crossed my fingers that she'd get back to me before my deadline (which was the following business day).
+By my math, even with a 5% discount adjusting from Seattle to Chicago, this offer was higher than Google's and so I sent this new offer to my recruiter and crossed my fingers that she'd get back to me before my deadline (which was the following business day) and she did! 
+
+<blockquote style="background: #f9f9f9;border-left: 10px solid #ccc;margin: 1.5em 10px;padding: 0.5em 10px;">
+I heard back from the comp team and they were able to increase your Google offer even more to match your Confluent offer at 100% over 2 years :)  They let me know that for peer equity reasons, this is our max offer so since we won't be able to increase any more I will go ahead and request that an updated offer letter is sent your way. 
+</blockquote>
+
+Amazingly, it seemed that the Google compensation team treated the Confluent offer based out of Seattle as the same cost of living as Chicago, so they didn't actually discount it at all! The result was the maxed out Google Chicago offer:
+
+Base: $111,000
+Bonus: 15.00%
+Equity: $155,000
+Sign-on: $25,000
+Relocation Bonus: $8,400
+**Total Comp Year 1: $212,200**
+
+This was a fantastic offer and I was super happy with the results of my negotiations with Google.
+
+### Accepting an Offer
+
+Naturally, I accepted the Google Chicago offer! Despite their initial lowball offer of 155k, getting them up to 212k with negotiations was obviously worth the effort of going through interviews with all the other companies!
 
 ### Learnings
 
@@ -245,7 +264,3 @@ I wanted to let you know that, although [company] aligns really well with my car
 I just wanted to say that this was an amazing recruiting experience and I very strongly appreciated how quickly the interview process progressed and that you, yourself, were a great recruiting point of contact. I really hope I get another chance down the line to work with you and with [company] when my goals better align; it’s been a pleasure!
   
 </blockquote>
-
-### Accepting an Offer
-
-I...still haven't decided.
