@@ -22,7 +22,6 @@ class Home extends Component {
           ). I also generally enjoy working on side projects that make my life easier. In particular, there's a good chance you've come across my website because of my popular <a href="/#/parser">resume parser project</a>.
         </p>
         
-        <p>If you're looking to connect, we can hop on a Google Meet to talk about experiences, education, connect about an opportunity, or just hangout -- <a href="https://calendly.com/itsjafer/coffee-chat"> schedule a coffee chat on my calendar</a>!
         </p>
 
       </div>
