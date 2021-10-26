@@ -22,8 +22,6 @@ class Home extends Component {
           ). I also generally enjoy working on side projects that make my life easier. In particular, there's a good chance you've come across my website because of my popular <a href="/#/parser">resume parser project</a>.
         </p>
         
-        </p>
-
       </div>
     );
   }
