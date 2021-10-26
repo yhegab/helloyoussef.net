@@ -47,7 +47,7 @@
     "simple-react-modal": "^0.5.1"
   },
   "scripts": {
-    "start": "BROWSER='firefox' react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
