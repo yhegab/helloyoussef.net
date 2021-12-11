@@ -150,7 +150,7 @@ class ReverseSplit extends Component {
                   localStorage.setItem('uri', this.state.uri)
                   localStorage.setItem('totpSchwab', e.target.value)}}/>
                 {
-                  this.state.totpSchwab.length <= 0 &&
+                  this.state.totpSchwab && this.state.totpSchwab.length <= 0 &&
                   <button type="button" onClick={this.onGenerate} value="Generate TOTP">Generate TOTP</button>
                 }
                 {
