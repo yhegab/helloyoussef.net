@@ -35,14 +35,11 @@ class ReverseSplit extends Component {
             symantecID: data['symantec_id'],
             generated_totp: data['totp']
           })
-          if (this.state.totpSchwab.length <= 0) {
             this.setState({
               totpSchwab: data['totp']
             })
             localStorage.setItem('totpSchwab', data['totp'])
             localStorage.setItem('uri', this.state.uri)
-
-          }
           this.setState({ loading: false })
 
 
