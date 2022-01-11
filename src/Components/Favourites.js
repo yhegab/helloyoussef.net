@@ -107,10 +107,12 @@ class Favourites extends Component {
             <li>Looper (2012)</li>
             <li>Django Unchained (2012)</li>
             <li>21 Jump Street (2012)</li>
+            <li>The Conjuring</li>
             <li>The Grand Budapest Hotel (2014)</li>
             <li>John Wick (2014)</li>
             <li>Guardians of the Galaxy (2014)</li>
             <li>Gone Girl (2014)</li>
+            <li>Edge of Tomorrow</li>
             <li>The Hateful Eight (2015)</li>
             <li>The Martian (2015)</li>
             <li>The Big Short (2015)</li>
@@ -142,6 +144,7 @@ class Favourites extends Component {
             <li>A Quiet Place 2 (2021)</li>
             <li>Luca (2021)</li>
             <li>Jungle Cruise (2021)</li>
+            <li>Spider-Man: No Way Home (2021) </li>
           </ul>
         </div>
         <div className="shows">
