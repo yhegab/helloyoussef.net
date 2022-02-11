@@ -21,10 +21,6 @@ class Home extends Component {
           <a href="/#/favourites"> list</a>
           ). I also generally enjoy working on side projects that make my life easier. In particular, there's a good chance you've come across my website because of my popular <a href="/#/parser">resume parser project</a>.
         </p>
-
-        <p>
-          Recently, I've started a blog that about career stuff like <a href="/#/blog/negotiating">negotiating new grad offers</a> and maybe other stuff down the line. 
-        </p>
         
         <p>If you're looking to connect to talk about experiences, education, connect about an opportunity, or just hangout, feel free to send me an email or connect on linkedin!
         </p>
