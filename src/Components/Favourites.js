@@ -121,6 +121,7 @@ class Favourites extends Component {
             <li>La La Land (2016)</li>
             <li>Doctor Strange (2016)</li>
             <li>Don&apos;t Breathe (2016)</li>
+            <li>Zootopia (2016)</li>
             <li>Wonder Woman (2017)</li>
             <li>Get Out (2017)</li>
             <li>It (2017)</li>
@@ -145,6 +146,7 @@ class Favourites extends Component {
             <li>Luca (2021)</li>
             <li>Jungle Cruise (2021)</li>
             <li>Spider-Man: No Way Home (2021) </li>
+            <li>Nightmare Alley (2022) </li>
           </ul>
         </div>
         <div className="shows">
