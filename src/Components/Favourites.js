@@ -139,14 +139,17 @@ class Favourites extends Component {
             <li>Parasite (2019)</li>
             <li>Klaus (2019)</li>
             <li>Tenet (2020)</li>
-            <li>Enola Holmes (2020)</li>
             <li>His House (2020)</li>
             <li>The Social Dilemma (2020)</li>
             <li>A Quiet Place 2 (2021)</li>
             <li>Luca (2021)</li>
             <li>Jungle Cruise (2021)</li>
+            <li>Dune (2021)</li>
+            <li>Free Guy (2021)</li>
             <li>Spider-Man: No Way Home (2021) </li>
+            <li>Scream (2022)</li>
             <li>Nightmare Alley (2022) </li>
+            <li>The Batman (2022)</li>
           </ul>
         </div>
         <div className="shows">
