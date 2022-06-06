@@ -151,6 +151,7 @@ class Favourites extends Component {
             <li>Nightmare Alley (2022) </li>
             <li>The Batman (2022)</li>
             <li>Everything, Everywhere, All At Once (2022)</li>
+            <li>Men (2022)</li>
           </ul>
         </div>
         <div className="shows">

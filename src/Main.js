@@ -42,15 +42,14 @@ class Main extends Component {
               <li><NavLink exact to="/resume">Resume</NavLink></li>
               <li><NavLink to="/favourites">Things I Love</NavLink></li>
               <li><NavLink to="/schedule">Coursework</NavLink></li>
-              <li><NavLink to="/blog">Blog</NavLink></li>
               <li>
                 <div class="dropdown">
                 <label class="dropbtn">Projects</label>
                 <div class="dropdown-content">
+                <NavLink to="/blog">Blog</NavLink>
                 <NavLink to="/parser">Resume Parser</NavLink>
-                <NavLink to="/show-predictor">TV Show Recommender</NavLink>
                 <NavLink to="/schwab">Schwab Trader</NavLink>
-                <a href="https://itsjafer.com/repo" target="_blank" rel="noopener noreferrer">Jailbreak Tweaks</a>
+                <a href="https://itsjafer.com/repo" target="_blank" rel="noopener noreferrer">Jailbreak Repo</a>
                 </div>
               </div></li>
             </ul>
