@@ -23,21 +23,21 @@ class Technical extends Component {
     return (
       <div>
         <Helmet>
-          <title>Jafer Haider -- Resume</title>
+          <title>Youssef Hegab -- Resume</title>
           <meta name="description" content="My most up-to-date resume."/>
-          <link rel="canonical" href="http://itsjafer.com/#/resume" />
+          <link rel="canonical" href="http://helloyoussef.net/#/resume" />
           <meta name="image" property="og:image" content="/Resume.jpg"/>
         </Helmet>
         <div className="Resume">
           <p>
             {' '}
             Here is a
-            <a href="Jafer_Haider_Resume.pdf" target="_blank" rel="noopener noreferrer"> direct link to my resume;</a>  I used <a href="https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs">this template</a> as the basis for my resume.
+            <a href="Youssef_resume.pdf" target="_blank" rel="noopener noreferrer"> direct link to my resume;</a>  I used <a href="https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs">this template</a> as the basis for my resume.
           </p>
 
           <SizeMe>
               {({ size }) => (
-                <Document file={"Jafer_Haider_Resume.pdf"}>
+                <Document file={"Youssef_resume.pdf"}>
                   <Page pageNumber={1}  onLoadSuccess={this.removeTextLayerOffset} width={size.width ? size.width : 1} />
                 </Document>
               )}

@@ -24,6 +24,8 @@ class Favourites extends Component {
         <div className="movies">
           <h3>Movies</h3>
           <ul>
+            <li>UNDER CONSTRUCTION</li>
+            {/*
             <li>12 Angry Men (1957)</li>
             <li>Taxi Driver (1976)</li>
             <li>The Shining (1980)</li>
@@ -151,13 +153,13 @@ class Favourites extends Component {
             <li>Nightmare Alley (2022) </li>
             <li>The Batman (2022)</li>
             <li>Everything, Everywhere, All At Once (2022)</li>
-            <li>Men (2022)</li>
+            <li>Men (2022)</li>*/}
           </ul>
         </div>
         <div className="shows">
           <h3>TV Shows</h3>
           <ul>
-            <li>The Twilight Zone (1959-1964)</li>
+            {/*<li>The Twilight Zone (1959-1964)</li>
             <li>Friends (1994-2004)</li>
             <li>Firefly (2002-2003)</li>
             <li>Avatar (2003-2008)</li>
@@ -216,14 +218,14 @@ class Favourites extends Component {
             <li>Solar Opposites (2020-)</li>
             <li>Ted Lasso (2020-)</li>
             <li>Invincible (2021-)</li>
-            <li>WandaVision (2021)</li>
+            <li>WandaVision (2021)</li>*/}
           </ul>
         </div>
 
         <div className="books">
-          <h3>Books</h3>
+          <h3>{/*'Music'*/}</h3>
           <ul>
-            <li>Le Petit Prince (Saint-Exupéry)</li>
+            {/*<li>Le Petit Prince (Saint-Exupéry)</li>
             <li>Le Compte de Monte-Cristo (Dumas)</li>
             <li>Kingkiller Chronicles (Rothfuss)</li>
             <li>Mistborn Trilogy (Brandon Sanderson)</li>
@@ -236,7 +238,7 @@ class Favourites extends Component {
             <li>The Mazerunner (James Dashner)</li>
             <li>Lord of the Flies (Golding)</li>
             <li>Ender&apos;s Game (Orson Scott Card)</li>
-            <li>City of Ember (Jeanne DuPrau)</li>
+            <li>City of Ember (Jeanne DuPrau)</li>*/}
           </ul>
         </div>
       </div>

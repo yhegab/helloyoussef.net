@@ -15,11 +15,11 @@ class Social extends Component {
   render() {
     return (
       <div className="social">
-        <SocialIcon link="http://github.com/itsjafer" name="github" />
-        <SocialIcon link="http://www.linkedin.com/in/itsjafer" name="linkedin" />
-        <SocialIcon link="mailto:itsjafer@gmail.com" name="email" />
-        <SocialIcon link="http://facebook.com/itsjafer" name="facebook" />
-        <SocialIcon link="http://instagram.com/itsjafer" name="instagram" />
+        <SocialIcon link="http://github.com/yhegab" name="github" />
+        <SocialIcon link="http://www.linkedin.com/in/yhegab" name="linkedin" />
+        <SocialIcon link="mailto:youssef.hegab@gmail.com" name="email" />
+        <SocialIcon link="https://twitter.com/techssef" name="twitter" />
+        <SocialIcon link="http://instagram.com/youssef.hegab" name="instagram" />
       </div>
     );
   }

@@ -64,7 +64,7 @@ class Blog extends Component {
             * 2022 New Grad Grind
             * Negotiating between Microsoft, Google, Robinhood
           */}
-          <BlogEntry 
+          {/*<BlogEntry 
             title="Negotiating New Grad Offers"
             date="October 11, 2021" 
             description="When looking for a 2022 new grad opportunity, I was fortunate to have received offers from Google, Microsoft, Confluent, and Robinhood." 
@@ -75,11 +75,11 @@ class Blog extends Component {
             date="September 27, 2021" 
             description="I reflect about the journey to actually securing my Summer 2021 internship at Google." 
             file="google_internship"
-          />
+          />*/}
           <BlogEntry 
             title="This is my first blog post"
-            date="September 25, 2021" 
-            description="Testing out my first blog post is exciting!" 
+            date="June 25, 2021" 
+            description="Here goes nothing!" 
             file="first_post"
           />
       </div>

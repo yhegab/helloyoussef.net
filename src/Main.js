@@ -47,13 +47,10 @@ class Main extends Component {
                 <label class="dropbtn">Projects</label>
                 <div class="dropdown-content">
                 <NavLink to="/blog">Blog</NavLink>
-                <NavLink to="/parser">Resume Parser</NavLink>
-                <NavLink to="/schwab">Schwab Trader</NavLink>
-                <a href="https://itsjafer.com/repo" target="_blank" rel="noopener noreferrer">Jailbreak Repo</a>
                 </div>
               </div></li>
             </ul>
-            <h1>Jafer Haider</h1>
+            <h1>Youssef Hegab</h1>
             <Social />
 
             <Route exact path="/" component={withTracker(Home)} />
