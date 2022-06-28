@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/helloyoussef.net/static/css/main.6ac2bb83.chunk.css",
+    "main.js": "/helloyoussef.net/static/js/main.7d1d6fb9.chunk.js",
+    "main.js.map": "/helloyoussef.net/static/js/main.7d1d6fb9.chunk.js.map",
+    "runtime-main.js": "/helloyoussef.net/static/js/runtime-main.6626f34a.js",
+    "runtime-main.js.map": "/helloyoussef.net/static/js/runtime-main.6626f34a.js.map",
+    "static/css/2.569d7983.chunk.css": "/helloyoussef.net/static/css/2.569d7983.chunk.css",
+    "static/js/2.3fcaaf6f.chunk.js": "/helloyoussef.net/static/js/2.3fcaaf6f.chunk.js",
+    "static/js/2.3fcaaf6f.chunk.js.map": "/helloyoussef.net/static/js/2.3fcaaf6f.chunk.js.map",
+    "index.html": "/helloyoussef.net/index.html",
+    "precache-manifest.f7c816c9e928e5d2c520ddb05260db8f.js": "/helloyoussef.net/precache-manifest.f7c816c9e928e5d2c520ddb05260db8f.js",
+    "service-worker.js": "/helloyoussef.net/service-worker.js",
+    "static/css/2.569d7983.chunk.css.map": "/helloyoussef.net/static/css/2.569d7983.chunk.css.map",
+    "static/css/main.6ac2bb83.chunk.css.map": "/helloyoussef.net/static/css/main.6ac2bb83.chunk.css.map",
+    "static/js/2.3fcaaf6f.chunk.js.LICENSE.txt": "/helloyoussef.net/static/js/2.3fcaaf6f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6626f34a.js",
+    "static/css/2.569d7983.chunk.css",
+    "static/js/2.3fcaaf6f.chunk.js",
+    "static/css/main.6ac2bb83.chunk.css",
+    "static/js/main.7d1d6fb9.chunk.js"
+  ]
+}
