@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "79c0dc4ed229a348f2197dd1a1c06f8e",
+    "revision": "c24ac75a852557085a4835e2a652741d",
     "url": "/helloyoussef.net/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/helloyoussef.net/static/css/2.569d7983.chunk.css"
   },
   {
-    "revision": "57fd69f649cc897004e6",
+    "revision": "ad80e7862897500895d2",
     "url": "/helloyoussef.net/static/css/main.6ac2bb83.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/helloyoussef.net/static/js/2.7794d5b6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "57fd69f649cc897004e6",
-    "url": "/helloyoussef.net/static/js/main.8d3998ac.chunk.js"
+    "revision": "ad80e7862897500895d2",
+    "url": "/helloyoussef.net/static/js/main.05afe9ac.chunk.js"
   },
   {
     "revision": "253cae65f005e6c21a66",
