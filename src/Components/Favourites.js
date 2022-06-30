@@ -24,8 +24,6 @@ class Favourites extends Component {
         <div className="movies">
           <h3>Movies</h3>
           <ul>
-            <li>UNDER CONSTRUCTION</li>
-            {/*
             <li>12 Angry Men (1957)</li>
             <li>Taxi Driver (1976)</li>
             <li>The Shining (1980)</li>
@@ -153,7 +151,7 @@ class Favourites extends Component {
             <li>Nightmare Alley (2022) </li>
             <li>The Batman (2022)</li>
             <li>Everything, Everywhere, All At Once (2022)</li>
-            <li>Men (2022)</li>*/}
+            <li>Men (2022)</li>
           </ul>
         </div>
         <div className="shows">
