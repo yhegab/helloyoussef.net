@@ -1,25 +1,31 @@
 {
   "files": {
     "main.css": "/helloyoussef.net/static/css/main.6ac2bb83.chunk.css",
-    "main.js": "/helloyoussef.net/static/js/main.05afe9ac.chunk.js",
-    "main.js.map": "/helloyoussef.net/static/js/main.05afe9ac.chunk.js.map",
+    "main.js": "/helloyoussef.net/static/js/main.943532cc.chunk.js",
+    "main.js.map": "/helloyoussef.net/static/js/main.943532cc.chunk.js.map",
     "runtime-main.js": "/helloyoussef.net/static/js/runtime-main.6626f34a.js",
     "runtime-main.js.map": "/helloyoussef.net/static/js/runtime-main.6626f34a.js.map",
     "static/css/2.569d7983.chunk.css": "/helloyoussef.net/static/css/2.569d7983.chunk.css",
-    "static/js/2.7794d5b6.chunk.js": "/helloyoussef.net/static/js/2.7794d5b6.chunk.js",
-    "static/js/2.7794d5b6.chunk.js.map": "/helloyoussef.net/static/js/2.7794d5b6.chunk.js.map",
+    "static/js/2.f847776d.chunk.js": "/helloyoussef.net/static/js/2.f847776d.chunk.js",
+    "static/js/2.f847776d.chunk.js.map": "/helloyoussef.net/static/js/2.f847776d.chunk.js.map",
     "index.html": "/helloyoussef.net/index.html",
-    "precache-manifest.ec223977aab8876974b26aa89e5e4a8b.js": "/helloyoussef.net/precache-manifest.ec223977aab8876974b26aa89e5e4a8b.js",
+    "precache-manifest.52c150bb348c650a10e22ff8408c8919.js": "/helloyoussef.net/precache-manifest.52c150bb348c650a10e22ff8408c8919.js",
     "service-worker.js": "/helloyoussef.net/service-worker.js",
     "static/css/2.569d7983.chunk.css.map": "/helloyoussef.net/static/css/2.569d7983.chunk.css.map",
     "static/css/main.6ac2bb83.chunk.css.map": "/helloyoussef.net/static/css/main.6ac2bb83.chunk.css.map",
-    "static/js/2.7794d5b6.chunk.js.LICENSE.txt": "/helloyoussef.net/static/js/2.7794d5b6.chunk.js.LICENSE.txt"
+    "static/js/2.f847776d.chunk.js.LICENSE.txt": "/helloyoussef.net/static/js/2.f847776d.chunk.js.LICENSE.txt",
+    "static/media/email.svg": "/helloyoussef.net/static/media/email.c66ee6f6.svg",
+    "static/media/facebook.svg": "/helloyoussef.net/static/media/facebook.f2cd52bd.svg",
+    "static/media/github.svg": "/helloyoussef.net/static/media/github.ea8bb7f4.svg",
+    "static/media/instagram.svg": "/helloyoussef.net/static/media/instagram.fbae9d49.svg",
+    "static/media/linkedin.svg": "/helloyoussef.net/static/media/linkedin.de559fc1.svg",
+    "static/media/twitter.svg": "/helloyoussef.net/static/media/twitter.b308fa8b.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.6626f34a.js",
     "static/css/2.569d7983.chunk.css",
-    "static/js/2.7794d5b6.chunk.js",
+    "static/js/2.f847776d.chunk.js",
     "static/css/main.6ac2bb83.chunk.css",
-    "static/js/main.05afe9ac.chunk.js"
+    "static/js/main.943532cc.chunk.js"
   ]
 }
