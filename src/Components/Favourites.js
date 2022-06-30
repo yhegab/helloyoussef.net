@@ -223,22 +223,63 @@ class Favourites extends Component {
         </div>
 
         <div className="books">
-          <h3>{/*'Music'*/}</h3>
+          <h3>{'Music'}</h3>
           <ul>
-            {/*<li>Le Petit Prince (Saint-Exupéry)</li>
-            <li>Le Compte de Monte-Cristo (Dumas)</li>
-            <li>Kingkiller Chronicles (Rothfuss)</li>
-            <li>Mistborn Trilogy (Brandon Sanderson)</li>
-            <li>Small Steps (Louis Sachar)</li>
-            <li>To Kill a Mockingbird (Harper Lee)</li>
-            <li>The Qur&apos;an</li>
-            <li>The Circle (Dave Eggers)</li>
-            <li>1984 (George Orwell)</li>
-            <li>Brave New World (Aldous Huxley)</li>
-            <li>The Mazerunner (James Dashner)</li>
-            <li>Lord of the Flies (Golding)</li>
-            <li>Ender&apos;s Game (Orson Scott Card)</li>
-            <li>City of Ember (Jeanne DuPrau)</li>*/}
+            <li>Getz/Gilberto by Stan Getz and Joao Gilberto(1964)</li>
+            <li>El Atlal by Umm Kulthum(1966)</li>
+            <li>Ode To Quetzalcoatl by Dave Bixby(1969)</li>
+            <li>Aghany Film Aby Fawk El Shogara by Abdul Halim Hafez(1969)</li>
+            <li>Tell Me This Is a Dream by The Delfonics(1972)</li>
+            <li>Colour Green by Sybille Baker(1973)</li>
+            <li>I Want You by Marvin Gaye(1976)</li>
+            <li>Brasil by Joao Gilberto(1981)</li>
+            <li>Purple Rain by Prince(1984)</li>
+            <li>Habibi Funk 018 by Hamid El Shaeri(1988)</li>
+            <li>Either Or by Elliot Smith(1997)</li>
+            <li>The Miseducation of Lauryn Hill by Lauryn Hill(1998)</li>
+            <li>Voodoo by D'Angelo(2001)</li>
+            <li>The Glow Pt. 2 by The Microphones(2001)</li>
+            <li>MTV Unplugged No.20 by Lauryn Hill(2002)</li>
+            <li>Frank by Amy Winehouse(2003)</li>
+            <li>For Lovers by Lamp(2004)</li>
+            <li>MM...FOOD by MF DOOM(2004)</li>
+            <li>Amy Winehouse by Back to Black(2006)</li>
+            <li>Donuts by J Dilla(2006)</li>
+            <li>New Moon by Elliot Smith(2007)</li>
+            <li>For Emma Forever Ago by Bon Iver(2008)</li>
+            <li>House of Balloons by The Weeknd(2010)</li>
+            <li>Bon Iver by Bon Iver(2011)</li>
+            <li>Helplessness Blues by Fleet Foxes(2011)</li>
+            <li>James Blake by James Blake(2011)</li>
+            <li>channel ORANGE by Frank Ocean(2012)</li>
+            <li>Kaleidescope Dream by Miguel(2012)</li>
+            <li>Trick by Alex G(2012)</li>
+            <li>Bait Ones by Jai Paul(2013)</li>
+            <li>Overgrown by James Blake(2013)</li>
+            <li>Bury Me at Makeout Creek by Mitski(2014)</li>
+            <li>Stay Up by Abhi Dijon(2014)</li>
+            <li>Yume by Lamp(2014)</li>
+            <li>On Your Own Love Again by Jessica Pratt(2014)</li>
+            <li>Carrie and Lowell by Sufjan Stevens(2015)</li>
+            <li>Hiatus Kaiyote by Choose Your Weapon(2015)</li>
+            <li>To Pimp a Butterfly by Kendrick Lamar(2015)</li>
+            <li>Blonde by Frank Ocean(2016)</li>
+            <li>Endless by Frank Ocean(2016)</li>
+            <li>Puberty 2 by Mitski(2016)</li>
+            <li>Telefone by Noname(2016)</li>
+            <li>Needle Paw by Nai Palm(2017)</li>
+            <li>Process by Sampha(2017)</li>
+            <li>Steve Lacy's Demos by Steve Lacy(2017)</li>
+            <li>I Need to Start a Garden by Haley Heynderickx(2018)</li>
+            <li>Atlanta Millionaires Club by Faye Webster(2019)</li>
+            <li>CTRL by SZA(2019)</li>
+            <li>BUBBA by Kaytranada(2019)</li>
+            <li>MAN ALIVE! by King Krule(2020)</li>
+            <li>Punisher by Phoebe Bridgers(2020)</li>
+            <li>Texas Sun by Khruangbin and Leon Bridges(2020)</li>
+            <li>Absolutely by Dijon(2021)</li>
+            <li>Gemini Rights by Steve Lacy(2022)</li>
+            <li>Texas Moon by Khruangbin and Leon Bridges(2022)</li>
           </ul>
         </div>
       </div>
