@@ -40,7 +40,7 @@ class BlogEntry extends Component {
         }
         return (
             <div className="blogEntry">
-                <a href={"/#/blog/"+ this.state.file}><h4>{this.props.title}</h4></a>
+                <a href={"helloyoussef.net/#/blog/"+ this.state.file}><h4>{this.props.title}</h4></a>
                 <i>{this.state.date}</i>
                 <br/>
                 <span>{this.state.description}</span>
@@ -63,8 +63,8 @@ class Blog extends Component {
             * Reflecting on Google Internship
             * 2022 New Grad Grind
             * Negotiating between Microsoft, Google, Robinhood
-          */}
-          {/*<BlogEntry 
+         
+          <BlogEntry 
             title="Negotiating New Grad Offers"
             date="October 11, 2021" 
             description="When looking for a 2022 new grad opportunity, I was fortunate to have received offers from Google, Microsoft, Confluent, and Robinhood." 
@@ -75,7 +75,7 @@ class Blog extends Component {
             date="September 27, 2021" 
             description="I reflect about the journey to actually securing my Summer 2021 internship at Google." 
             file="google_internship"
-          />*/}
+          /> */}
           <BlogEntry 
             title="This is my first blog post"
             date="June 25, 2021" 
