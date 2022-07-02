@@ -40,7 +40,7 @@ class BlogEntry extends Component {
         }
         return (
             <div className="blogEntry">
-                <a href={"helloyoussef.net/#/blog/"+ this.state.file}><h4>{this.props.title}</h4></a>
+                <a href={"#/blog/"+ this.state.file}><h4>{this.props.title}</h4></a>
                 <i>{this.state.date}</i>
                 <br/>
                 <span>{this.state.description}</span>
