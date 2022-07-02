@@ -7,7 +7,7 @@ function UnderConstruction() {
 
         <p>
           So I'm still working on integrating some of my projects into actual web apps. However, if you would like to check out the 
-          raw source code, you can do so at my <a href="www.github.com/yhegab">Github</a></p>
+          raw source code, you can do so at my <a href="https://github.com/yhegab/">Github</a></p>
 
         <p>In any case...</p>
 
