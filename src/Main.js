@@ -10,6 +10,7 @@ import withTracker from './withTracker';
 import Home from './Components/Home';
 import Social from './Components/Social';
 import Technical from './Components/Technical';
+import UnderConstruction from './Components/UnderConstruction';
 import Favourites from './Components/Favourites';
 import Schedule from './Components/Schedule';
 import ShowPredictor from './Components/ShowPredictor';
@@ -46,7 +47,7 @@ class Main extends Component {
                 <div class="dropdown">
                 <label class="dropbtn">Projects</label>
                 <div class="dropdown-content">
-                <NavLink to="/blog">Blog</NavLink>
+                <NavLink to="/construction">Under Construction...</NavLink>
                 </div>
               </div></li>
             </ul>
@@ -58,6 +59,7 @@ class Main extends Component {
             <Route exact path="/resume" component={withTracker(Technical)} />
             <Route path="/favourites" component={withTracker(Favourites)} />
             <Route path="/chai" component={withTracker(Chai)} />
+            <Route exact path="/construction" component={withTracker(UnderConstruction)} />
             <Route exact path="/blog" component={withTracker(Blog)} />
             <Route exact path="/blog/:file/" component={withTracker(BlogEntry)} />
             <Route path="/reversesplit" component={withTracker(ReverseSplit)} />
