@@ -6,7 +6,7 @@ class Home extends Component {
     return (
       <div>
         <div className='baby'>
-          <Img src='baby_youssef.jpeg' />
+          <Img src='adult_youssef.jpeg' />
         </div>
         <h4>Hello,</h4>
 
